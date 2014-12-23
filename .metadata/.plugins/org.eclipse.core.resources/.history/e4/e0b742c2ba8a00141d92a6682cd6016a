@@ -1,0 +1,5 @@
+package com.pku.wlj.dao;
+
+public interface ProfileDao {
+
+}
