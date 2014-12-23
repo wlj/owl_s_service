@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.owl-ontologies.com/Ontology1367940844.owl#" xmlns:daml="http://www.daml.org/2001/03/daml+oil#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:expr="http://www.daml.org/services/owl-s/1.1/generic/Expression.owl#" xmlns:grounding="http://www.daml.org/services/owl-s/1.1/Grounding.owl#" xmlns:list="http://www.daml.org/services/owl-s/1.1/generic/ObjectList.owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:process="http://www.daml.org/services/owl-s/1.1/Process.owl#" xmlns:profile="http://www.daml.org/services/owl-s/1.1/Profile.owl#" xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:service="http://www.daml.org/services/owl-s/1.1/Service.owl#" xmlns:swrl="http://www.w3.org/2003/11/swrl#" xmlns:swrlb="http://www.w3.org/2003/11/swrlb#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://www.example.org/owls/GetWeather.owl#" xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#">
+<owl:Ontology rdf:about="">
+<owl:imports rdf:resource="http://www.daml.org/services/owl-s/1.2/Profile.owl"/>
+<owl:imports rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl"/>
+<owl:imports rdf:resource="http://www.w3.org/2003/11/swrl"/>
+<owl:imports rdf:resource="http://www.w3.org/2003/11/swrlb"/>
+</owl:Ontology>
+<profile:Profile rdf:ID="CheckLuggageSecurityProfile">
+<service:presentedBy>
+<service:Service rdf:ID="CheckLuggageSecurityService">
+<service:presents rdf:resource="#CheckLuggageSecurityProfile"/>
+<service:supports>
+<grounding:WsdlGrounding rdf:ID="CheckLuggageSecurityGrounding">
+<grounding:hasAtomicProcessGrounding>
+<grounding:WsdlAtomicProcessGrounding rdf:ID="WsdlAtomicProcessGrounding_9"/>
+</grounding:hasAtomicProcessGrounding>
+</grounding:WsdlGrounding>
+</service:supports>
+<service:describedBy>
+<process:AtomicProcess rdf:ID="CheckLuggageSecurityProcess">
+<service:describes rdf:resource="#CheckLuggageSecurityService"/>
+ <profile:hasOutput>
+      <process:Output rdf:ID="Output1">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#FlightItinerary</process:parameterType>
+      </process:Output>
+    </profile:hasOutput>
+    <profile:hasOutput>
+      <process:Output rdf:ID="Output2">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#FlightList</process:parameterType>
+      </process:Output>
+    </profile:hasOutput>
+     <profile:hasOutput>
+      <process:Output rdf:ID="Output3">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#ReservationNumber</process:parameterType>
+      </process:Output>
+    </profile:hasOutput>
+    
+    <profile:hasInput>
+      <process:Input rdf:ID="Input1">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#FlightDate</process:parameterType>
+      </process:Input>
+    </profile:hasInput>
+    <profile:hasInput>
+      <process:Input rdf:ID="Input2">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#FlightDate</process:parameterType>
+      </process:Input>
+    </profile:hasInput>
+    <profile:hasInput>
+      <process:Input rdf:ID="Input3">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#Password</process:parameterType>
+      </process:Input>
+    </profile:hasInput>
+    <profile:hasInput>
+      <process:Input rdf:ID="Input4">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#Airport</process:parameterType>
+      </process:Input>
+    </profile:hasInput>
+    <profile:hasInput>
+      <process:Input rdf:ID="Input5">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#AcctName</process:parameterType>
+      </process:Input>
+    </profile:hasInput>
+    <profile:hasInput>
+      <process:Input rdf:ID="Input6">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#Airport</process:parameterType>
+      </process:Input>
+    </profile:hasInput>
+    <profile:hasInput>
+      <process:Input rdf:ID="Input7">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#RoundTrip</process:parameterType>
+      </process:Input>
+    </profile:hasInput>
+    <profile:hasInput>
+      <process:Input rdf:ID="Input8">
+        <process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >http://www.w3.org/2001/XMLSchema#http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#Confirmation</process:parameterType>
+      </process:Input>
+    </profile:hasInput>
+</process:AtomicProcess>
+</service:describedBy>
+</service:Service>
+</service:presentedBy>
+<profile:hasOutput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#FlightItinerary"/>
+<profile:hasOutput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#FlightList"/>
+<profile:hasOutput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#ReservationNumber"/>
+<profile:hasInput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#FlightDate"/>
+<profile:hasInput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#FlightDate"/>
+<profile:hasInput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#Password"/>
+<profile:hasInput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#Airport"/>
+<profile:hasInput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#AcctName"/>
+<profile:hasInput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#Airport"/>
+<profile:hasInput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#RoundTrip"/>
+<profile:hasInput rdf:resource="http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl#Confirmation"/>
+</profile:Profile>
+</rdf:RDF>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.apache.axis2.tool.service.eclipse.ui.WSDLFileSelectionPage">
+		<item value="true" key="SKIP_WSDL"/>
+		<item value="false" key="SELECT_WSDL"/>
+		<item value="" key="WSDL_FILE_NAME"/>
+		<item value="true" key="WSDL_GEN"/>
+	</section>
+	<section name="org.apache.axis2.tool.service.eclipse.ui.ServiceArchiveOutputLocationPage">
+		<item value="" key="OUT_LOCATION"/>
+		<item value="my_service1" key="OUT_NAME"/>
+	</section>
+	<section name="org.apache.axis2.tool.service.eclipse.ui.ServiceXMLGenerationPage">
+		<item value="false" key="LOAD_ALL"/>
+		<item value="MyService2" key="SERVICE_NAME"/>
+		<item value="EDU.pku.ly.owlsservice.implementation.OwlsServiceMainImpl" key="CLASSNAME"/>
+	</section>
+	<section name="org.apache.axis2.tool.service.eclipse.ui.ClassFileLocationPage">
+		<item value="H:\eclipse_workspace\liuxin\ExtendedService\bin" key="CLASS_FILE_LOCATION"/>
+		<item value="true" key="FILTER_BY_CLASSES"/>
+	</section>
+	<section name="org.apache.axis2.tool.service.eclipse.ui.LibraryAddingPage">
+		<list key="LIB_NAMES">
+			<item value="H:\eclipse_workspace\liuxin\ExtendedService\lib\axis.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\ExtendedService\lib\jaxrpc.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\ExtendedService\lib\axis-ant.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\ExtendedService\lib\commons-discovery-0.2.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\ExtendedService\lib\commons-logging-1.0.4.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\ExtendedService\lib\libthrift-0.9.0.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\ExtendedService\lib\log4j-1.2.8.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\ExtendedService\lib\saaj.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\ExtendedService\lib\slf4j-api-1.7.5.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\ExtendedService\lib\wsdl4j-1.5.1.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\owlsapi-1.1.2\lib\icu4j_3.4.4.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\owlsapi-1.1.2\lib\iri-0.8.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\owlsapi-1.1.2\lib\jena.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\owlsapi-1.1.2\lib\junit.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\owlsapi-1.1.2\lib\owlapi-src.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\owlsapi-1.1.2\lib\resolver.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\owlsapi-1.1.2\lib\swrlapi.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\owlsapi-1.1.2\lib\xercesImpl.jar"/>
+			<item value="H:\eclipse_workspace\liuxin\owlsapi-1.1.2\lib\xml-apis.jar"/>
+		</list>
+	</section>
+	<section name="org.apache.axis2.tool.service.eclipse.ui.ServiceXMLFileSelectionPage">
+		<item value="" key="SERVICE_XML"/>
+		<item value="true" key="AUTO_GEN"/>
+	</section>
+</section>

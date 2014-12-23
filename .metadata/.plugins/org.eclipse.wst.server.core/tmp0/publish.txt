@@ -1,0 +1,9 @@
+#Tomcat publish data
+#Sat Dec 20 18:29:07 CST 2014
+org.eclipse.jst.j2ee.server\:GroundingOpe=E\:\\apache-tomcat-7.0.57\\webapps\\simple-service-webapp\\WEB-INF\\lib\\GroundingOpe-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:ProfileOpe=E\:\\apache-tomcat-7.0.57\\webapps\\simple-service-webapp\\WEB-INF\\lib\\ProfileOpe-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:ExtendedService=E\:\\apache-tomcat-7.0.57\\webapps\\simple-service-webapp\\WEB-INF\\lib\\ExtendedService-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:rscasd-utils=E\:\\apache-tomcat-7.0.57\\webapps\\simple-service-webapp\\WEB-INF\\lib\\rscasd-utils-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:simple-service-webapp=E\:\\apache-tomcat-7.0.57\\webapps\\simple-service-webapp
+org.eclipse.jst.j2ee.server\:ProcessOpe=E\:\\apache-tomcat-7.0.57\\webapps\\simple-service-webapp\\WEB-INF\\lib\\ProcessOpe-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:owlsapi-1.1.2=E\:\\apache-tomcat-7.0.57\\webapps\\simple-service-webapp\\WEB-INF\\lib\\owlsapi-1.1.2-0.0.1-SNAPSHOT.jar

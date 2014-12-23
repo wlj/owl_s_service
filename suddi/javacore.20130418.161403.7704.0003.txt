@@ -1,0 +1,684 @@
+NULL           ------------------------------------------------------------------------
+0SECTION       TITLE subcomponent dump routine
+NULL           ===============================
+1TISIGINFO     Dump Event "gpf" (00002000) received 
+1TIDATETIME    Date:                 2013/04/18 at 16:14:06
+1TIFILENAME    Javacore filename:    H:\juddi\suddi\suddi\javacore.20130418.161403.7704.0003.txt
+NULL           ------------------------------------------------------------------------
+0SECTION       GPINFO subcomponent dump routine
+NULL           ================================
+2XHOSLEVEL     OS Level         : Windows Vista 6.2 build 9200
+2XHCPUS        Processors -
+3XHCPUARCH       Architecture   : x86
+3XHNUMCPUS       How Many       : 4
+3XHNUMASUP       NUMA is either not supported or has been disabled by user
+NULL           
+1XHEXCPCODE    J9Generic_Signal_Number: 00000004
+1XHEXCPCODE    ExceptionCode: C0000005
+1XHEXCPCODE    ExceptionAddress: 7FEF43E8
+1XHEXCPCODE    ContextFlags: 0001003F
+1XHEXCPCODE    Handler1: 7FEE9A50
+1XHEXCPCODE    Handler2: 7FEC95C0
+1XHEXCPCODE    InaccessibleAddress: 0002D567
+NULL           
+1XHEXCPMODULE  Module: H:\juddi\running\jdk\jre\bin\j9vm24.dll
+1XHEXCPMODULE  Module_base_address: 7FEE0000
+1XHEXCPMODULE  Offset_in_DLL: 000143E8
+NULL           
+1XHREGISTERS   Registers:
+2XHREGISTER      EDI: 0002D507
+2XHREGISTER      ESI: 005B534B
+2XHREGISTER      EAX: 6AA1DC91
+2XHREGISTER      EBX: 6BA056E0
+2XHREGISTER      ECX: 6AA1DC60
+2XHREGISTER      EDX: 00000000
+2XHREGISTER      EIP: 7FEF43E8
+2XHREGISTER      ESP: 6AA1DC3C
+2XHREGISTER      EBP: 005CB400
+2XHREGISTER      EFLAGS: 00210202
+NULL           
+1XHFLAGS       VM flags:00040000
+NULL           
+NULL           ------------------------------------------------------------------------
+0SECTION       ENVINFO subcomponent dump routine
+NULL           =================================
+1CIJAVAVERSION J2RE 6.0 IBM J9 2.4 Windows Vista x86-32 build jvmwi3260-20080816_22093
+1CIVMVERSION   VM build 20080816_022093_lHdSMr
+1CIJITVERSION  JIT enabled, AOT enabled - r9_20080721_1330ifx2
+1CIGCVERSION   GC - 20080724_AA
+1CIRUNNINGAS   Running as a standalone JVM
+1CICMDLINE     H:\juddi\running\jdk\bin\javaw.exe -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:58534 -Dfile.encoding=UTF-8 -classpath H:\juddi\suddi\suddi\bin;H:\juddi\suddi\owlsapi-1.1.2\bin;H:\juddi\lib\mavenrepo\.m2\repository\com\hp\hpl\jena\jena\2.6.2\jena-2.6.2.jar;H:\juddi\lib\mavenrepo\.m2\repository\com\hp\hpl\jena\iri\0.7\iri-0.7.jar;H:\juddi\lib\mavenrepo\.m2\repository\com\ibm\icu\icu4j\3.4.4\icu4j-3.4.4.jar;H:\juddi\lib\mavenrepo\.m2\repository\org\slf4j\slf4j-api\1.5.6\slf4j-api-1.5.6.jar;H:\juddi\lib\mavenrepo\.m2\repository\xerces\xercesImpl\2.7.1\xercesImpl-2.7.1.jar;H:\juddi\lib\mavenrepo\.m2\repository\org\slf4j\slf4j-log4j12\1.5.6\slf4j-log4j12-1.5.6.jar;H:\juddi\lib\mavenrepo\.m2\repository\log4j\log4j\1.2.13\log4j-1.2.13.jar;H:\juddi\lib\mavenrepo\.m2\repository\EDU\cmu\atlas\swrlapi\1.0\swrlapi-1.0.jar;H:\juddi\lib\mavenrepo\.m2\repository\junit\junit\4.5\junit-4.5.jar;H:\juddi\suddi\suddi\lib\log4j-1.2.15.jar Test
+1CIJAVAHOMEDIR Java Home Dir:   H:\juddi\running\jdk\jre
+1CIJAVADLLDIR  Java DLL Dir:    H:\juddi\running\jdk\jre\bin
+1CISYSCP       Sys Classpath:   H:\juddi\running\jdk\jre\lib\vm.jar;H:\juddi\running\jdk\jre\lib\annotation.jar;H:\juddi\running\jdk\jre\lib\beans.jar;H:\juddi\running\jdk\jre\lib\java.util.jar;H:\juddi\running\jdk\jre\lib\jndi.jar;H:\juddi\running\jdk\jre\lib\logging.jar;H:\juddi\running\jdk\jre\lib\security.jar;H:\juddi\running\jdk\jre\lib\sql.jar;H:\juddi\running\jdk\jre\lib\ibmorb.jar;H:\juddi\running\jdk\jre\lib\ibmorbapi.jar;H:\juddi\running\jdk\jre\lib\ibmcfw.jar;H:\juddi\running\jdk\jre\lib\rt.jar;H:\juddi\running\jdk\jre\lib\charsets.jar;H:\juddi\running\jdk\jre\lib\resources.jar;H:\juddi\running\jdk\jre\lib\ibmpkcs.jar;H:\juddi\running\jdk\jre\lib\ibmcertpathfw.jar;H:\juddi\running\jdk\jre\lib\ibmjgssfw.jar;H:\juddi\running\jdk\jre\lib\ibmjssefw.jar;H:\juddi\running\jdk\jre\lib\ibmsaslfw.jar;H:\juddi\running\jdk\jre\lib\ibmjcefw.jar;H:\juddi\running\jdk\jre\lib\ibmjgssprovider.jar;H:\juddi\running\jdk\jre\lib\ibmjsseprovider2.jar;H:\juddi\running\jdk\jre\lib\ibmcertpathprovider.jar;H:\juddi\running\jdk\jre\lib\ibmxmlcrypto.jar;H:\juddi\running\jdk\jre\lib\management-agent.jar;H:\juddi\running\jdk\jre\lib\xml.jar;H:\juddi\running\jdk\jre\lib\jlm.jar;H:\juddi\running\jdk\jre\lib\javascript.jar;
+1CIUSERARGS    UserArgs:
+2CIUSERARG               -Xjcl:jclscar_24
+2CIUSERARG               -Dcom.ibm.oti.vm.bootstrap.library.path=H:\juddi\running\jdk\jre\bin
+2CIUSERARG               -Dsun.boot.library.path=H:\juddi\running\jdk\jre\bin
+2CIUSERARG               -Djava.library.path=H:\juddi\running\jdk\jre\bin;.;H:\juddi\running\jdk\jre\bin;H:/juddi/running/jdk/jre/bin/j9vm;H:/juddi/running/jdk/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;F:\win8\java\bin;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\
+2CIUSERARG               -Djava.home=H:\juddi\running\jdk\jre
+2CIUSERARG               -Djava.ext.dirs=H:\juddi\running\jdk\jre\lib\ext
+2CIUSERARG               -Duser.dir=H:\juddi\suddi\suddi
+2CIUSERARG               _j2se_j9=71168 0x7FB971A0
+2CIUSERARG               -Xdump
+2CIUSERARG               -Djava.class.path=.;F:\win8\java\lib\dt.jar;F:\win8\java\lib\tools.jar;
+2CIUSERARG               -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:58534
+2CIUSERARG               -Dfile.encoding=UTF-8
+2CIUSERARG               -Djava.class.path=H:\juddi\suddi\suddi\bin;H:\juddi\suddi\owlsapi-1.1.2\bin;H:\juddi\lib\mavenrepo\.m2\repository\com\hp\hpl\jena\jena\2.6.2\jena-2.6.2.jar;H:\juddi\lib\mavenrepo\.m2\repository\com\hp\hpl\jena\iri\0.7\iri-0.7.jar;H:\juddi\lib\mavenrepo\.m2\repository\com\ibm\icu\icu4j\3.4.4\icu4j-3.4.4.jar;H:\juddi\lib\mavenrepo\.m2\repository\org\slf4j\slf4j-api\1.5.6\slf4j-api-1.5.6.jar;H:\juddi\lib\mavenrepo\.m2\repository\xerces\xercesImpl\2.7.1\xercesImpl-2.7.1.jar;H:\juddi\lib\mavenrepo\.m2\repository\org\slf4j\slf4j-log4j12\1.5.6\slf4j-log4j12-1.5.6.jar;H:\juddi\lib\mavenrepo\.m2\repository\log4j\log4j\1.2.13\log4j-1.2.13.jar;H:\juddi\lib\mavenrepo\.m2\repository\EDU\cmu\atlas\swrlapi\1.0\swrlapi-1.0.jar;H:\juddi\lib\mavenrepo\.m2\repository\junit\junit\4.5\junit-4.5.jar;H:\juddi\suddi\suddi\lib\log4j-1.2.15.jar
+2CIUSERARG               -Dsun.java.command=Test
+2CIUSERARG               -Dsun.java.launcher=SUN_STANDARD
+2CIUSERARG               _port_library 0x7FB969A8
+NULL           
+1CIJVMMI       JVM Monitoring Interface (JVMMI)
+NULL           ------------------------
+2CIJVMMIOFF    [not available]
+NULL           
+NULL           ------------------------------------------------------------------------
+0SECTION       MEMINFO subcomponent dump routine
+NULL           =================================
+1STHEAPFREE    Bytes of Heap Space Free: 118878 
+1STHEAPALLOC   Bytes of Heap Space Allocated: BDE400 
+NULL           
+1STSEGTYPE     Internal Memory
+NULL           segment  start    alloc    end       type     bytes
+1STSEGMENT     6B59C6F4 6AADDDF8 6AADDDF8 6AAEDDF8  01000040 10000
+1STSEGMENT     6B59C7B4 6BBB9040 6BBB9040 6BBC9040  01000040 10000
+1STSEGMENT     6B59C874 6BD9AFD8 6BD9AFD8 6BDAAFD8  01000040 10000
+1STSEGMENT     6B59C814 6BEEDC78 6BEEDC78 6BEFDC78  01000040 10000
+1STSEGMENT     005CD604 6BE8DC50 6BE8DC50 6BE9DC50  01000040 10000
+1STSEGMENT     6B59C754 6BD6ABA0 6BD6ABA0 6BD7ABA0  01000040 10000
+1STSEGMENT     005CD5A4 6A988F60 6A988F60 6A998F60  01000040 10000
+1STSEGMENT     005CD424 0062ABD8 0062ABD8 0063E470  01000040 13898
+1STSEGMENT     005CD3C4 0061ABD0 0061ABD0 0062ABD0  01000040 10000
+NULL           
+1STSEGTYPE     Object Memory
+NULL           segment  start    alloc    end       type     bytes
+1STSEGMENT     005CD7AC 022C0000 02E9E400 02E9E400  00000009 BDE400
+NULL           
+1STSEGTYPE     Class Memory
+NULL           segment  start    alloc    end       type     bytes
+1STSEGMENT     00614FA4 6BB5FCD0 6BB5FE60 6BB5FE60  00010040 1A0
+1STSEGMENT     00614F44 6BE6A048 6BE6A428 6BE6A858  00020040 810
+1STSEGMENT     6B350154 6BA01060 6BA07920 6BA09060  00010040 8010
+1STSEGMENT     6B3500F4 6BE9DC58 6BEBAE48 6BEBDC58  00020040 20000
+1STSEGMENT     6B350094 6B59C9A0 6B59CB30 6B59CB30  00010040 1A0
+1STSEGMENT     6B350034 6BC97390 6BC975F0 6BC97A80  00020040 6F0
+1STSEGMENT     6B34FFD4 6BE2A010 6BE32000 6BE32010  00010040 8010
+1STSEGMENT     6B34FF74 6BE6DC48 6BE8D558 6BE8DC48  00020040 20000
+1STSEGMENT     6B34FF14 6BE62030 6BE69FB0 6BE6A030  00010040 8010
+1STSEGMENT     6B34FEB4 6BE42028 6BE61B50 6BE62028  00020040 20000
+1STSEGMENT     6B34FE54 6BE3A010 6BE40030 6BE42010  00010040 8010
+1STSEGMENT     6B34FDF4 6BD7ABA8 6BD94CC8 6BD9ABA8  00020040 20000
+1STSEGMENT     6A9AE7BC 6BC8F380 6BC96C30 6BC97380  00010040 8010
+1STSEGMENT     6A9AE75C 6BD4AB98 6BD69710 6BD6AB98  00020040 20000
+1STSEGMENT     6A9AE6FC 6BC77360 6BC7F020 6BC7F360  00010040 8010
+1STSEGMENT     6A9AE69C 6BD2AB90 6BD48128 6BD4AB90  00020040 20000
+1STSEGMENT     6A9AE63C 6B2D88C0 6B2E08A0 6B2E08C0  00010040 8010
+1STSEGMENT     6A9AE5DC 6BB18880 6BB207D0 6BB20880  00010040 8010
+1STSEGMENT     6A9AE57C 6BD0AB88 6BD2A828 6BD2AB88  00020040 20000
+1STSEGMENT     6A9AE51C 6BCE7B80 6BD07670 6BD07B80  00020040 20000
+1STSEGMENT     6A9AE4BC 6BC97B70 6BC9FB10 6BC9FB70  00010040 8010
+1STSEGMENT     6A9AE45C 6BCC7B78 6BCE76D8 6BCE7B78  00020040 20000
+1STSEGMENT     6B48FA94 6BB508B0 6BB58810 6BB588B0  00010040 8010
+1STSEGMENT     6B48FA34 6BCA7B70 6BCC7588 6BCC7B70  00020040 20000
+1STSEGMENT     6B48F9D4 6BA7BEC0 6BA7CC50 6BA7CEC0  00010040 1010
+1STSEGMENT     6B48F974 6BA73EA0 6BA7BDF0 6BA7BEA0  00010040 8010
+1STSEGMENT     6B48F914 6BC0B720 6BC0BF10 6BC0BF20  00010040 810
+1STSEGMENT     6B48F8B4 6BA1B260 6BA1C410 6BA1C410  00010040 11C0
+1STSEGMENT     6B48F854 6BBF0F18 6BC04608 6BC0B718  00020040 1A800
+1STSEGMENT     6B48F7F4 6BA1A080 6BA1B240 6BA1B240  00010040 11D0
+1STSEGMENT     6B48F794 6BA58838 6BA5F350 6BA73E98  00020040 1B660
+1STSEGMENT     6B48F734 6BBD0F10 6BBF0CB0 6BBF0F10  00020040 20000
+1STSEGMENT     6B374094 6BB48890 6BB505D0 6BB50890  00010040 8010
+1STSEGMENT     6B374034 6BB28888 6BB48518 6BB48888  00020040 20000
+1STSEGMENT     6B373FD4 6B4E8C20 6B4F0BB0 6B4F0C20  00010040 8010
+1STSEGMENT     6B373F74 6BAC0848 6BAE0170 6BAE0848  00020040 20000
+1STSEGMENT     6B373F14 6BB10870 6BB18730 6BB18870  00010040 8010
+1STSEGMENT     6B373EB4 6BAF0860 6BB100E8 6BB10860  00020040 20000
+1STSEGMENT     6B373E54 6BAA0840 6BABFAC8 6BAC0840  00020040 20000
+1STSEGMENT     6B373DF4 6BA50820 6BA586D0 6BA58820  00010040 8010
+1STSEGMENT     6B373D94 6BA80838 6BA9D240 6BAA0838  00020040 20000
+1STSEGMENT     6B373D34 6B374920 6B37C810 6B37C920  00010040 8010
+1STSEGMENT     6B3ED24C 6BA12070 6BA1A060 6BA1A070  00010040 8010
+1STSEGMENT     6B3ED1EC 6B59CCA0 6B5BC750 6B5BCCA0  00020040 20000
+1STSEGMENT     6B3ED18C 6B578C98 6B598510 6B598C98  00020040 20000
+1STSEGMENT     6B3ED12C 6B3C0960 6B3C8840 6B3C8960  00010040 8010
+1STSEGMENT     6B3ED0CC 6B3B8950 6B3C08A0 6B3C0950  00010040 8010
+1STSEGMENT     6B3ED06C 6B558C90 6B578300 6B578C90  00020040 20000
+1STSEGMENT     6B3ED00C 6B550C80 6B558B80 6B558C80  00010040 8010
+1STSEGMENT     6B3ECFAC 6B530C70 6B550648 6B550C70  00020040 20000
+1STSEGMENT     6B3ECF4C 6B528C60 6B530BE0 6B530C60  00010040 8010
+1STSEGMENT     6B3ECEEC 6B508C50 6B528510 6B528C50  00020040 20000
+1STSEGMENT     6B370CC4 6BA20010 6BA27F00 6BA28010  00010040 8010
+1STSEGMENT     6B370C64 6B9E0058 6B9FF728 6BA00058  00020040 20000
+1STSEGMENT     6B370C04 6B500C40 6B508B00 6B508C40  00010040 8010
+1STSEGMENT     6B370BA4 6B9C0050 6B9DED58 6B9E0050  00020040 20000
+1STSEGMENT     6B370B44 6BBB1030 6BBB8F90 6BBB9030  00010040 8010
+1STSEGMENT     6B370AE4 6B9A0048 6B9BE678 6B9C0048  00020040 20000
+1STSEGMENT     6B370A84 6BB80010 6BBB0D78 6BBB1020  00020040 31010
+1STSEGMENT     6B370A24 6BB60008 6BB7FD28 6BB80008  00020040 20000
+1STSEGMENT     6B3709C4 6B4F8C20 6B500B80 6B500C20  00010040 8010
+1STSEGMENT     6B370964 6BA30010 6BA4FA78 6BA50010  00020040 20000
+1STSEGMENT     6B385C9C 6B4E0C00 6B4E8A00 6B4E8C00  00010040 8010
+1STSEGMENT     6B385C3C 6B4D8BF0 6B4E0B60 6B4E0BF0  00010040 8010
+1STSEGMENT     6B385BDC 6B4B8BE0 6B4D6A48 6B4D8BE0  00020040 20000
+1STSEGMENT     6B385B7C 6B4B0BD0 6B4B8A80 6B4B8BD0  00010040 8010
+1STSEGMENT     6B385B1C 6A9A2F90 6A9AAEF0 6A9AAF90  00010040 8010
+1STSEGMENT     6B385ABC 6B490BC0 6B4AEDA8 6B4B0BC0  00020040 20000
+1STSEGMENT     6B385A5C 6B385D10 6B38DC90 6B38DD10  00010040 8010
+1STSEGMENT     6B3859FC 6B360930 6B3688C0 6B368930  00010040 8010
+1STSEGMENT     6B38599C 6B358920 6B3607D0 6B360920  00010040 8010
+1STSEGMENT     6B38593C 6B46D310 6B48B950 6B48D310  00020040 20000
+1STSEGMENT     6B3CA62C 6B340920 6B3488B0 6B348920  00010040 8010
+1STSEGMENT     6B3CA5CC 6B44D308 6B46AFF8 6B46D308  00020040 20000
+1STSEGMENT     6B3CA56C 6B338910 6B340770 6B340910  00010040 8010
+1STSEGMENT     6B3CA50C 6B42D300 6B44AD50 6B44D300  00020040 20000
+1STSEGMENT     6B3CA4AC 6B1E0050 6B1E7F80 6B1E8050  00010040 8010
+1STSEGMENT     6B3CA44C 6B260880 6B268770 6B268880  00010040 8010
+1STSEGMENT     6B3CA3EC 6B3ED2F8 6B40CF70 6B40D2F8  00020040 20000
+1STSEGMENT     6B3CA38C 6B3308F0 6B3388E0 6B3388F0  00010040 8010
+1STSEGMENT     6B3CA32C 6B350900 6B3588F0 6B358900  00010040 8010
+1STSEGMENT     6B3CA2CC 6B3CA698 6B3E9DA0 6B3EA698  00020040 20000
+1STSEGMENT     6AAF7554 6AB9CFD0 6ABA4D60 6ABA4FD0  00010040 8010
+1STSEGMENT     6AAF74F4 6B3108E8 6B32F230 6B3308E8  00020040 20000
+1STSEGMENT     6AAF7494 6A8D0050 6A8D8040 6A8D8050  00010040 8010
+1STSEGMENT     6AAF7434 6B2B88B0 6B2D6EA0 6B2D88B0  00020040 20000
+1STSEGMENT     6AAF73D4 6B3B0930 6B3B8810 6B3B8930  00010040 8010
+1STSEGMENT     6AAF7374 6B390928 6B3AECA0 6B3B0928  00020040 20000
+1STSEGMENT     6AAF7314 6B3088D0 6B3107F0 6B3108D0  00010040 8010
+1STSEGMENT     6AAF72B4 6B2E88C8 6B308818 6B3088C8  00020040 20000
+1STSEGMENT     6AAF7254 6B2B08A0 6B2B8820 6B2B88A0  00010040 8010
+1STSEGMENT     6AAF71F4 6B290890 6B2AEC88 6B2B0890  00020040 20000
+1STSEGMENT     6AAF696C 6B270888 6B28F850 6B290888  00020040 20000
+1STSEGMENT     6AAF690C 6AB45E10 6AB4DD90 6AB4DE10  00010040 8010
+1STSEGMENT     6AAF68AC 6AB3DDF0 6AB45D10 6AB45DF0  00010040 8010
+1STSEGMENT     6AAF684C 6B258870 6B2606F0 6B260870  00010040 8010
+1STSEGMENT     6AAF67EC 6A8E0060 6A8E7FD0 6A8E8060  00010040 8010
+1STSEGMENT     6AAF678C 6B238860 6B257E00 6B258860  00020040 20000
+1STSEGMENT     6AAF672C 6AAA0080 6AAA8000 6AAA8080  00010040 8010
+1STSEGMENT     6AAF66CC 6B5CF020 6B65F828 6B65FA30  00020040 90A10
+1STSEGMENT     6AAF666C 6AAD5DE0 6AADDCB0 6AADDDE0  00010040 8010
+1STSEGMENT     6AAF660C 6B1C0048 6B1DF450 6B1E0048  00020040 20000
+1STSEGMENT     6A9A2A04 6AB7ACE0 6AB99328 6AB9ACE0  00020040 20000
+1STSEGMENT     6A9A29A4 6AB2DE20 6AB35D70 6AB35E20  00010040 8010
+1STSEGMENT     6A9A2944 6AB55E40 6AB74658 6AB75E40  00020040 20000
+1STSEGMENT     6A9A28E4 6AB4DE30 6AB55D20 6AB55E30  00010040 8010
+1STSEGMENT     6A9A2884 6AB25E00 6AB2DCE0 6AB2DE00  00010040 8010
+1STSEGMENT     6A9A2824 6AB05DF8 6AB24878 6AB25DF8  00020040 20000
+1STSEGMENT     6A9A27C4 6A9B0050 6A9B8000 6A9B8050  00010040 8010
+1STSEGMENT     6A9A2764 6A9C8068 6A9E5F78 6A9E8068  00020040 20000
+1STSEGMENT     6A9A2704 6A9C0050 6A9C8040 6A9C8050  00010040 8010
+1STSEGMENT     6A9A26A4 6AAB5DD8 6AAD3C98 6AAD5DD8  00020040 20000
+1STSEGMENT     005CDFE4 6A8F8F50 6A900ED0 6A900F50  00010040 8010
+1STSEGMENT     005CDF84 6A968F50 6A9882F0 6A988F50  00020040 20000
+1STSEGMENT     005CDF24 6AA10070 6AA17E60 6AA18070  00010040 8010
+1STSEGMENT     005CDEC4 6AA80078 6AA9DDA8 6AAA0078  00020040 20000
+1STSEGMENT     005CDE64 6A998F70 6A9A0F50 6A9A0F70  00010040 8010
+1STSEGMENT     005CDE04 6A9F0068 6AA0CF90 6AA10068  00020040 20000
+1STSEGMENT     005CDDA4 7FC15D10 7FC1616C 7FC1616C  04020104 48C
+1STSEGMENT     005CDD44 7FEEE4F8 7FEEE928 7FEEE928  04200104 460
+1STSEGMENT     005CDCE4 0068DCC0 00695CA0 00695CC0  00010040 8010
+1STSEGMENT     005CDC84 6A8B0048 6A8CD718 6A8D0048  00020040 20000
+NULL           
+1STSEGTYPE     JIT Code Cache
+NULL           segment  start    alloc    end       type     bytes
+1STSEGMENT     0061A274 6C330000 6C3B0000 6C3B0000  00000068 80000
+1STSEGMENT     0061A214 6C1A0000 6C220000 6C220000  00000068 80000
+1STSEGMENT     0061A1B4 6A710000 6A790000 6A790000  00000068 80000
+NULL           
+1STSEGTYPE     JIT Data Cache
+NULL           segment  start    alloc    end       type     bytes
+1STSEGMENT     0061A35C 6C2B0000 6C2CDA28 6C330000  00000068 80000
+1STSEGMENT     0061A2FC 6A792020 6A811F90 6A812020  00000048 80000
+NULL           
+1STGCHTYPE     GC History  
+3STHSTTYPE     08:04:46:158482242 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=4567064/12444672 loa=0/0 
+3STHSTTYPE     08:04:46:158481814 GMT j9mm.139 -   Reference count end: weak=9 soft=32 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:46:158463414 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=32 threshold=12 phantom=0 finalizers=101 newspace=0/0 oldspace=4568032/12444672 loa=0/0 
+3STHSTTYPE     08:04:46:158457424 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:46:156807445 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:46:156132648 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:46:156131792 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:46:151279418 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:46:151262729 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=32 phantom=0 finalizers=137 globalcount=22 scavengecount=0 
+3STHSTTYPE     08:04:46:151254599 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.009 meanexclusiveaccessms=0.009 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:46:151253316 GMT j9mm.138 -   Reference count start: weak=9 soft=32 phantom=0 threshold=12 maxThreshold=32 
+3STHSTTYPE     08:04:46:151251604 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/12444672 loa=0/0 requestedbytes=40 
+3STHSTTYPE     08:04:46:46954642 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=4996768/12444672 loa=0/0 
+3STHSTTYPE     08:04:46:46954214 GMT j9mm.139 -   Reference count end: weak=9 soft=8 phantom=0 threshold=12 maxThreshold=32 
+3STHSTTYPE     08:04:46:46936670 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=8 threshold=13 phantom=0 finalizers=101 newspace=0/0 oldspace=4997736/12444672 loa=0/0 
+3STHSTTYPE     08:04:46:46931108 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:46:45334189 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:46:44591356 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:46:44587505 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:46:39855798 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:46:39846384 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=8 phantom=0 finalizers=125 globalcount=21 scavengecount=0 
+3STHSTTYPE     08:04:46:39842105 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:46:39841249 GMT j9mm.138 -   Reference count start: weak=9 soft=8 phantom=0 threshold=13 maxThreshold=32 
+3STHSTTYPE     08:04:46:39840393 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/12444672 loa=0/0 requestedbytes=48 
+3STHSTTYPE     08:04:45:926127086 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=5392208/12444672 loa=0/0 
+3STHSTTYPE     08:04:45:926126658 GMT j9mm.139 -   Reference count end: weak=9 soft=6 phantom=0 threshold=13 maxThreshold=32 
+3STHSTTYPE     08:04:45:925973470 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=6 threshold=11 phantom=0 finalizers=102 newspace=0/0 oldspace=5413872/12444672 loa=0/0 
+3STHSTTYPE     08:04:45:925964912 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:45:924453572 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:45:923912708 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:45:923911852 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:45:919732135 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:45:919723577 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=6 phantom=0 finalizers=105 globalcount=20 scavengecount=0 
+3STHSTTYPE     08:04:45:919718870 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:45:919718442 GMT j9mm.138 -   Reference count start: weak=9 soft=6 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:45:919717586 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=5312/12444672 loa=0/0 requestedbytes=21664 
+3STHSTTYPE     08:04:45:860640564 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=4338208/12444672 loa=0/0 
+3STHSTTYPE     08:04:45:860639281 GMT j9mm.139 -   Reference count end: weak=9 soft=6 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:45:860614035 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=6 threshold=9 phantom=0 finalizers=101 newspace=0/0 oldspace=4339176/12444672 loa=0/0 
+3STHSTTYPE     08:04:45:860605049 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:45:858543431 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:45:858044929 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:45:858044501 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:45:852268292 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:45:852257167 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=17 phantom=0 finalizers=101 globalcount=19 scavengecount=0 
+3STHSTTYPE     08:04:45:852252460 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.007 meanexclusiveaccessms=0.007 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:45:852251604 GMT j9mm.138 -   Reference count start: weak=9 soft=17 phantom=0 threshold=9 maxThreshold=32 
+3STHSTTYPE     08:04:45:852250748 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/12444672 loa=0/0 requestedbytes=32 
+3STHSTTYPE     08:04:45:783282841 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=3733184/12444672 loa=0/0 
+3STHSTTYPE     08:04:45:783282413 GMT j9mm.139 -   Reference count end: weak=9 soft=17 phantom=0 threshold=9 maxThreshold=32 
+3STHSTTYPE     08:04:45:783261874 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=17 threshold=11 phantom=0 finalizers=101 newspace=0/0 oldspace=3734152/12444672 loa=0/0 
+3STHSTTYPE     08:04:45:783131792 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:45:780966195 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:45:780586221 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:45:780585793 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:45:773431750 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:45:773422336 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=17 phantom=0 finalizers=101 globalcount=18 scavengecount=0 
+3STHSTTYPE     08:04:45:773417629 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.007 meanexclusiveaccessms=0.007 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:45:773416773 GMT j9mm.138 -   Reference count start: weak=9 soft=17 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:45:773415917 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/10485760 loa=0/0 requestedbytes=40 
+3STHSTTYPE     08:04:45:674363714 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=3818912/10485760 loa=0/0 
+3STHSTTYPE     08:04:45:674363286 GMT j9mm.139 -   Reference count end: weak=9 soft=17 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:45:674327342 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=17 threshold=10 phantom=0 finalizers=101 newspace=0/0 oldspace=3828128/10485760 loa=0/0 
+3STHSTTYPE     08:04:45:674216944 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:45:672975181 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:45:672520753 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:45:672519469 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:45:668178005 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:45:668167308 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=17 phantom=0 finalizers=101 globalcount=17 scavengecount=0 
+3STHSTTYPE     08:04:45:668161317 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:45:668160462 GMT j9mm.138 -   Reference count start: weak=9 soft=17 phantom=0 threshold=10 maxThreshold=32 
+3STHSTTYPE     08:04:45:668159606 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=689544/9437184 loa=0/0 requestedbytes=9216 
+3STHSTTYPE     08:04:45:600604193 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2991920/9437184 loa=0/0 
+3STHSTTYPE     08:04:45:600603765 GMT j9mm.139 -   Reference count end: weak=9 soft=17 phantom=0 threshold=10 maxThreshold=32 
+3STHSTTYPE     08:04:45:600586649 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=17 threshold=11 phantom=0 finalizers=101 newspace=0/0 oldspace=2992888/9437184 loa=0/0 
+3STHSTTYPE     08:04:45:600581086 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:45:599272143 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:45:598657680 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:45:598656397 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:45:593640136 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:45:593630295 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=17 phantom=0 finalizers=104 globalcount=16 scavengecount=0 
+3STHSTTYPE     08:04:45:593625588 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.007 meanexclusiveaccessms=0.007 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:45:593625160 GMT j9mm.138 -   Reference count start: weak=9 soft=17 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:45:593624304 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/9437184 loa=0/0 requestedbytes=24 
+3STHSTTYPE     08:04:45:465744972 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=3464408/9437184 loa=0/0 
+3STHSTTYPE     08:04:45:465744544 GMT j9mm.139 -   Reference count end: weak=9 soft=17 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:45:465726144 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=17 threshold=10 phantom=0 finalizers=101 newspace=0/0 oldspace=3465376/9437184 loa=0/0 
+3STHSTTYPE     08:04:45:465594351 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:45:464534445 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:45:464070603 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:45:464069747 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:45:460648694 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:45:460634574 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=17 phantom=0 finalizers=107 globalcount=15 scavengecount=0 
+3STHSTTYPE     08:04:45:460626444 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.009 meanexclusiveaccessms=0.009 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:45:460624732 GMT j9mm.138 -   Reference count start: weak=9 soft=17 phantom=0 threshold=10 maxThreshold=32 
+3STHSTTYPE     08:04:45:460623448 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/8388608 loa=0/0 requestedbytes=32 
+3STHSTTYPE     08:04:45:381981600 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2727488/8388608 loa=0/0 
+3STHSTTYPE     08:04:45:381981172 GMT j9mm.139 -   Reference count end: weak=9 soft=17 phantom=0 threshold=10 maxThreshold=32 
+3STHSTTYPE     08:04:45:381956354 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=17 threshold=11 phantom=0 finalizers=101 newspace=0/0 oldspace=2727520/8388608 loa=0/0 
+3STHSTTYPE     08:04:45:381947796 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:45:380832263 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:45:380355584 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:45:380353872 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:45:377071459 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:45:377062473 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=17 phantom=0 finalizers=105 globalcount=14 scavengecount=0 
+3STHSTTYPE     08:04:45:377057766 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:45:377056910 GMT j9mm.138 -   Reference count start: weak=9 soft=17 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:45:377056482 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/8388608 loa=0/0 requestedbytes=32 
+3STHSTTYPE     08:04:45:284341035 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2963248/8388608 loa=0/0 
+3STHSTTYPE     08:04:45:284340607 GMT j9mm.139 -   Reference count end: weak=9 soft=17 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:45:284323491 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=17 threshold=11 phantom=0 finalizers=101 newspace=0/0 oldspace=2963280/8388608 loa=0/0 
+3STHSTTYPE     08:04:45:284317928 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:45:283366709 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:45:282991014 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:45:282990158 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:45:279713307 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:45:279704321 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=17 phantom=0 finalizers=104 globalcount=13 scavengecount=0 
+3STHSTTYPE     08:04:45:279699614 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:45:279699186 GMT j9mm.138 -   Reference count start: weak=9 soft=17 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:45:279698331 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/8388608 loa=0/0 requestedbytes=32 
+3STHSTTYPE     08:04:45:166191270 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=3133624/8388608 loa=0/0 
+3STHSTTYPE     08:04:45:166190415 GMT j9mm.139 -   Reference count end: weak=9 soft=17 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:45:166173727 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=17 threshold=10 phantom=0 finalizers=101 newspace=0/0 oldspace=3134592/8388608 loa=0/0 
+3STHSTTYPE     08:04:45:166115104 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:45:165217800 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:45:164830551 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:45:164829268 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:45:161606760 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:45:161596919 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=17 phantom=0 finalizers=103 globalcount=12 scavengecount=0 
+3STHSTTYPE     08:04:45:161591784 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:45:161590928 GMT j9mm.138 -   Reference count start: weak=9 soft=17 phantom=0 threshold=10 maxThreshold=32 
+3STHSTTYPE     08:04:45:161590500 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/7340032 loa=0/0 requestedbytes=24 
+3STHSTTYPE     08:04:45:64666238 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2336464/7340032 loa=0/0 
+3STHSTTYPE     08:04:45:64665810 GMT j9mm.139 -   Reference count end: weak=9 soft=17 phantom=0 threshold=10 maxThreshold=32 
+3STHSTTYPE     08:04:45:64640992 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=17 threshold=10 phantom=0 finalizers=100 newspace=0/0 oldspace=2336496/7340032 loa=0/0 
+3STHSTTYPE     08:04:45:64632862 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:45:63720581 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:45:63339751 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:45:63338468 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:45:60239195 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:45:60230637 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=23 phantom=0 finalizers=211 globalcount=11 scavengecount=0 
+3STHSTTYPE     08:04:45:60225930 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:45:60225074 GMT j9mm.138 -   Reference count start: weak=9 soft=23 phantom=0 threshold=10 maxThreshold=32 
+3STHSTTYPE     08:04:45:60224646 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/7340032 loa=0/0 requestedbytes=32 
+3STHSTTYPE     08:04:44:837916559 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2509456/7340032 loa=0/0 
+3STHSTTYPE     08:04:44:837915275 GMT j9mm.139 -   Reference count end: weak=9 soft=22 phantom=0 threshold=10 maxThreshold=32 
+3STHSTTYPE     08:04:44:837891741 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=22 threshold=11 phantom=0 finalizers=98 newspace=0/0 oldspace=2509488/7340032 loa=0/0 
+3STHSTTYPE     08:04:44:837842961 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:44:837164741 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:44:836901583 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:44:836900299 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:44:833953359 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:44:833943517 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=22 phantom=0 finalizers=98 globalcount=10 scavengecount=0 
+3STHSTTYPE     08:04:44:833938810 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:44:833937954 GMT j9mm.138 -   Reference count start: weak=9 soft=22 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:44:833937098 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/6291456 loa=0/0 requestedbytes=32 
+3STHSTTYPE     08:04:44:698501925 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2209496/6291456 loa=0/0 
+3STHSTTYPE     08:04:44:698500641 GMT j9mm.139 -   Reference count end: weak=8 soft=15 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     08:04:44:698477107 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=8 soft=15 threshold=13 phantom=0 finalizers=96 newspace=0/0 oldspace=2210744/6291456 loa=0/0 
+3STHSTTYPE     08:04:44:698424903 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:44:697556696 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:44:697311510 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:44:697310654 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:44:694925973 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:44:694916559 GMT j9mm.52 -   GlobalGC start: weakrefs=8 soft=16 phantom=0 finalizers=97 globalcount=9 scavengecount=0 
+3STHSTTYPE     08:04:44:694911852 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.005 meanexclusiveaccessms=0.005 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:44:694910997 GMT j9mm.138 -   Reference count start: weak=8 soft=16 phantom=0 threshold=13 maxThreshold=32 
+3STHSTTYPE     08:04:44:694910141 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=104448/5242880 loa=104448/104448 requestedbytes=24 
+3STHSTTYPE     08:04:44:313216944 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2230688/5242880 loa=104448/104448 
+3STHSTTYPE     08:04:44:313216089 GMT j9mm.139 -   Reference count end: weak=6 soft=13 phantom=0 threshold=13 maxThreshold=32 
+3STHSTTYPE     08:04:44:313195121 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=6 soft=13 threshold=19 phantom=0 finalizers=94 newspace=0/0 oldspace=2230720/5242880 loa=104448/104448 
+3STHSTTYPE     08:04:44:313151476 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:44:312665382 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:44:312419768 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:44:312418913 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:44:310588361 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:44:310578947 GMT j9mm.52 -   GlobalGC start: weakrefs=6 soft=13 phantom=0 finalizers=94 globalcount=8 scavengecount=0 
+3STHSTTYPE     08:04:44:310574668 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.005 meanexclusiveaccessms=0.005 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:44:310573812 GMT j9mm.138 -   Reference count start: weak=6 soft=13 phantom=0 threshold=19 maxThreshold=32 
+3STHSTTYPE     08:04:44:310572956 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=125440/4194304 loa=125440/125440 requestedbytes=32 
+3STHSTTYPE     08:04:44:235646127 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2609640/4194304 loa=125440/125440 
+3STHSTTYPE     08:04:44:235644843 GMT j9mm.139 -   Reference count end: weak=6 soft=13 phantom=0 threshold=19 maxThreshold=32 
+3STHSTTYPE     08:04:44:235620881 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=6 soft=13 threshold=21 phantom=0 finalizers=94 newspace=0/0 oldspace=2740728/4194304 loa=125440/125440 
+3STHSTTYPE     08:04:44:235614462 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:44:235497646 GMT j9mm.137 -   Compact end: bytesmoved=589176 
+3STHSTTYPE     08:04:44:232124090 GMT j9mm.136 -   Compact start: reason=compact to meet allocation 
+3STHSTTYPE     08:04:44:232122807 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:44:231882755 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:44:231881471 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:44:230124090 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:44:230115104 GMT j9mm.52 -   GlobalGC start: weakrefs=6 soft=13 phantom=0 finalizers=94 globalcount=7 scavengecount=0 
+3STHSTTYPE     08:04:44:230110397 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:44:230109542 GMT j9mm.138 -   Reference count start: weak=6 soft=13 phantom=0 threshold=21 maxThreshold=32 
+3STHSTTYPE     08:04:44:230109114 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=1171688/4194304 loa=83456/83456 requestedbytes=131088 
+3STHSTTYPE     08:04:44:147672657 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2826424/4194304 loa=83456/83456 
+3STHSTTYPE     08:04:44:147672229 GMT j9mm.139 -   Reference count end: weak=6 soft=11 phantom=0 threshold=21 maxThreshold=32 
+3STHSTTYPE     08:04:44:147660248 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=6 soft=11 threshold=21 phantom=0 finalizers=93 newspace=0/0 oldspace=2826456/4194304 loa=83456/83456 
+3STHSTTYPE     08:04:44:147657680 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:44:147165596 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:44:146873341 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:44:146872913 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:44:145160890 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:44:145151476 GMT j9mm.52 -   GlobalGC start: weakrefs=6 soft=11 phantom=0 finalizers=94 globalcount=6 scavengecount=0 
+3STHSTTYPE     08:04:44:145147197 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.005 meanexclusiveaccessms=0.005 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:44:145146341 GMT j9mm.138 -   Reference count start: weak=6 soft=11 phantom=0 threshold=21 maxThreshold=32 
+3STHSTTYPE     08:04:44:145145485 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=125440/4194304 loa=125440/125440 requestedbytes=32 
+3STHSTTYPE     08:04:44:20185708 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2864264/4194304 loa=125440/125440 
+3STHSTTYPE     08:04:44:20184424 GMT j9mm.139 -   Reference count end: weak=6 soft=11 phantom=0 threshold=21 maxThreshold=32 
+3STHSTTYPE     08:04:44:20163029 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=6 soft=11 threshold=19 phantom=0 finalizers=94 newspace=0/0 oldspace=2917232/4194304 loa=125440/125440 
+3STHSTTYPE     08:04:44:20156611 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:44:20101412 GMT j9mm.137 -   Compact end: bytesmoved=1276144 
+3STHSTTYPE     08:04:44:16044501 GMT j9mm.136 -   Compact start: reason=heap fragmented 
+3STHSTTYPE     08:04:44:16043645 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:44:15777064 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:44:15775780 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:44:14413778 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:44:14408215 GMT j9mm.52 -   GlobalGC start: weakrefs=6 soft=11 phantom=0 finalizers=94 globalcount=5 scavengecount=0 
+3STHSTTYPE     08:04:44:14405220 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.002 meanexclusiveaccessms=0.002 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:44:14404792 GMT j9mm.138 -   Reference count start: weak=6 soft=11 phantom=0 threshold=19 maxThreshold=32 
+3STHSTTYPE     08:04:44:14404364 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=2581944/4194304 loa=167424/167424 requestedbytes=52968 
+3STHSTTYPE     08:04:44:14347454 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2582752/4194304 loa=167424/167424 
+3STHSTTYPE     08:04:44:14346170 GMT j9mm.139 -   Reference count end: weak=6 soft=11 phantom=0 threshold=19 maxThreshold=32 
+3STHSTTYPE     08:04:44:14290115 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=6 soft=11 threshold=20 phantom=0 finalizers=94 newspace=0/0 oldspace=2635720/4194304 loa=167424/167424 
+3STHSTTYPE     08:04:44:14284552 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:44:13946084 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:44:13642276 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:44:13641420 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:44:11930680 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:44:11921266 GMT j9mm.52 -   GlobalGC start: weakrefs=6 soft=11 phantom=0 finalizers=94 globalcount=4 scavengecount=0 
+3STHSTTYPE     08:04:44:11916559 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.005 meanexclusiveaccessms=0.005 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:44:11915703 GMT j9mm.138 -   Reference count start: weak=6 soft=11 phantom=0 threshold=20 maxThreshold=32 
+3STHSTTYPE     08:04:44:11914848 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=2335992/4194304 loa=209408/209408 requestedbytes=52968 
+3STHSTTYPE     08:04:43:968154043 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2708032/4194304 loa=209408/209408 
+3STHSTTYPE     08:04:43:968153615 GMT j9mm.139 -   Reference count end: weak=6 soft=11 phantom=0 threshold=20 maxThreshold=32 
+3STHSTTYPE     08:04:43:968141634 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=6 soft=11 threshold=21 phantom=0 finalizers=94 newspace=0/0 oldspace=2716248/4194304 loa=209408/209408 
+3STHSTTYPE     08:04:43:968139067 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:43:967764655 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:43:967485237 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:43:967484381 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     08:04:43:965570817 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     08:04:43:965562259 GMT j9mm.52 -   GlobalGC start: weakrefs=6 soft=11 phantom=0 finalizers=94 globalcount=3 scavengecount=0 
+3STHSTTYPE     08:04:43:965557552 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.005 meanexclusiveaccessms=0.005 threads=0 lastthreadtid=0x005CB400 beatenbyotherthread=0 
+3STHSTTYPE     08:04:43:965557124 GMT j9mm.138 -   Reference count start: weak=6 soft=11 phantom=0 threshold=21 maxThreshold=32 
+3STHSTTYPE     08:04:43:965556268 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=214344/4194304 loa=209408/209408 requestedbytes=8208 
+3STHSTTYPE     08:04:43:806711596 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2857608/4194304 loa=209408/209408 
+3STHSTTYPE     08:04:43:806711168 GMT j9mm.139 -   Reference count end: weak=5 soft=11 phantom=0 threshold=21 maxThreshold=32 
+3STHSTTYPE     08:04:43:806700470 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=5 soft=11 threshold=22 phantom=0 finalizers=92 newspace=0/0 oldspace=2858416/4194304 loa=209408/209408 
+3STHSTTYPE     08:04:43:806697903 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     08:04:43:806443303 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     08:04:43:806280701 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     08:04:43:806279418 GMT j9mm.55 -   Mark end 
+NULL           
+NULL           ------------------------------------------------------------------------
+0SECTION       LOCKS subcomponent dump routine
+NULL           ===============================
+NULL           
+1LKPOOLINFO    Monitor pool info:
+2LKPOOLTOTAL     Current total number of monitors: 0
+NULL           
+1LKMONPOOLDUMP Monitor Pool Dump (flat & inflated object-monitors):
+NULL           
+1LKREGMONDUMP  JVM System Monitor Dump (registered monitors):
+2LKREGMON          Thread global lock (0x022B2438): <unowned>
+2LKREGMON          Windows native console event lock lock (0x022B248C): <unowned>
+2LKREGMON          NLS hash table lock (0x022B24E0): <unowned>
+2LKREGMON          portLibrary_j9sig_async_monitor lock (0x022B2534): <unowned>
+2LKREGMON          Hook Interface lock (0x022B2588): <unowned>
+2LKREGMON          &(vm->bytecodeTableMutex) lock (0x022B25DC): <unowned>
+2LKREGMON          Hook Interface lock (0x022B2630): <unowned>
+2LKREGMON          dump tokens mutex lock (0x022B2684): <unowned>
+2LKREGMON          MM_SublistPool lock (0x022B26D8): <unowned>
+2LKREGMON          MM_SublistPool lock (0x022B272C): <unowned>
+2LKREGMON          MM_SublistPool lock (0x022B2780): <unowned>
+2LKREGMON          MM_SublistPool lock (0x022B27D4): <unowned>
+2LKREGMON          MM_SublistPool lock (0x022B2828): <unowned>
+2LKREGMON          Undead Segment List Monitor lock (0x022B287C): <unowned>
+2LKREGMON          Hook Interface lock (0x022B28D0): <unowned>
+2LKREGMON          Hook Interface lock (0x022B2924): <unowned>
+2LKREGMON          MM_ParallelDispatcher::slaveThread lock (0x022B2978): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "Gc Slave Thread" (0x6AA65600)
+3LKWAITNOTIFY            "Gc Slave Thread" (0x6AA75200)
+3LKWAITNOTIFY            "Gc Slave Thread" (0x6AA75700)
+2LKREGMON          MM_ParallelDispatcher::shutdownCount lock (0x022B29CC): <unowned>
+2LKREGMON          MM_ParallelDispatcher::synchronize lock (0x022B2A20): <unowned>
+2LKREGMON          MM_WorkPackets::inputList lock (0x022B2A74): <unowned>
+2LKREGMON          MM_WorkPackets::allocatingPackets lock (0x022B2AC8): <unowned>
+2LKREGMON          MM_GCExtensions::gcStats lock (0x022B2B1C): <unowned>
+2LKREGMON          &vm->verboseStateMutex lock (0x022B2B70): <unowned>
+2LKREGMON          VM thread list lock (0x022B2BC4): <unowned>
+2LKREGMON          VM exclusive access lock (0x022B2C18): <unowned>
+2LKREGMON          VM Runtime flags Mutex lock (0x022B2C6C): <unowned>
+2LKREGMON          VM Extended method block flags Mutex lock (0x022B2CC0): <unowned>
+2LKREGMON          Async event mutex lock (0x022B2D14): <unowned>
+2LKREGMON          JIT/GC class unload mutex lock (0x022B2D68): <unowned>
+2LKREGMON          VM bind native lock (0x022B2DBC): <unowned>
+2LKREGMON          VM class loader blocks lock (0x022B2E10): <unowned>
+2LKREGMON          VM class table lock (0x022B2E64): <unowned>
+2LKREGMON          VM string table lock (0x022B2EB8): <unowned>
+2LKREGMON          VM segment lock (0x022B2F0C): <unowned>
+2LKREGMON          VM JNI frame lock (0x022B2F60): <unowned>
+2LKREGMON          VM GC finalize master lock (0x022B2FB4): <unowned>
+2LKREGMON          VM GC finalize run finalization lock (0x022B3008): <unowned>
+2LKREGMON          VM memory space list lock (0x022B305C): <unowned>
+2LKREGMON          VM JXE description lock (0x022B30B0): <unowned>
+2LKREGMON          VM AOT runtime init lock (0x022B3104): <unowned>
+2LKREGMON          VM monitor table lock (0x022B3158): <unowned>
+2LKREGMON          VM volatile long lock (0x022B31AC): <unowned>
+2LKREGMON          VM mem segment list lock (0x022B3200): <unowned>
+2LKREGMON          VM mem segment list lock (0x022B3254): <unowned>
+2LKREGMON          VM mem segment list lock (0x022B32A8): <unowned>
+2LKREGMON          FinalizeListManager lock (0x022B32FC): <unowned>
+2LKREGMON          &(jvmtiData->mutex) lock (0x022B3350): <unowned>
+2LKREGMON          &(jvmtiData->redefineMutex) lock (0x022B33A4): <unowned>
+2LKREGMON          BCVD verifier lock (0x022B33F8): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x022B344C): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x022B34A0): <unowned>
+2LKREGMON          jvmriDumpThread lock (0x022B34F4): <unowned>
+2LKREGMON          tracemon lock (0x022B3548): <unowned>
+2LKREGMON          tracemon lock (0x022B359C): <unowned>
+2LKREGMON          tracemon lock (0x022B35F0): <unowned>
+2LKREGMON          jvmriDumpThread lock (0x022B3644): <unowned>
+2LKREGMON          JIT-MonitorTableMonitor lock (0x022B3698): <unowned>
+2LKREGMON          JIT-MemoryAllocMonitor lock (0x022B36EC): <unowned>
+2LKREGMON          JIT-MemoryUseMonitor lock (0x022B3740): <unowned>
+2LKREGMON          Hook Interface lock (0x022B3794): <unowned>
+2LKREGMON          JIT-jitConfig->mutex lock (0x022B37E8): <unowned>
+2LKREGMON          JIT-AssumptionTableMutex lock (0x022B383C): <unowned>
+2LKREGMON          VM mem segment list lock (0x022B3890): <unowned>
+2LKREGMON          VM mem segment list lock (0x022B38E4): <unowned>
+2LKREGMON          JIT-CompilationQueueMonitor lock (0x022BC590): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "JIT Compilation Thread" (0x005CB900)
+2LKREGMON          JIT-DLTmonitor lock (0x022BC5E4): <unowned>
+2LKREGMON          JIT-CodeCacheListMutex lock (0x022BC638): <unowned>
+2LKREGMON          JIT-CodeCacheMonitor-?? lock (0x022BC68C): <unowned>
+2LKREGMON          OptimizationPlanMonitor lock (0x022BC6E0): <unowned>
+2LKREGMON          JIT-InterpreterProfilingMonitor lock (0x022BC734): <unowned>
+2LKREGMON          ValueProfilingMutex lock (0x022BC788): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x022BC7DC): <unowned>
+2LKREGMON          &(j9env->mutex) lock (0x022BC830): <unowned>
+2LKREGMON          management fields lock lock (0x022BC884): <unowned>
+2LKREGMON          &vm->managementData->notificationMonitor lock (0x022BC8D8): <unowned>
+2LKREGMON          &vm->managementData->dlparNotificationMonitor lock (0x022BC92C): <unowned>
+2LKREGMON          JIT-QueueSlotMonitor-0 lock (0x022BC980): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x022BC9D4): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x022BCA28): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x022BCA7C): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x022BCAD0): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x022BCB24): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x022BCB78): <unowned>
+2LKREGMON          JDWP Reference Table Monitor lock (0x022BCBCC): <unowned>
+2LKREGMON          JDWP Thread Lock lock (0x022BCC20): <unowned>
+2LKREGMON          JDWP Step Handler Lock lock (0x022BCC74): <unowned>
+2LKREGMON          JDWP Invocation Lock lock (0x022BCCC8): <unowned>
+2LKREGMON          JDWP Resume Lock lock (0x022BCD1C): <unowned>
+2LKREGMON          JDWP Initialization Monitor lock (0x022BCD70): <unowned>
+2LKREGMON          JDWP Transport Listener Monitor lock (0x022BCDC4): <unowned>
+2LKREGMON          JDWP Transport Send Monitor lock (0x022BCE18): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x022BCE6C): <unowned>
+2LKREGMON          JDWP Callback Lock lock (0x022BCEC0): <unowned>
+2LKREGMON          JDWP Callback Block lock (0x022BCF14): <unowned>
+2LKREGMON          JDWP Event Handler Lock lock (0x022BCF68): <unowned>
+2LKREGMON          JDWP Event Helper Queue Monitor lock (0x022BCFBC): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "JDWP Event Helper Thread" (0x6AA7A700)
+2LKREGMON          JDWP Event Helper Completion Monitor lock (0x022BD010): <unowned>
+2LKREGMON          JDWP Event Block CommandLoop Monitor lock (0x022BD064): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x022BD0B8): <unowned>
+2LKREGMON          JDWP Command Queue Lock lock (0x022BD10C): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "JDWP Transport Listener: dt_socket" (0x6AA7A200)
+2LKREGMON          Thread public flags mutex lock (0x022BD160): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD1B4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD208): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD25C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD2B0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD304): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD358): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD3AC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD400): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD454): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD4A8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD4FC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD550): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD5A4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD5F8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD64C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD6A0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD6F4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD748): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD79C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD7F0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD844): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD898): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD8EC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD940): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD994): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BD9E8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x022BDA3C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740080): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B7400D4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740128): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B74017C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B7401D0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740224): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740278): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B7402CC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740320): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740374): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B7403C8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B74041C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740470): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B7404C4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740518): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B74056C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B7405C0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740614): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740668): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B7406BC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740710): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740764): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B7407B8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B74080C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740860): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B7408B4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740908): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B74095C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B7409B0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740A04): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6B740A58): <unowned>
+2LKREGMON          &(slaveData->monitor) lock (0x6B740AAC): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "Finalizer thread" (0x6AA6B700)
+2LKREGMON          Thread public flags mutex lock (0x6B740B00): <unowned>
+2LKREGMON          JIT-CodeCacheMonitor-?? lock (0x6B740B54): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x6B740BA8): <unowned>
+2LKREGMON          JIT-CodeCacheMonitor-?? lock (0x6B740BFC): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x6B740C50): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x6B740CA4): <unowned>
+NULL           
+NULL           ------------------------------------------------------------------------
+0SECTION       THREADS subcomponent dump routine
+NULL           =================================
+NULL            
+1XMCURTHDINFO  Current Thread Details
+NULL           ----------------------
+3XMTHREADINFO      "main" TID:0x005CB400, j9thread_t:0x022B395C, state:R, prio=5
+3XMTHREADINFO1            (native thread ID:0x990, native priority:0x5, native policy:UNKNOWN)
+4XESTACKTRACE          at java/util/ArrayList.add(Bytecode PC:45)

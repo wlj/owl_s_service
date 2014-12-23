@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.ws.rs.DELETE"/>
+<fullyQualifiedTypeName name="EDU.pku.ly.Grounding.Implementation.GroundingDeleteImpl"/>
+<fullyQualifiedTypeName name="EDU.cmu.Atlas.owls1_1.process.Process"/>
+<fullyQualifiedTypeName name="EDU.pku.ly.Process.ProcessMain"/>
+<fullyQualifiedTypeName name="EDU.pku.ly.Process.Implementation.ProcessMainImpl"/>
+<fullyQualifiedTypeName name="javax.ws.rs.GET"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
+<fullyQualifiedTypeName name="EDU.cmu.Atlas.owls1_1.grounding.OWLSGroundingModel"/>
+<fullyQualifiedTypeName name="EDU.pku.ly.Grounding.util.GroundingResource"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Path"/>
+<fullyQualifiedTypeName name="javax.ws.rs.POST"/>
+<fullyQualifiedTypeName name="javax.ws.rs.FormParam"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="EDU.pku.ly.owlsservice.implementation.OwlsServiceMainImpl"/>
+</qualifiedTypeNameHistroy>

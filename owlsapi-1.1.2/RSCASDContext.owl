@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE uridef [
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema">
+  <!ENTITY DEFAULT "http://localhost:8080/juddiv3/owl-s/1.1/RSCASDContext.owl">
+  <!ENTITY context "http://localhost:8080/juddiv3/owl-s/1.1/ServiceContext.owl">
+]>
+<rdf:RDF xmlns:rdf="&rdf;#" xmlns:rdfs="&rdfs;#" xmlns:owl="&owl;#"  xmlns:context="&context;#"  
+	xmlns="&DEFAULT;#" xml:base="&DEFAULT;">
+	<owl:Ontology rdf:about="">
+		<owl:versionInfo>
+		</owl:versionInfo>
+		<rdfs:comment> This file describe Service Context ontology.</rdfs:comment>
+	</owl:Ontology>
+	
+	<owl:Class rdf:ID="sj_Direct">
+	</owl:Class>
+	
+	<sj_Direct rdf:ID="sj_South"></sj_Direct>
+	
+	<sj_Direct rdf:ID="sj_North"></sj_Direct>
+	
+	<owl:Class rdf:ID="sj_China">
+        <rdfs:label>sj_China</rdfs:label>
+        <rdfs:comment> Definition of sj_China</rdfs:comment>
+    </owl:Class>
+    
+	<owl:Class rdf:ID="sj_China_South">
+	    <rdfs:subClassOf rdf:resource="#sj_China" />
+	    <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#sj_hasDirect" />
+                <owl:hasValue rdf:resource="#sj_South" />
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>sj_China_South</rdfs:label>
+        <rdfs:comment> Definition of sj_China_South</rdfs:comment>
+    </owl:Class>
+    
+	<owl:Class rdf:ID="sj_China_North">
+	    <rdfs:subClassOf rdf:resource="#sj_China" />
+	    <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#sj_hasDirect" />
+                <owl:hasValue rdf:resource="#sj_North" />
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>sj_China_North</rdfs:label>
+        <rdfs:comment> Definition of sj_China_North</rdfs:comment>
+    </owl:Class>
+    
+    <owl:FunctionalProperty rdf:ID="sj_hasDirect">
+        <rdfs:domain rdf:resource="#sj_China" />
+        <rdfs:range rdf:resource="#sj_Direct" />
+    </owl:FunctionalProperty>
+    
+    <sj_China_South rdf:ID="sj_FuJian">
+        <sj_hasDirect rdf:resource="#sj_South"/>
+    </sj_China_South>
+    
+    <sj_China_South rdf:ID="sj_HuBei">
+        <sj_hasDirect rdf:resource="#sj_South"/>
+    </sj_China_South>
+    
+    <sj_China_North rdf:ID="sj_Beijing">
+        <sj_hasDirect rdf:resource="#sj_North"/>
+    </sj_China_North>
+	
+  
+    
+	<!-- Classes: Context -->
+	<context:LocationContext rdf:ID="Full_context_testing_parsing_Location">
+	   <owl:sameAs rdf:resource="#Full_context_testing_parsing_Normal"/>
+	</context:LocationContext>
+	
+	<context:QoSContext rdf:ID="Full_context_testing_parsing_QoS">
+	   <owl:sameAs rdf:resource="#Full_context_testing_parsing_Normal"/>
+	</context:QoSContext>
+	
+	<context:Context rdf:ID="Full_context_testing_parsing_Normal">
+	   <context:hasContextObject>
+	       <context:ContextObject>
+	           <context:hasDomain>
+	               <context:ContextValueDomain>
+	                   <context:hasDomainValue>&DEFAULT;#sj_Beijing</context:hasDomainValue>
+	               </context:ContextValueDomain>
+	           </context:hasDomain>
+	           <context:hasPropertyValue>
+	               <context:PropertyValue>
+	                   <context:hasPropertyType rdf:resource="#sj_hasDirect" />
+	                   <context:hasPropertyContextValue>
+	                       <context:ContextValue>
+	                           <context:hasDomain>
+				                   <context:ContextValueDomain>
+				                       <context:hasDomainValue>&DEFAULT;#sj_FuJian</context:hasDomainValue>
+				                   </context:ContextValueDomain>
+				               </context:hasDomain>
+	                       </context:ContextValue>
+	                   </context:hasPropertyContextValue>
+	               </context:PropertyValue>
+	           </context:hasPropertyValue>
+	       </context:ContextObject>
+	   </context:hasContextObject>
+	   <context:hasContextValue>
+	       <context:ContextValue>
+		       <context:hasDomain>
+	               <context:ContextValueDomain>
+	                   <context:hasDomainValue>&DEFAULT;#sj_HuBei</context:hasDomainValue>
+	               </context:ContextValueDomain>
+	           </context:hasDomain>
+           </context:ContextValue>
+	   </context:hasContextValue>
+	   <context:hasContextType>
+	       <context:ContextType>
+		       <context:hasDomain>
+	               <context:ContextValueDomain>
+	                   <context:hasDomainValue>&DEFAULT;#sj_China_North</context:hasDomainValue>
+	               </context:ContextValueDomain>
+	           </context:hasDomain>
+           </context:ContextType>
+	   </context:hasContextType>
+	</context:Context>
+</rdf:RDF>

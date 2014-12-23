@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.owl-ontologies.com/Ontology1367940844.owl#" xmlns:daml="http://www.daml.org/2001/03/daml+oil#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:expr="http://www.daml.org/services/owl-s/1.1/generic/Expression.owl#" xmlns:grounding="http://www.daml.org/services/owl-s/1.1/Grounding.owl#" xmlns:list="http://www.daml.org/services/owl-s/1.1/generic/ObjectList.owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:process="http://www.daml.org/services/owl-s/1.1/Process.owl#" xmlns:profile="http://www.daml.org/services/owl-s/1.1/Profile.owl#" xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:service="http://www.daml.org/services/owl-s/1.1/Service.owl#" xmlns:swrl="http://www.w3.org/2003/11/swrl#" xmlns:swrlb="http://www.w3.org/2003/11/swrlb#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://www.example.org/owls/GetWeather.owl#" xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#">
+<owl:Ontology rdf:about="">
+<owl:imports rdf:resource="http://www.daml.org/services/owl-s/1.2/Profile.owl"/>
+<owl:imports rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl"/>
+<owl:imports rdf:resource="http://www.w3.org/2003/11/swrl"/>
+<owl:imports rdf:resource="http://www.w3.org/2003/11/swrlb"/>
+</owl:Ontology>
+<profile:Profile rdf:ID="BuyAirTicketProfile">
+<service:presentedBy>
+<service:Service rdf:ID="BuyAirTicketService">
+<service:presents rdf:resource="#BuyAirTicketProfile"/>
+<service:supports>
+<grounding:WsdlGrounding rdf:ID="BuyAirTicketGrounding">
+<grounding:hasAtomicProcessGrounding>
+<grounding:WsdlAtomicProcessGrounding rdf:ID="WsdlAtomicProcessGrounding"/>
+</grounding:hasAtomicProcessGrounding>
+</grounding:WsdlGrounding>
+</service:supports>
+<profile:processContent>&lt;!DOCTYPE uridef[&lt;!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns"&gt;&lt;!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema"&gt;&lt;!ENTITY shadow-rdf "http://localhost:8080/juddiv3/owl-s/1.1/ObjectList.owl"&gt;&lt;!ENTITY expr "http://localhost:8080/juddiv3/owl-s/1.1/Expression.owl"&gt;&lt;!ENTITY owl "http://www.w3.org/2002/07/owl"&gt;&lt;!ENTITY xsd "http://www.w3.org/2001/XMLSchema"&gt;&lt;!ENTITY service "http://localhost:8080/juddiv3/owl-s/1.1/Service.owl"&gt;&lt;!ENTITY process "http://localhost:8080/juddiv3/owl-s/1.1/Process.owl"&gt;&lt;!ENTITY profile "http://localhost:8080/juddiv3/owl-s/1.1/Profile.owl"&gt;&lt;!ENTITY ba_service "http://localhost:8080/juddiv3/owl-s/1.1/BravoAirService.owl"&gt;&lt;!ENTITY swrlx "http://localhost:8080/juddiv3/owl-s/1.1/swrl.owl"&gt;&lt;!ENTITY ruleml "http://localhost:8080/juddiv3/owl-s/1.1/swrl.owl"&gt;&lt;!ENTITY concepts "http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl"&gt;&lt;!ENTITY DEFAULT "http://localhost:8080/juddiv3/owl-s/1.1/BravoAirProcess.owl"&gt;]&gt;&lt;rdf:RDF xmlns:rdf="&amp;rdf;#" xmlns="&amp;DEFAULT;#" xmlns:ba_service="&amp;ba_service;#" xmlns:concepts="&amp;concepts;#" xmlns:expr="&amp;expr;#" xmlns:list="&amp;shadow-rdf;#" xmlns:owl="&amp;owl;#" xmlns:process="&amp;process;#" xmlns:profile="&amp;profile;#" xmlns:rdfs="&amp;rdfs;#" xmlns:ruleml="&amp;ruleml;#" xmlns:service="&amp;service;#" xmlns:swrlx="&amp;swrlx;#" xmlns:xsd="&amp;xsd;#" xml:base="&amp;DEFAULT;"&gt;  &lt;owl:Ontology&gt;    &lt;owl:imports rdf:resource="&amp;service;"/&gt;    &lt;owl:imports rdf:resource="&amp;process;"/&gt;    &lt;owl:imports rdf:resource="&amp;profile;"/&gt;    &lt;owl:imports rdf:resource="&amp;concepts;"/&gt;    &lt;owl:imports rdf:resource="&amp;shadow-rdf;"/&gt;    &lt;owl:imports rdf:resource="&amp;expr;"/&gt;  &lt;/owl:Ontology&gt;  &lt;service:Service rdf:ID="BuyAirTicket"/&gt;  &lt;process:CompositeProcess rdf:ID="CompositeProcess_0"&gt;    &lt;process:composedOf&gt;      &lt;process:Sequence rdf:ID="Sequence_0"&gt;        &lt;process:components/&gt;      &lt;/process:Sequence&gt;    &lt;/process:composedOf&gt;  &lt;/process:CompositeProcess&gt;&lt;/rdf:RDF&gt;
+
+</profile:processContent>
+</service:Service>
+</service:presentedBy>
+</profile:Profile>
+</rdf:RDF>

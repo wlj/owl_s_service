@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY koala "http://localhost:8080/juddiv3/owl-s/1.1/koala.owl#" >
+    <!ENTITY koala2 "http://localhost:8080/juddiv3/owl-s/1.1/koala2.owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY family "http://localhost:8080/juddiv3/owl-s/1.1/family.owl#" >
+]>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:family="http://localhost:8080/juddiv3/owl-s/1.1/family.owl#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:koala="http://localhost:8080/juddiv3/owl-s/1.1/koala.owl#"
+	xmlns="http://localhost:8080/juddiv3/owl-s/1.1/koala2.owl#"
+	xmlns:koala2="http://localhost:8080/juddiv3/owl-s/1.1/koala2.owl#" 
+	xml:base="http://localhost:8080/juddiv3/owl-s/1.1/koala2.owl">
+	<owl:Ontology rdf:about="" />
+	<owl:Class rdf:ID="BigSchool">
+		<rdfs:subClassOf rdf:resource="&koala;University" />
+	</owl:Class>
+	<rdfs:Datatype rdf:about="#GreaterThan1000">
+		<owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger" />
+		<xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000
+		</xsd:minExclusive>
+	</rdfs:Datatype>
+	<owl:Class rdf:ID="SuperSchool">
+		<rdfs:subClassOf rdf:resource="&koala;University" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasSchoolSize" />
+				<owl:allValuesFrom rdf:resource="#SuperSchoolSize" />
+				<owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="AnotherSuperSchool">
+	    <owl:equivalentClass rdf:resource="#SuperSchool" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasSchoolSize" />
+				<owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#SomeSite" />
+	</owl:Class>
+	<owl:Class rdf:ID="SuperSchoolWithTwoParents">
+		<rdfs:subClassOf rdf:resource="#SuperSchool" />
+		<rdfs:subClassOf rdf:resource="#AnotherSuperSchool" />
+	</owl:Class>
+	<owl:Class rdf:ID="SuperSchoolWithTwoNoRelationParents">
+		<rdfs:subClassOf rdf:resource="#SuperSchool" />
+		<rdfs:subClassOf rdf:resource="#SomeSite" />
+	</owl:Class>
+	<owl:Class rdf:ID="UnionedSuperSchool">
+		<owl:unionOf rdf:parseType="Collection">
+			<owl:Class>
+				<owl:equivalentClass rdf:resource="#SuperSchool" />
+			</owl:Class>
+			<owl:Class>
+				<rdfs:subClassOf rdf:resource="#SomeSite" />
+			</owl:Class>
+		</owl:unionOf>
+	</owl:Class>
+	<koala2:AnotherSuperSchool rdf:ID="AnotherSuperSchoolExample" />
+	<owl:Class rdf:ID="AnotherSuperSchoolSubClass">
+		<rdfs:subClassOf rdf:resource="#AnotherSuperSchool" />
+	</owl:Class>
+	<owl:Class rdf:ID="AnotherSuperSchoolSubClass2Lvl">
+		<rdfs:subClassOf rdf:resource="#AnotherSuperSchoolSubClass" />
+	</owl:Class>
+	<owl:Class rdf:ID="ThirdSuperSchool">
+		<rdfs:subClassOf rdf:resource="&koala;University" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasSchoolSize" />
+				<owl:allValuesFrom rdf:resource="#SuperSchoolSize" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasSchoolSize" />
+				<owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ForthSuperSchool">
+		<rdfs:subClassOf rdf:resource="#SuperSchool" />
+	</owl:Class>
+	<ThirdSuperSchool rdf:about="&koala2;ThirdSuperSchoolExample" />
+	<owl:DatatypeProperty rdf:about="#hasCount">
+		<rdfs:domain rdf:resource="&koala;University" />
+		<rdfs:range rdf:resource="&xsd;nonNegativeInteger" />
+	</owl:DatatypeProperty>
+	<owl:Class rdf:ID="EarthLocation" />
+	<owl:Class rdf:ID="SomeSite">
+		<rdfs:subClassOf rdf:resource="#EarthLocation" />
+	</owl:Class>
+	<owl:Class rdf:ID="SchoolSize" />
+	<owl:Class rdf:ID="SuperSchoolSize">
+		<rdfs:subClassOf rdf:resource="#SchoolSize" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&koala2;hasScaleSize" />
+				<owl:allValuesFrom>
+					<rdfs:Datatype>
+						<owl:onDataRange rdf:resource="&xsd;int" />
+						<xsd:minInclusive rdf:datatype="&xsd;int">1000
+						</xsd:minInclusive>
+						<xsd:maxExclusive rdf:datatype="&xsd;int">20000
+						</xsd:maxExclusive>
+					</rdfs:Datatype>
+				</owl:allValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="MiddleSchoolSize">
+		<rdfs:subClassOf rdf:resource="#SchoolSize" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&koala2;hasScaleSize" />
+				<owl:allValuesFrom>
+					<rdfs:Datatype>
+						<owl:onDataRange rdf:resource="&xsd;int" />
+						<xsd:minInclusive rdf:datatype="&xsd;int">500
+						</xsd:minInclusive>
+						<xsd:maxExclusive rdf:datatype="&xsd;int">999
+						</xsd:maxExclusive>
+					</rdfs:Datatype>
+				</owl:allValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<koala2:SuperSchoolSize rdf:ID="JustTestingSchoolSize">
+		<koala2:hasScaleSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1501
+		</koala2:hasScaleSize>
+	</koala2:SuperSchoolSize>
+	<koala2:SchoolSize rdf:ID="JustTestingIncorrectSchoolSize">
+		<koala2:hasScaleSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">501
+		</koala2:hasScaleSize>
+	</koala2:SchoolSize>
+	<koala2:SchoolSize rdf:ID="JustTestingMiddleSchoolSize">
+		<koala2:hasScaleSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">550
+		</koala2:hasScaleSize>
+	</koala2:SchoolSize>
+	<owl:DatatypeProperty rdf:about="&koala2;hasScaleSize">
+		<rdfs:range rdf:resource="&xsd;nonNegativeInteger" />
+		<rdfs:domain rdf:resource="&koala2;SchoolSize" />
+	</owl:DatatypeProperty>
+	<owl:FunctionalProperty rdf:about="#hasSchoolSize">
+		<rdfs:range rdf:resource="#SchoolSize" />
+    <!--
+    <rdfs:range rdf:resource="&xsd;int"/>
+    -->
+		<rdfs:domain rdf:resource="&koala;University" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:about="#hasAnotherSchoolSize">
+		<rdfs:range rdf:resource="#SchoolSize" />
+    <!--
+    <rdfs:range rdf:resource="&xsd;int"/>
+    -->
+		<rdfs:domain rdf:resource="&koala;University" />
+	</owl:FunctionalProperty>
+	<koala2:BigSchool rdf:about="&koala2;BigABCSchoolInstance" />
+	<!--
+		size less then 1000 <koala2:SuperSchoolSize
+		rdf:about="IncorrectSuperSchoolSize"> <koala2:hasScaleSize
+		rdf:datatype="&xsd;nonNegativeInteger">100</koala2:hasScaleSize>
+		</koala2:SuperSchoolSize>
+	-->
+	<koala2:SuperSchoolSize rdf:about="&koala2;CorrectSuperSchoolSize">
+		<koala2:hasScaleSize rdf:datatype="&xsd;int">1000
+		</koala2:hasScaleSize>
+	</koala2:SuperSchoolSize>
+	<koala2:SuperSchool rdf:about="&koala2;SuperSchoolWithoutProp" />
+	<koala2:SuperSchool rdf:about="&koala2;SuperSchoolWithIncorrectProp">
+		<koala2:hasSchoolSize rdf:resource="&koala2;IncorrectSuperSchoolSize" />
+	</koala2:SuperSchool>
+	<koala2:SuperSchool rdf:about="&koala2;SuperSchoolWithCorrectProp">
+		<koala2:hasSchoolSize rdf:resource="&koala2;CorrectSuperSchoolSize" />
+	</koala2:SuperSchool>
+	<koala2:SuperSchool rdf:about="&koala2;SuperSchoolWithCorrectProp2">
+		<koala2:hasSchoolSize rdf:resource="&koala2;CorrectSuperSchoolSize" />
+	</koala2:SuperSchool>
+	<koala2:SuperSchool rdf:about="&koala2;SuperSchoolWithCorrectProp3">
+		<koala2:hasSchoolSize rdf:resource="&koala2;CorrectSuperSchoolSize" />
+		<koala2:hasAnotherSchoolSize rdf:resource="&koala2;CorrectSuperSchoolSize" />
+	</koala2:SuperSchool>
+	<koala:University rdf:about="&koala2;NormalUniversityWithCorrectProp">
+		<koala2:hasSchoolSize rdf:resource="&koala2;CorrectSuperSchoolSize" />
+	</koala:University>
+	<koala:University rdf:about="&koala2;NormalUniversityWithAnotherCorrectProp">
+		<koala2:hasAnotherSchoolSize rdf:resource="&koala2;CorrectSuperSchoolSize" />
+	</koala:University>
+	<family:Adult rdf:about="BigPerson">
+		<family:hasAge rdf:datatype="&xsd;nonNegativeInteger">3</family:hasAge>
+	</family:Adult>
+	<koala2:ThirdSuperSchool rdf:ID="ThirdSuperSchoolExample"></koala2:ThirdSuperSchool>
+</rdf:RDF>

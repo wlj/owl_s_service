@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE uridef [
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl">
+  <!ENTITY profile "http://www.daml.org/services/owl-s/1.1/Profile.owl">
+  <!ENTITY expr "http://www.daml.org/services/owl-s/1.1/generic/Expression.owl">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema">
+  <!ENTITY context "http://localhost:8080/juddiv3/owl-s/1.1/ServiceContext.owl">
+  <!ENTITY DEFAULT "http://localhost:8080/juddiv3/owl-s/1.1/ProfileExt.owl">
+]>
+<rdf:RDF xmlns:rdf="&rdf;#" xmlns:rdfs="&rdfs;#" xmlns:owl="&owl;#"
+	xmlns:profile="&profile;#" xmlns:context="&context;#" xmlns="&DEFAULT;#"
+	xml:base="&DEFAULT;">
+	
+	<owl:Ontology rdf:about="">
+		<owl:versionInfo>
+		</owl:versionInfo>
+		<rdfs:comment> This file describe Profile extension related to service
+			Context.</rdfs:comment>
+	</owl:Ontology>
+  
+
+    <!--  ############ ########### ############ ############ ########### -->
+	<!-- Classes: Context Rule -->
+	<owl:Class rdf:ID="ContextRule">
+		<rdfs:label>ContextRule</rdfs:label>
+		<rdfs:comment> Definition of ContextRule</rdfs:comment>
+	</owl:Class>
+	
+	<!-- Properties: Context Rule -->
+	<owl:ObjectProperty rdf:ID="hasContextRule">
+		<rdfs:domain rdf:resource="&profile;#Profile" />
+		<rdfs:range rdf:resource="#ContextRule" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasRuleContent">
+		<rdfs:domain rdf:resource="#ContextRule" />
+		<rdfs:range rdf:resource="&context;#Context" />
+	</owl:ObjectProperty>
+	
+	<!-- Restriction: Context Rule -->
+	<!-- No restriction for context rule -->
+	
+    <!--  ############ ########### ############ ############ ########### -->
+	<!-- Classes: Context -->
+	<owl:FunctionalProperty rdf:ID="hasContext">
+		<rdfs:domain rdf:resource="&profile;#Profile" />
+		<rdfs:range rdf:resource="&context;#Context" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasQoSContext">
+		<rdfs:domain rdf:resource="&profile;#Profile" />
+		<rdfs:range rdf:resource="&context;#QoSContext" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasLocationContext">
+		<rdfs:domain rdf:resource="&profile;#Profile" />
+		<rdfs:range rdf:resource="&context;#LocationContext" />
+	</owl:FunctionalProperty>
+</rdf:RDF>

@@ -1,0 +1,115 @@
+2013.05.01 00:13:08.708 CST INFO: *** SYSTEM START ***
+2013.05.01 00:13:09.266 CST WARNING: [Local Folder Repository] The specified file must be a directory. (E:\Users\Jacob\workspace\protege-owl-src-3.4.8\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2013.05.01 00:13:09.284 CST INFO: Loading triples for: null -- ProtegeOWLParser.loadTriples()
+2013.05.01 00:13:10.015 CST INFO:     Completed triple loading after 591 ms -- ProtegeOWLParser.loadTriples()
+2013.05.01 00:13:13.641 CST INFO: Importing http://protege.stanford.edu/plugins/owl/protege from location: http://protege.stanford.edu/plugins/owl/protege -- AbstractOWLModel.loadImportedAssertions()
+2013.05.01 00:13:20.565 CST INFO: Loading triples for: http://protege.stanford.edu/plugins/owl/protege -- ProtegeOWLParser.loadTriples()
+2013.05.01 00:13:20.597 CST INFO:     Completed triple loading after 30 ms -- ProtegeOWLParser.loadTriples()
+2013.05.01 00:13:20.597 CST INFO: http://protege.stanford.edu/plugins/owl/protege already imported as triple store http://protege.stanford.edu/plugins/owl/protege -- AbstractOWLModel.loadImportedAssertions()
+2013.05.01 00:13:20.599 CST INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2013.05.01 00:13:20.599 CST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2013.05.01 00:13:20.600 CST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2013.05.01 00:13:20.601 CST INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2013.05.01 00:13:20.601 CST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2013.05.01 00:13:20.602 CST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2013.05.01 00:13:20.602 CST INFO: Postprocess: Instances with multiple types (87 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2013.05.01 00:13:20.604 CST INFO: 2 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2013.05.01 00:13:20.605 CST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2013.05.01 00:13:20.609 CST INFO: 4 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2013.05.01 00:13:20.612 CST INFO: Postprocess: Process orphan classes (85 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2013.05.01 00:13:20.616 CST INFO: 4 ms
+ -- TriplePostProcessor.processOrphanClses()
+2013.05.01 00:13:20.616 CST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2013.05.01 00:13:20.616 CST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2013.05.01 00:13:20.616 CST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2013.05.01 00:13:20.617 CST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2013.05.01 00:13:20.617 CST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2013.05.01 00:13:20.622 CST INFO: 5 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2013.05.01 00:13:20.622 CST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2013.05.01 00:13:20.623 CST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2013.05.01 00:13:20.647 CST INFO: Updating underlying frames model in 24 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2013.05.01 00:13:20.661 CST WARNING: Exception caught by default exception handler -- java.lang.NoClassDefFoundError: org/semanticweb/owl/apibinding/OWLManager
+	at edu.stanford.smi.protegex.owl.inference.pellet.ProtegePelletOWLAPIReasoner.<init>(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:357)
+	at java.lang.Class.newInstance(Class.java:310)
+	at edu.stanford.smi.protegex.owl.inference.protegeowl.ReasonerPluginManager.getReasonerPluginInstance(ReasonerPluginManager.java:104)
+	at edu.stanford.smi.protegex.owl.inference.protegeowl.ReasonerPluginManager.getReasonerPluginInstance(ReasonerPluginManager.java:92)
+	at edu.stanford.smi.protegex.owl.inference.protegeowl.ReasonerManager.internalCreateReasoner(ReasonerManager.java:156)
+	at edu.stanford.smi.protegex.owl.inference.protegeowl.ReasonerManager.getProtegeReasoner(ReasonerManager.java:141)
+	at edu.stanford.smi.protegex.owl.inference.protegeowl.ReasonerManager.createProtegeReasoner(ReasonerManager.java:183)
+	at edu.pku.basis.ProtegeReasonerExample.createPelletOWLAPIReasoner(ProtegeReasonerExample.java:153)
+	at edu.pku.basis.ProtegeReasonerExample.main(ProtegeReasonerExample.java:50)
+Caused by: java.lang.ClassNotFoundException: org.semanticweb.owl.apibinding.OWLManager
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 14 more
+
+2013.05.06 20:43:21.898 CST INFO: *** SYSTEM START ***
+2013.05.06 20:43:22.465 CST WARNING: [Local Folder Repository] The specified file must be a directory. (E:\Users\Jacob\workspace\protege-owl-src-3.4.8\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2013.05.16 15:57:13.149 CST INFO: *** SYSTEM START ***
+2013.05.16 15:57:13.843 CST WARNING: [Local Folder Repository] The specified file must be a directory. (E:\Users\Jacob\workspace\protege-owl-src-3.4.8\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2013.05.16 15:57:13.860 CST INFO: Loading triples for: null -- ProtegeOWLParser.loadTriples()
+2013.05.16 15:57:14.358 CST INFO:     Completed triple loading after 349 ms -- ProtegeOWLParser.loadTriples()
+2013.05.16 15:57:15.106 CST INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2013.05.16 15:57:20.020 CST INFO: Loading triples for: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2013.05.16 15:57:20.056 CST INFO:     Completed triple loading after 35 ms -- ProtegeOWLParser.loadTriples()
+2013.05.16 15:57:20.057 CST INFO: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl already imported as triple store http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2013.05.16 15:57:21.259 CST INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2013.05.16 15:57:23.169 CST INFO: Loading triples for: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2013.05.16 15:57:23.732 CST INFO:     Completed triple loading after 560 ms -- ProtegeOWLParser.loadTriples()
+2013.05.16 15:57:23.732 CST INFO: http://swrl.stanford.edu/ontologies/3.3/swrla.owl already imported as triple store http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2013.05.16 15:57:23.734 CST INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2013.05.16 15:57:23.735 CST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2013.05.16 15:57:23.736 CST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2013.05.16 15:57:23.737 CST INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2013.05.16 15:57:23.737 CST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2013.05.16 15:57:23.738 CST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2013.05.16 15:57:23.738 CST INFO: Postprocess: Instances with multiple types (16 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2013.05.16 15:57:23.746 CST INFO: 7 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2013.05.16 15:57:23.747 CST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2013.05.16 15:57:23.756 CST INFO: 9 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2013.05.16 15:57:23.760 CST INFO: Postprocess: Process orphan classes (49 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2013.05.16 15:57:23.765 CST INFO: 5 ms
+ -- TriplePostProcessor.processOrphanClses()
+2013.05.16 15:57:23.766 CST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2013.05.16 15:57:23.766 CST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2013.05.16 15:57:23.766 CST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2013.05.16 15:57:23.767 CST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2013.05.16 15:57:23.767 CST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2013.05.16 15:57:23.778 CST INFO: 11 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2013.05.16 15:57:23.779 CST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2013.05.16 15:57:23.779 CST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2013.05.16 15:57:23.781 CST INFO: Updating underlying frames model in 2 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2013.05.16 15:57:24.257 CST WARNING: Exception caught by default exception handler -- java.lang.NullPointerException
+	at edu.pku.contextEffect.CXTEffect.exec_P(CXTEffect.java:353)
+	at edu.pku.contextEffect.CXTEffect.exec(CXTEffect.java:656)
+	at edu.pku.contextEffect.CXTEffect.execAll(CXTEffect.java:689)
+	at edu.pku.func.ServiceSelection.select(ServiceSelection.java:129)
+	at edu.pku.func.ServiceSelection.main(ServiceSelection.java:546)
+

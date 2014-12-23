@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="baseActionServiceTest" class="edu.pku.ss.oes.evolution.IBaseAction"
+		factory-bean="clientFactoryBaseAction" factory-method="create" />
+	<bean id="clientFactoryBaseAction" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
+		<property name="serviceClass" value="edu.pku.ss.oes.evolution.IBaseAction" />
+		<property name="address"
+			value="http://192.168.1.101:8080/OntologyEvolutionSystem_new/webservices/BaseActionService?wsdl" />
+	</bean>
+	<bean id="baseActionTest" class="edu.pku.ss.oes.evolution.testcase.BaseActionTest">
+		<property name="baseActionServiceTest" ref="baseActionServiceTest" />
+	</bean>
+</beans>

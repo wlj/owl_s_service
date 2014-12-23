@@ -1,0 +1,100 @@
+namespace java cn.edu.pku.ss.matchmaker.thrift
+
+struct IOModel {
+  1: optional string URI;
+  2: optional string parameterType;
+  3: optional string parameterValue;
+}
+
+struct PECRModel {
+	1: optional string URI;
+	2: optional string expressionBody;
+}
+
+// for QoS
+struct ReturnPoint {
+  1: optional double totalPoint;
+  2: optional double currentPoint;
+  3: optional i32 times;
+}
+
+struct QoS {
+  1: optional string name;
+  2: optional bool type;
+  3: optional double weight;
+  4: optional double pointOfSupply;
+  5: optional double pointOfValuation;
+  6: optional double pointOfReturn;
+  7: optional ReturnPoint returnPoint;
+  8: optional double pointAll;
+}
+
+struct Actor {
+  1: optional string URI;
+  2: optional string name;
+  3: optional string title;
+  4: optional string phone;
+  5: optional string fax;
+  6: optional string email;
+  7: optional string physicalAddress;
+  8: optional string webURI;
+}
+
+struct Category {
+  1: optional string URI;
+  2: optional string categoryName;
+  3: optional string taxonomy;
+  4: optional string value;
+  5: optional string code; 
+}
+
+
+// profile info
+struct ProfileInfo {
+		// serviceName
+		
+	1: optional string serviceKey;
+	2: optional string serviceName;
+  3: optional string description;
+	4: optional list<IOModel> inputList;
+	5: optional list<IOModel> outputList;
+	6: optional list<PECRModel> preconditionList;
+	7: optional list<PECRModel> effectList;
+	8: optional list<PECRModel> context;
+	9: optional list<PECRModel> rule;
+	10: optional list<QoS> qosList;
+	11: optional list<Actor> actorList;
+	12: optional list<Category> categoryList;
+	13: optional string profileName;
+	14: optional string processName;
+	15: optional string groundingName;
+	16: optional string wsdlURI;
+}
+
+struct TaskInfo {
+  1: required string taskID;
+  
+  // owls info
+  2: optional string owlsURI;
+  3: optional string owlsContent;
+  4: optional ProfileInfo profileInfo;
+}
+
+struct GRLInfo {
+	1: optional string grlURI;
+	2: optional string grlContent;
+}
+
+struct RequestInfo {
+	1: optional list<TaskInfo> taskInfoList;
+	2: optional GRLInfo grlinfo;
+}
+
+struct ResponseInfo {
+	1: required i32 status;
+	2: optional map<string, list<ProfileInfo>> taskServices;
+}
+
+service ServiceDiscoverer {
+	ResponseInfo getServices(1: RequestInfo requestInfo);
+}

@@ -1,0 +1,872 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:service="http://www.daml.org/services/owl-s/1.2/Service.owl#"
+    xmlns:process="http://www.daml.org/services/owl-s/1.2/Process.owl#"
+    xmlns="http://www.owl-ontologies.com/Ontology1364019654.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:list="http://www.daml.org/services/owl-s/1.2/generic/ObjectList.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:expr="http://www.daml.org/services/owl-s/1.2/generic/Expression.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:sqwrl="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:grounding="http://www.daml.org/services/owl-s/1.2/Grounding.owl#"
+    xmlns:profile="http://www.daml.org/services/owl-s/1.2/Profile.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:time="http://www.isi.edu/~pan/damltime/time-entry.owl#"
+    xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+  xml:base="http://www.owl-ontologies.com/Tour.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl"/>
+    <owl:imports rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Status"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Name"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Bus_Company">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Transport_Company"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Luggage">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Scenery"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Star_Hotel">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Hotel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Ordinary_Ticket">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketLevel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Shop">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Activity"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Finance"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Country">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Address"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#CreditCard">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Cultural_Scenery">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Natural_Scenery"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Scenery"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Flight">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Transport"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Airplane"/>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Guide">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#DepartureDate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Time"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#UserName">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Name"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Password"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#FlightitInerary">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Flight"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#City">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Province"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#SecurityCheck"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Bus">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Transport"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Visitor">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Money">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Finance"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#RoundTrip"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Ticket"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#CivilServant">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Man">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Woman"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Sex"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Origin">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Address"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Departure"/>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Destination">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Address"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Arrival"/>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Aircraft">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Transport"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Airplane"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Flight"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#BoardingGate">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#DepartureAirport">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Departure"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#ArrivalPort">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Arrival"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Company"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#T_P_Ticket">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketType"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Pass">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#SecurityCheckState"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketType">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketLevel"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Ticket"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Arrival">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Address"/>
+    <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Destination"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Female">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Sex"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Male"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Departure">
+    <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Origin"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Origin"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#address"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Address"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#RegisteredStatus">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Status"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Transport_Company">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Company"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#DepartureTime">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Time"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Abled">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Disabled"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Paid">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#SecurityCheckState"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Male">
+    <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Female"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Sex"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Airplane_Company">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Transport_Company"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#SecurityCheckState">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Status"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#FlightList">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Ticket"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#ButterFingerss">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#LoginedPerson">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#NormalGoods">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Train_Company">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Transport_Company"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Train">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Transport"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#DangerousGoods">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#SpecialClient">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Client"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#InterimIDCard">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#ButterFingerss"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#identify"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#identify"/>
+        <owl:allValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#ButterFingerss"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#HeavyGoods">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#LuggageTicket">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Ticket"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods_Ticket">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketType"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Staff">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Channel"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Province">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Country"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Ordinary_Hotel">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Hotel"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketLevel">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Ticket"/>
+    <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketType"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Client">
+    <owl:equivalentClass>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Passenger"/>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Passenger">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+    <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Client"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#IDCard">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Resource">
+          <rdf:first>
+            <owl:Restriction>
+              <owl:allValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+              <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#identify"/>
+            </owl:Restriction>
+          </rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#InterimIDCard"/>
+              </rdf:List>
+            </rdf:rest>
+          </rdf:rest>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#LoginStatus">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Status"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#BoardingCard">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#E_Ticket">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketType"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#ArrivalTime">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Time"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Traveler">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Cash">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Finance"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#VIPCard">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#P_Ticket">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketType"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Woman">
+    <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Man"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Sex"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#VIPRoom">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Economy_Ticket">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketLevel"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Disabled">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+    <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Abled"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Tourism_Company">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Company"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#E_Bank">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Natural_Scenery">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Scenery"/>
+    <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Cultural_Scenery"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#FirstClass_Ticket">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#TicketLevel"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Airplane">
+    <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Flight"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Transport"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasTicketByAddress">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Address"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Address"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#address_of_departure">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#address"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#nonLogined">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Name"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Password"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#employed">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#employ"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasSecurityCheckState">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#SecurityCheckState"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#SecurityCheckState"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#employ">
+    <owl:inverseOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#employed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#sex"/>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasDangerousGoods">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasGoods"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#logined">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Name"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Password"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasETicket">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasTicket"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Ticket"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#E_Ticket"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasGoods">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasTicket">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Ticket"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#address_of_arrival">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#address"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasVIPCard">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#VIPCard"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasCard"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasPTicket">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Ticket"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#P_Ticket"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#hasTicket"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasLuggageTicket">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#LuggageTicket"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#hasTicket"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#registered">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Name"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Password"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#administer">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#administered"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#noRegistered">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Name"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Password"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasHeavyGoods">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#hasGoods"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasLuggage">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Luggage"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasCard">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#administered">
+    <owl:inverseOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#administer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasActivity">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Activity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasSecurityCheck">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Status"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#SecurityCheckState"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasIDCard">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#IDCard"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#hasCard"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasBoradingCard">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#BoardingCard"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#hasCard"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#noLuggage">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Luggage"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Card"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#name_is"/>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasCardMoney">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasCardInfo"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#carryAllowed">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods"/>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</rdf:first>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+          >true</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#phone_number_of_person_is">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#phone_number_is"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#isDomestic">
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+          >true</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#name_of_person_is">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#name_is"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#age_is"/>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#time_of_departure_is">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#time_is"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#isAvailable">
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</rdf:first>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+          >true</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasStatus">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Status"/>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</rdf:first>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+          >true</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#phone_number_of_company_is">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#phone_number_is"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#hasWeight">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#time_of_arrival_is">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#time_is"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#name_of_company_is">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#name_is"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#shipmentAllowed">
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+          >true</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Goods"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#availableTicket">
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+          >true</rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:rest>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Ticket"/>
+  </owl:DatatypeProperty>
+  <swrl:Imp rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Rule-hasDangerousGoods">
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#hasGoods"/>
+            <swrl:argument2>
+              <swrl:Variable rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+            </swrl:argument2>
+            <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            <rdf:first>
+              <swrl:ClassAtom>
+                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#DangerousGoods"/>
+              </swrl:ClassAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+            <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+            <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#hasDangerousGoods"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <swrl:Imp rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Rule-SpecialClient2">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+            <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#SpecialClient"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+            <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Disabled"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Imp rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Rule-SpecialClient3">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#SpecialClient"/>
+            <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#CivilServant"/>
+            <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <Channel rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#t_buy"/>
+  <swrl:Imp rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Rule-SpecialClient">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#SpecialClient"/>
+            <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            <rdf:first>
+              <swrl:ClassAtom>
+                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#FirstClass_Ticket"/>
+                <swrl:argument1>
+                  <swrl:Variable rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#y"/>
+                </swrl:argument1>
+              </swrl:ClassAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#y"/>
+            <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+            <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#hasTicket"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Imp rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#Rule-hasHeavyGoods">
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+            <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+            <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#hasGoods"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:ClassAtom>
+                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#HeavyGoods"/>
+              </swrl:ClassAtom>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:IndividualPropertyAtom>
+            <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#x"/>
+            <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#Person"/>
+            <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1364019654.owl#hasHeavyGoods"/>
+          </swrl:IndividualPropertyAtom>
+        </rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <Channel rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#p_buy"/>
+  <Channel rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#e_commerce"/>
+  <Channel rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#e_buy"/>
+  <RoundTrip rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#notRoundTrip"/>
+  <RoundTrip rdf:about="http://www.owl-ontologies.com/Ontology1364019654.owl#roundTrip"/>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="cn.edu.pku.ss.matchmaker.query.filtersClassDiagram" id="{UMLID=_epI_kc9-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters}" metadata="uml2-1.0" initialized="true" scrolledY="-80" tag="100" key="3230303730363239207375646469">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.1/@sourceConnections.0" name="QueryFilter" location="266,-70" size="141,115" timstampe="2" id="{UMLID=_fBZHgM9-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters/QueryFilter}" runTimeClassModel="addNextFilter(Lcn.edu.pku.ss.matchmaker.query.filters.QueryFilter;),process(Lcn.edu.pku.ss.matchmaker.query.Query;Lcn.edu.pku.ss.matchmaker.query.QueryResults;),sendToNextFilter(Lcn.edu.pku.ss.matchmaker.query.Query;Lcn.edu.pku.ss.matchmaker.query.QueryResults;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,54">
+      <children xsi:type="editmodel:MethodEditModel" name="process" size="80,16" id="{UMLID=_fBsCdc9-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters/QueryFilter#process(Lcn.edu.pku.ss.matchmaker.query.Query;Lcn.edu.pku.ss.matchmaker.query.QueryResults;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addNextFilter" size="103,16" id="{UMLID=_fBsCcs9-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters/QueryFilter#addNextFilter(Lcn.edu.pku.ss.matchmaker.query.filters.QueryFilter;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendToNextFilter" size="120,16" id="{UMLID=_fBZHg89-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters/QueryFilter#sendToNextFilter(Lcn.edu.pku.ss.matchmaker.query.Query;Lcn.edu.pku.ss.matchmaker.query.QueryResults;)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AbstractQueryFilter" location="266,98" size="162,175" timstampe="3" stereotype="" id="{UMLID=_fC4VQM9-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters/AbstractQueryFilter}" runTimeClassModel="getNextFilter(),addNextFilter(Lcn.edu.pku.ss.matchmaker.query.filters.QueryFilter;),setNextFilter(Lcn.edu.pku.ss.matchmaker.query.filters.QueryFilter;),nextFilter,sendToNextFilter(Lcn.edu.pku.ss.matchmaker.query.Query;Lcn.edu.pku.ss.matchmaker.query.QueryResults;),AbstractQueryFilter()">
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:AttributeEditModel" name="nextFilter" size="79,21" id="{UMLID=_fDBfMM9-EeKhJKgLXWm8lQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="134,105">
+      <children xsi:type="editmodel:MethodEditModel" name="AbstractQueryFilter" size="134,16" id="{UMLID=_fDVBOM9-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters/AbstractQueryFilter#AbstractQueryFilter()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addNextFilter" size="109,21" id="{UMLID=_fDLQMM9-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters/AbstractQueryFilter#addNextFilter(Lcn.edu.pku.ss.matchmaker.query.filters.QueryFilter;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendToNextFilter" size="120,16" id="{UMLID=_fDLQM89-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters/AbstractQueryFilter#sendToNextFilter(Lcn.edu.pku.ss.matchmaker.query.Query;Lcn.edu.pku.ss.matchmaker.query.QueryResults;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNextFilter" size="106,21" id="{UMLID=_fDVBNc9-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters/AbstractQueryFilter#getNextFilter()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setNextFilter" size="106,21" id="{UMLID=_fDBfMs9-EeKhJKgLXWm8lQ,JavaID=cn.edu.pku.ss.matchmaker.query.filters/AbstractQueryFilter#setNextFilter(Lcn.edu.pku.ss.matchmaker.query.filters.QueryFilter;)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:RealizationEditModel" size="2,1" description="Realization" autoLocated="true" id="{UMLID=_Gu-3EM9_EeKhJKgLXWm8lQ}" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" label="//@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="70,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="70,115"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="14,14" gridOrigin="0,-70" rulerUnit="cm" gridShow="true">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" shortPackageNameFormat="true" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showMethods="true" showAttributes="true" showLiterlas="true" showInnerEntity="true"/>
+</editmodel:ClassDiagramEditModel>

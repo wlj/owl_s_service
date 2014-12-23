@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.owl-ontologies.com/Ontology1367940844.owl#" xmlns:daml="http://www.daml.org/2001/03/daml+oil#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:expr="http://www.daml.org/services/owl-s/1.1/generic/Expression.owl#" xmlns:grounding="http://www.daml.org/services/owl-s/1.1/Grounding.owl#" xmlns:list="http://www.daml.org/services/owl-s/1.1/generic/ObjectList.owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:process="http://www.daml.org/services/owl-s/1.1/Process.owl#" xmlns:profile="http://www.daml.org/services/owl-s/1.1/Profile.owl#" xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:service="http://www.daml.org/services/owl-s/1.1/Service.owl#" xmlns:swrl="http://www.w3.org/2003/11/swrl#" xmlns:swrlb="http://www.w3.org/2003/11/swrlb#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://www.example.org/owls/GetWeather.owl#" xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#">
+<owl:Ontology rdf:about="">
+<owl:imports rdf:resource="http://www.daml.org/services/owl-s/1.2/Profile.owl"/>
+<owl:imports rdf:resource="http://www.daml.org/services/owl-s/1.2/Grounding.owl"/>
+<owl:imports rdf:resource="http://www.w3.org/2003/11/swrl"/>
+<owl:imports rdf:resource="http://www.w3.org/2003/11/swrlb"/>
+</owl:Ontology>
+<profile:Profile rdf:ID="BuyAirTicketProfile">
+<service:presentedBy>
+<service:Service rdf:ID="BuyAirTicketService">
+<service:presents rdf:resource="#BuyAirTicketProfile"/>
+<service:supports>
+<grounding:WsdlGrounding rdf:ID="BuyAirTicketGrounding">
+<grounding:hasAtomicProcessGrounding>
+<grounding:WsdlAtomicProcessGrounding rdf:ID="WsdlAtomicProcessGrounding"/>
+</grounding:hasAtomicProcessGrounding>
+</grounding:WsdlGrounding>
+</service:supports>
+<profile:processContent><!DOCTYPE uridef[<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns"><!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema"><!ENTITY shadow-rdf "http://localhost:8080/juddiv3/owl-s/1.1/ObjectList.owl"><!ENTITY expr "http://localhost:8080/juddiv3/owl-s/1.1/Expression.owl"><!ENTITY owl "http://www.w3.org/2002/07/owl"><!ENTITY xsd "http://www.w3.org/2001/XMLSchema"><!ENTITY service "http://localhost:8080/juddiv3/owl-s/1.1/Service.owl"><!ENTITY process "http://localhost:8080/juddiv3/owl-s/1.1/Process.owl"><!ENTITY profile "http://localhost:8080/juddiv3/owl-s/1.1/Profile.owl"><!ENTITY ba_service "http://localhost:8080/juddiv3/owl-s/1.1/BravoAirService.owl"><!ENTITY swrlx "http://localhost:8080/juddiv3/owl-s/1.1/swrl.owl"><!ENTITY ruleml "http://localhost:8080/juddiv3/owl-s/1.1/swrl.owl"><!ENTITY concepts "http://localhost:8080/juddiv3/owl-s/1.1/Concepts.owl"><!ENTITY DEFAULT "http://localhost:8080/juddiv3/owl-s/1.1/BravoAirProcess.owl">]>
+<rdf:RDF xmlns:rdf="&rdf;#" xmlns="&DEFAULT;#" xmlns:ba_service="&ba_service;#" xmlns:concepts="&concepts;#" xmlns:expr="&expr;#" xmlns:list="&shadow-rdf;#" xmlns:owl="&owl;#" xmlns:process="&process;#" xmlns:profile="&profile;#" xmlns:rdfs="&rdfs;#" xmlns:ruleml="&ruleml;#" xmlns:service="&service;#" xmlns:swrlx="&swrlx;#" xmlns:xsd="&xsd;#" xml:base="&DEFAULT;">
+	<owl:Ontology>
+		<owl:imports rdf:resource="&service;"/>
+		<owl:imports rdf:resource="&process;"/>
+		<owl:imports rdf:resource="&profile;"/>
+		<owl:imports rdf:resource="&concepts;"/>
+		<owl:imports rdf:resource="&shadow-rdf;"/>
+		<owl:imports rdf:resource="&expr;"/>
+	</owl:Ontology>
+	<service:Service rdf:ID="BuyAirTicket"/>
+	<process:CompositeProcess rdf:ID="CompositeProcess_0">
+		<process:composedOf>
+			<process:Sequence rdf:ID="Sequence_0">
+				<process:components>
+					<process:ControlConstructList rdf:ID="ControlConstructList_0">
+						<list:first>
+							<process:Perform>
+								<process:process>
+									<process:CompositeProcess rdf:ID="CompleteReservation">
+										<process:composedOf>
+
+											<process:If-Then-Else rdf:ID="If-Then-Else_0">
+
+												<process:ifCondition>
+													<expr:SWRL-Condition>
+														<expr:expressionLanguage rdf:resource="&expr;#SWRL"/>
+														<expr:expressionBody rdf:parseType="Literal"/>
+													</expr:SWRL-Condition>
+												</process:ifCondition>
+
+												<process:then>
+													<process:Perform rdf:ID="Perform_0">
+														<process:process>
+															<process:AtomicProcess rdf:ID="Register">
+																<process:hasInput>
+																	<process:Input rdf:ID="input0">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#UserName</process:parameterType>
+																	</process:Input>
+																</process:hasInput>
+																<process:hasInput>
+																	<process:Input rdf:ID="input1">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#Password</process:parameterType>
+																	</process:Input>
+																</process:hasInput>
+																<process:hasOutput>
+																	<process:Output rdf:ID="output0">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#RegisterStatus</process:parameterType>
+																	</process:Output>
+																</process:hasOutput>
+															</process:AtomicProcess>
+														</process:process>
+													</process:Perform>
+												</process:then>
+
+												<process:else>
+													<process:Perform rdf:ID="Perform_1">
+														<process:process>
+															<process:AtomicProcess rdf:ID="Login">
+																<process:hasInput>
+																	<process:Input rdf:ID="input2">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#UserName</process:parameterType>
+																	</process:Input>
+																</process:hasInput>
+																<process:hasInput>
+																	<process:Input rdf:ID="input3">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#Password</process:parameterType>
+																	</process:Input>
+																</process:hasInput>
+																<process:hasInput>
+																	<process:Input rdf:ID="input4">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#Person</process:parameterType>
+																	</process:Input>
+																</process:hasInput>
+																<process:hasOutput>
+																	<process:Output rdf:ID="output1">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#LoginStatus</process:parameterType>
+																	</process:Output>
+																</process:hasOutput>
+															</process:AtomicProcess>
+														</process:process>
+													</process:Perform>
+												</process:else>
+
+											</process:If-Then-Else>
+										</process:composedOf>
+									</process:CompositeProcess>
+								</process:process>
+							</process:Perform>
+						</list:first>
+						<list:rest>
+							<process:ControlConstructList rdf:ID="ControlConstructList_1">
+								<list:first>
+									<process:Perform rdf:ID="Perform_2">
+										<process:process>
+											<process:AtomicProcess rdf:ID="QueryTicket">
+												<process:hasInput>
+													<process:Input rdf:ID="input5">
+														<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#Departure</process:parameterType>
+													</process:Input>
+												</process:hasInput>
+												<process:hasInput>
+													<process:Input rdf:ID="input6">
+														<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#Destination</process:parameterType>
+													</process:Input>
+												</process:hasInput>
+												<process:hasInput>
+													<process:Input rdf:ID="input7">
+														<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#DepartureTime</process:parameterType>
+													</process:Input>
+												</process:hasInput>
+												<process:hasOutput>
+													<process:Output rdf:ID="output2">
+														<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#FlightList</process:parameterType>
+													</process:Output>
+												</process:hasOutput>
+											</process:AtomicProcess>
+										</process:process>
+									</process:Perform>
+								</list:first>
+								<list:rest>
+									<process:ControlConstructList rdf:ID="ControlConstructList_2">
+										<list:first>
+											<process:Perform rdf:ID="Perform_3">
+												<process:process>
+													<process:AtomicProcess rdf:ID="SelectFlight">
+														<process:hasInput>
+															<process:Input rdf:ID="input8">
+																<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#FlightList</process:parameterType>
+															</process:Input>
+														</process:hasInput>
+														<process:hasOutput>
+															<process:Output rdf:ID="output3">
+																<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#Flight</process:parameterType>
+															</process:Output>
+														</process:hasOutput>
+													</process:AtomicProcess>
+												</process:process>
+											</process:Perform>
+										</list:first>
+										<list:rest>
+											<process:ControlConstructList rdf:ID="ControlConstructList_3">
+												<list:first>
+													<process:Perform rdf:ID="Perform_4">
+														<process:process>
+															<process:AtomicProcess rdf:ID="Pay">
+																<process:hasInput>
+																	<process:Input rdf:ID="input9">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#Person</process:parameterType>
+																	</process:Input>
+																</process:hasInput>
+																<process:hasInput>
+																	<process:Input rdf:ID="input10">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#CreditCard</process:parameterType>
+																	</process:Input>
+																</process:hasInput>
+																<process:hasInput>
+																	<process:Input rdf:ID="input11">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#Money</process:parameterType>
+																	</process:Input>
+																</process:hasInput>
+																<process:hasInput>
+																	<process:Input rdf:ID="input12">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#Flight</process:parameterType>
+																	</process:Input>
+																</process:hasInput>
+																<process:hasOutput>
+																	<process:Output rdf:ID="output4">
+																		<process:parameterType rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://localhost:8080/juddiv3/owl-s/1.1/Tour.owl#E_Ticket</process:parameterType>
+																	</process:Output>
+																</process:hasOutput>
+															</process:AtomicProcess>
+														</process:process>
+													</process:Perform>
+												</list:first>
+												<list:rest rdf:resource="&shadow-rdf;#nil"/>
+											</process:ControlConstructList>
+										</list:rest>
+									</process:ControlConstructList>
+								</list:rest>
+							</process:ControlConstructList>
+						</list:rest>
+					</process:ControlConstructList>
+				</process:components>
+			</process:Sequence>
+		</process:composedOf>
+	</process:CompositeProcess>
+</rdf:RDF>
+</profile:processContent>
+</service:Service>
+</service:presentedBy>
+</profile:Profile>
+</rdf:RDF>

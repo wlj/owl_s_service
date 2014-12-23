@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE uridef [
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema">
+  <!ENTITY DEFAULT "http://localhost:8080/juddiv3/owl-s/1.1/ServiceContext.owl">
+]>
+<rdf:RDF xmlns:rdf="&rdf;#" xmlns:rdfs="&rdfs;#" xmlns:owl="&owl;#"  
+	xmlns="&DEFAULT;#" xml:base="&DEFAULT;">
+	<owl:Ontology rdf:about="">
+		<owl:versionInfo>
+		</owl:versionInfo>
+		<rdfs:comment> This file describe Service Context ontology.</rdfs:comment>
+	</owl:Ontology>
+  
+	<!-- Restriction: Context Rule -->
+	<!-- No restriction for context rule -->
+	
+    <!--  ############ ########### ############ ############ ########### -->
+	<!-- Classes: Context -->
+	<owl:Class rdf:ID="Context">
+		<rdfs:label>Context</rdfs:label>
+		<rdfs:comment> Definition of Context</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="QoSContext">
+		<rdfs:label>QoSContext</rdfs:label>
+		<rdfs:comment> Definition of QoSContext</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#Context" />
+	</owl:Class>
+	<owl:Class rdf:ID="LocationContext">
+		<rdfs:label>LocationContext</rdfs:label>
+		<rdfs:comment> Definition of LocationContext</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#Context" />
+	</owl:Class>
+	<owl:Class rdf:ID="ContextType">
+		<rdfs:label>ContextType</rdfs:label>
+		<rdfs:comment> Definition of ContextType</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="ContextObject">
+		<rdfs:label>ContextObject</rdfs:label>
+		<rdfs:comment> Definition of ContextObject</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="PropertyValue">
+		<rdfs:label>PropertyValue</rdfs:label>
+		<rdfs:comment> Definition of PropertyValue</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="ContextValue">
+		<rdfs:label>ContextValue</rdfs:label>
+		<rdfs:comment> Definition of ContextValue</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="ContextValueDomain">
+		<rdfs:label>ContextValueDomain</rdfs:label>
+		<rdfs:comment> Definition of ContextValueDomain</rdfs:comment>
+	</owl:Class>
+	
+	<!-- Properties: Context -->
+	<owl:DatatypeProperty rdf:ID="contextName">
+		<rdfs:domain rdf:resource="#Context" />
+		<rdfs:range rdf:resource="&rdfs;#Literal" />
+	</owl:DatatypeProperty>
+	<owl:FunctionalProperty rdf:ID="hasContextValue">
+		<rdfs:domain rdf:resource="#Context" />
+		<rdfs:range rdf:resource="#ContextValue" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasContextObject">
+		<rdfs:domain rdf:resource="#Context" />
+		<rdfs:range rdf:resource="#ContextObject" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasContextType">
+	    <rdfs:domain rdf:resource="#Context" />
+		<rdfs:range rdf:resource="#ContextType" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasPropertyValue">
+		<rdfs:domain rdf:resource="#ContextObject" />
+		<rdfs:range rdf:resource="#PropertyValue" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasPropertyType">
+		<rdfs:domain rdf:resource="#PropertyValue" />
+		<rdfs:range rdf:resource="&rdf;#Property" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasPropertyContextValue">
+		<rdfs:domain rdf:resource="#PropertyValue" />
+		<rdfs:range rdf:resource="#ContextValue" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasDomain">
+		<rdfs:range rdf:resource="#ContextValueDomain" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="hasDomainValue">
+		<rdfs:domain rdf:resource="#ContextValueDomain" />
+		<rdfs:range rdf:datatype="&xsd;#anyURI" />
+	</owl:FunctionalProperty>
+	
+	<!-- Restriction: Context -->
+	<owl:Class rdf:about="#Context">
+		<rdfs:comment>
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasContextType" />
+				<owl:maxCardinality rdf:datatype="&xsd;#nonNegativeInteger">1
+				</owl:maxCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasContextValue" />
+				<owl:maxCardinality rdf:datatype="&xsd;#nonNegativeInteger">1
+				</owl:maxCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasContextObject" />
+				<owl:maxCardinality rdf:datatype="&xsd;#nonNegativeInteger">1
+				</owl:maxCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:about="#ContextValue">
+		<rdfs:comment>
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasDomain" />
+				<owl:maxCardinality rdf:datatype="&xsd;#nonNegativeInteger">1
+				</owl:maxCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:about="#ContextType">
+		<rdfs:comment>
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasDomain" />
+				<owl:maxCardinality rdf:datatype="&xsd;#nonNegativeInteger">1
+				</owl:maxCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:about="#PropertyValue">
+		<rdfs:comment>
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasPropertyType" />
+				<owl:maxCardinality rdf:datatype="&xsd;#nonNegativeInteger">1
+				</owl:maxCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="#hasPropertyContextValue" />
+				<owl:maxCardinality rdf:datatype="&xsd;#nonNegativeInteger">1
+				</owl:maxCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:about="#ContextObject">
+		<rdfs:comment>
+		</rdfs:comment>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasDomain" />
+                <owl:maxCardinality rdf:datatype="&xsd;#nonNegativeInteger">1
+                </owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:about="#ContextValueDomain">
+		<rdfs:comment>
+		</rdfs:comment>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasDomainValue" />
+                <owl:maxCardinality rdf:datatype="&xsd;#nonNegativeInteger">1
+                </owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+	</owl:Class>
+</rdf:RDF>

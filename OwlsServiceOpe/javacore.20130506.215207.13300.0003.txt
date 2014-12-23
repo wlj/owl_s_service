@@ -1,0 +1,2166 @@
+NULL           ------------------------------------------------------------------------
+0SECTION       TITLE subcomponent dump routine
+NULL           ===============================
+1TISIGINFO     Dump Event "gpf" (00002000) received 
+1TIDATETIME    Date:                 2013/05/06 at 21:52:10
+1TIFILENAME    Javacore filename:    C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\javacore.20130506.215207.13300.0003.txt
+NULL           ------------------------------------------------------------------------
+0SECTION       GPINFO subcomponent dump routine
+NULL           ================================
+2XHOSLEVEL     OS Level         : Windows Vista 6.1 build 7601 Service Pack 1
+2XHCPUS        Processors -
+3XHCPUARCH       Architecture   : x86
+3XHNUMCPUS       How Many       : 4
+3XHNUMASUP       NUMA is either not supported or has been disabled by user
+NULL           
+1XHEXCPCODE    J9Generic_Signal_Number: 00000004
+1XHEXCPCODE    ExceptionCode: C0000005
+1XHEXCPCODE    ExceptionAddress: 7FF1BBCF
+1XHEXCPCODE    ContextFlags: 0001003F
+1XHEXCPCODE    Handler1: 7FEE9A50
+1XHEXCPCODE    Handler2: 7FEC95C0
+1XHEXCPCODE    InaccessibleAddress: 6C706D53
+NULL           
+1XHEXCPMODULE  Module: C:\luoshan\SourceCode\juddi\running\jdk\jre\bin\j9vm24.dll
+1XHEXCPMODULE  Module_base_address: 7FEE0000
+1XHEXCPMODULE  Offset_in_DLL: 0003BBCF
+NULL           
+1XHREGISTERS   Registers:
+2XHREGISTER      EDI: 00000002
+2XHREGISTER      ESI: 6C706D49
+2XHREGISTER      EAX: 6C706D49
+2XHREGISTER      EBX: 619AFD5C
+2XHREGISTER      ECX: 00000015
+2XHREGISTER      EDX: 001A6CF0
+2XHREGISTER      EIP: 7FF1BBCF
+2XHREGISTER      ESP: 6221F934
+2XHREGISTER      EBP: 6221F9FC
+2XHREGISTER      EFLAGS: 00010202
+NULL           
+1XHFLAGS       VM flags:00000000
+NULL           
+NULL           ------------------------------------------------------------------------
+0SECTION       ENVINFO subcomponent dump routine
+NULL           =================================
+1CIJAVAVERSION J2RE 6.0 IBM J9 2.4 Windows Vista x86-32 build jvmwi3260-20080816_22093
+1CIVMVERSION   VM build 20080816_022093_lHdSMr
+1CIJITVERSION  JIT enabled, AOT enabled - r9_20080721_1330ifx2
+1CIGCVERSION   GC - 20080724_AA
+1CIRUNNINGAS   Running as a standalone JVM
+1CICMDLINE     C:\luoshan\SourceCode\juddi\running\jdk\bin\javaw.exe -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:47847 -Dfile.encoding=GB18030 -classpath C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\owlsapi-1.1.2\bin;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\icu4j-3.4.4.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\iri-0.7.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\jena-2.6.2.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\junit-4.5.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\log4j-1.2.13.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\slf4j-api-1.5.6.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\slf4j-log4j12-1.5.6.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\swrlapi-1.0.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\rscasd-utils\bin;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\avalon-framework-4.1.3.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\commons-io-1.4.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\commons-lang-2.5.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\commons-logging-1.1.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\junit-4.5.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\log4j-1.2.12.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\logkit-1.0.1.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\servlet-api-2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\rscasd-utils\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\activation-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-beanutils-1.7.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-beanutils-core-1.7.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-codec-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-collections-3.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-configuration-1.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-digester-1.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-lang-2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-logging-1.0.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxb-api-2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxb-impl-2.1.9.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxp-api-1.4.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxp-ri-1.4.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxws-api-2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxws-rt-2.1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jsr181-api-1.0-MR1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jsr250-api-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\juddi-client-3.0.2-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\mimepull-1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\resolver-20050927.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\saaj-api-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\saaj-impl-1.3.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\servlet-api-2.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\stax-api-1.0-2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\stax-ex-1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\streambuffer-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\uddi4j.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\uddi-ws-3.0.2-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\slf4j-api-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\mysql-connector-java-5.1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\activation-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\antlr-2.7.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\aopalliance-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\arq-2.8.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\asm-1.5.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\asm-2.2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\asm-attrs-1.5.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\aterm-java-1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\avalon-framework-4.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\axis-1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\axis-jaxrpc-1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\bcel-5.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\castor-1.1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cglib-full-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cglib-nodep-2.1_3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-beanutils-1.7.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-beanutils-1.8.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-beanutils-core-1.7.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-codec-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-collections-3.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-configuration-1.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-digester-1.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-discovery-0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-fileupload-1.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-io-1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-lang-2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-lang-2.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-logging-1.0.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-logging-1.1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-logging-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-logging-api-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-pool-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-api-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-common-schemas-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-common-utilities-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-bindings-soap-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-bindings-xml-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-databinding-jaxb-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-frontend-simple-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-transports-http-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-ws-addr-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-tools-common-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\derby-10.4.2.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\ehcache-1.2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\FastInfoset-1.2.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-activation_1.1_spec-1.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-annotation_1.0_spec-1.1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-javamail_1.4_spec-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-jaxws_2.1_spec-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-jms_1.1_spec-1.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-jpa_3.0_spec-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-jta_1.1_spec-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-stax-api_1.0_spec-1.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-ws-metadata_2.0_spec-1.1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\gwt-dev-2.0.0-SNAPSHOT-windows.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\gwt-servlet-2.0.0-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\gwt-user-2.0.0-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-3.2.5.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-annotations-3.3.0.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-commons-annotations-3.0.0.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-entitymanager-3.3.1.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-validator-3.0.0.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\httpclient-4.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\httpcore-4.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jakarta-regexp-1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\javassist-3.3.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxb-api-2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxb-impl-2.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxb-impl-2.1.9.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxb-xjc-2.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxp-api-1.4.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxp-ri-1.4.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxws-api-2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxws-rt-2.1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jboss-common-core-2.0.4.GA.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jms-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jmxtools-1.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jsr181-api-1.0-MR1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jsr250-api-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jta-1.0.1B.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\juddi-client-3.0.2-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\log4j-1.2.12.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\log4j-1.2.15.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\logkit-1.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\lucene-core-2.3.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\mail-1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\mimepull-1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\mysql-connector-java-5.1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\neethi-2.0.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\openjpa-1.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\oro-2.0.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\owlapiv2-2.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\owlapiv3-3.0.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\owl-s2uddi.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\owl-s2uddi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\owlsapi-1.1.2-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\Pellet-2.02.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-cli-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-core-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-datatypes-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-dig-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-el-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-explanation-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-jena-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-modularity-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-owlapi-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-owlapiv3-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-pellint-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-query-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-rules-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-test-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\persistence-api-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pluto-container-1.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pluto-descriptor-api-1.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pluto-descriptor-impl-1.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pluto-taglib-1.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\portlet-api-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\postgresql-8.2-504.jdbc3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\relaxngDatatype-20020414.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\resolver-20050927-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\rscasd-reasoning-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\rscasd-utils-1.0.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\saaj-api-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\saaj-impl-1.3.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\saaj-impl-1.3.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\serp-1.13.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\servlet-api-2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\servlet-api-2.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\sjsxp-1.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\slf4j-api-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\spring-beans-2.0.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\spring-context-2.0.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\spring-core-2.0.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\spring-web-2.0.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\stax-api-1.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\stax-api-1.0-2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\stax-ex-1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\streambuffer-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\velocity-1.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\wsdl4j-1.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\wstx-asl-3.2.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\wstx-asl-3.2.9.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xalan-2.7.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xercesImpl-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xml-apis-1.0.b2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xml-resolver-1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\XmlSchema-1.4.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xsdlib-20030225.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\persistence-api-1.0-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-entitymanager-3.3.1.ga-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-annotations-3.3.0.ga-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-3.2.5.ga-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jena-2.6.2-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\mysql-connector-java-5.1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\slf4j-api-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\mysql-connector-java-5.1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\slf4j-api-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\mysql-connector-java-5.1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\persistence-api-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\slf4j-api-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ExtendedService\bin EDU.pku.ly.owlservice.test.TestPublishAndGet
+1CIJAVAHOMEDIR Java Home Dir:   C:\luoshan\SourceCode\juddi\running\jdk\jre
+1CIJAVADLLDIR  Java DLL Dir:    C:\luoshan\SourceCode\juddi\running\jdk\jre\bin
+1CISYSCP       Sys Classpath:   C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\vm.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\annotation.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\beans.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\java.util.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\jndi.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\logging.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\security.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\sql.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmorb.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmorbapi.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmcfw.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\rt.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\charsets.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\resources.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmpkcs.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmcertpathfw.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmjgssfw.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmjssefw.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmsaslfw.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmjcefw.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmjgssprovider.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmjsseprovider2.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmcertpathprovider.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ibmxmlcrypto.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\management-agent.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\xml.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\jlm.jar;C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\javascript.jar;
+1CIUSERARGS    UserArgs:
+2CIUSERARG               -Xjcl:jclscar_24
+2CIUSERARG               -Dcom.ibm.oti.vm.bootstrap.library.path=C:\luoshan\SourceCode\juddi\running\jdk\jre\bin
+2CIUSERARG               -Dsun.boot.library.path=C:\luoshan\SourceCode\juddi\running\jdk\jre\bin
+2CIUSERARG               -Djava.library.path=C:\luoshan\SourceCode\juddi\running\jdk\jre\bin;.;C:/luoshan/SourceCode/juddi/running/jdk/jre/bin/j9vm;C:/luoshan/SourceCode/juddi/running/jdk/jre/bin;C:\Perl\bin;C:\app\tanli\product\11.1.0\db_2\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;c:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Python32;C:\luoshan\SourceCode\juddi\running\jdk\bin;C:\luoshan\SourceCode\juddi\running\jdk\jre\bin;C:\luoshan\SourceCode\juddi\running\mysql-5.0.88-win32\bin;C:\Program Files\SSH Communications Security\SSH Secure Shell;C:\Program Files\OpenVPN\bin;
+2CIUSERARG               -Djava.home=C:\luoshan\SourceCode\juddi\running\jdk\jre
+2CIUSERARG               -Djava.ext.dirs=C:\luoshan\SourceCode\juddi\running\jdk\jre\lib\ext
+2CIUSERARG               -Duser.dir=C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe
+2CIUSERARG               _j2se_j9=71168 0x7FB971A0
+2CIUSERARG               -Xdump
+2CIUSERARG               -Djava.class.path=.;C:\luoshan\SourceCode\juddi\running\jdk\lib\dt.jar;C:\luoshan\SourceCode\juddi\running\jdk\lib\tools.jar;
+2CIUSERARG               -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:47847
+2CIUSERARG               -Dfile.encoding=GB18030
+2CIUSERARG               -Djava.class.path=C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\owlsapi-1.1.2\bin;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\icu4j-3.4.4.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\iri-0.7.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\jena-2.6.2.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\junit-4.5.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\log4j-1.2.13.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\slf4j-api-1.5.6.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\slf4j-log4j12-1.5.6.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\swrlapi-1.0.jar;D:\JavaWorkSpace\BiSheDependency\owlsapi-1.1.2\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\rscasd-utils\bin;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\avalon-framework-4.1.3.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\commons-io-1.4.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\commons-lang-2.5.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\commons-logging-1.1.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\junit-4.5.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\log4j-1.2.12.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\logkit-1.0.1.jar;D:\JavaWorkSpace\BiSheDependency\rscasd-utils\lib\servlet-api-2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\rscasd-utils\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\activation-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-beanutils-1.7.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-beanutils-core-1.7.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-codec-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-collections-3.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-configuration-1.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-digester-1.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-lang-2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\commons-logging-1.0.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxb-api-2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxb-impl-2.1.9.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxp-api-1.4.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxp-ri-1.4.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxws-api-2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jaxws-rt-2.1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jsr181-api-1.0-MR1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\jsr250-api-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\juddi-client-3.0.2-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\mimepull-1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\resolver-20050927.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\saaj-api-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\saaj-impl-1.3.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\servlet-api-2.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\stax-api-1.0-2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\stax-ex-1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\streambuffer-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\uddi4j.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\owl-s2uddi\lib\uddi-ws-3.0.2-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\slf4j-api-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProcessOpe\lib\mysql-connector-java-5.1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\activation-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\antlr-2.7.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\aopalliance-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\arq-2.8.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\asm-1.5.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\asm-2.2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\asm-attrs-1.5.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\aterm-java-1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\avalon-framework-4.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\axis-1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\axis-jaxrpc-1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\bcel-5.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\castor-1.1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cglib-full-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cglib-nodep-2.1_3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-beanutils-1.7.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-beanutils-1.8.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-beanutils-core-1.7.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-codec-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-collections-3.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-configuration-1.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-digester-1.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-discovery-0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-fileupload-1.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-io-1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-lang-2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-lang-2.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-logging-1.0.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-logging-1.1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-logging-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-logging-api-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\commons-pool-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-api-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-common-schemas-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-common-utilities-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-bindings-soap-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-bindings-xml-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-databinding-jaxb-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-frontend-simple-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-transports-http-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-rt-ws-addr-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\cxf-tools-common-2.1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\derby-10.4.2.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\ehcache-1.2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\FastInfoset-1.2.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-activation_1.1_spec-1.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-annotation_1.0_spec-1.1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-javamail_1.4_spec-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-jaxws_2.1_spec-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-jms_1.1_spec-1.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-jpa_3.0_spec-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-jta_1.1_spec-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-stax-api_1.0_spec-1.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\geronimo-ws-metadata_2.0_spec-1.1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\gwt-dev-2.0.0-SNAPSHOT-windows.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\gwt-servlet-2.0.0-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\gwt-user-2.0.0-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-3.2.5.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-annotations-3.3.0.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-commons-annotations-3.0.0.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-entitymanager-3.3.1.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-validator-3.0.0.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\httpclient-4.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\httpcore-4.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jakarta-regexp-1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\javassist-3.3.ga.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxb-api-2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxb-impl-2.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxb-impl-2.1.9.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxb-xjc-2.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxp-api-1.4.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxp-ri-1.4.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxws-api-2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jaxws-rt-2.1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jboss-common-core-2.0.4.GA.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jms-1.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jmxtools-1.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jsr181-api-1.0-MR1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jsr250-api-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jta-1.0.1B.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\juddi-client-3.0.2-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\log4j-1.2.12.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\log4j-1.2.15.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\logkit-1.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\lucene-core-2.3.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\mail-1.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\mimepull-1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\mysql-connector-java-5.1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\neethi-2.0.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\openjpa-1.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\oro-2.0.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\owlapiv2-2.2.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\owlapiv3-3.0.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\owl-s2uddi.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\owl-s2uddi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\owlsapi-1.1.2-SNAPSHOT.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\Pellet-2.02.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-cli-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-core-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-datatypes-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-dig-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-el-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-explanation-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-jena-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-modularity-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-owlapi-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-owlapiv3-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-pellint-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-query-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-rules-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pellet-test-2.0.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\persistence-api-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pluto-container-1.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pluto-descriptor-api-1.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pluto-descriptor-impl-1.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\pluto-taglib-1.1.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\portlet-api-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\postgresql-8.2-504.jdbc3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\relaxngDatatype-20020414.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\resolver-20050927-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\rscasd-reasoning-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\rscasd-utils-1.0.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\saaj-api-1.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\saaj-impl-1.3.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\saaj-impl-1.3.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\serp-1.13.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\servlet-api-2.3.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\servlet-api-2.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\sjsxp-1.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\slf4j-api-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\spring-beans-2.0.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\spring-context-2.0.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\spring-core-2.0.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\spring-web-2.0.8.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\stax-api-1.0.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\stax-api-1.0-2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\stax-ex-1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\streambuffer-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\velocity-1.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\wsdl4j-1.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\wstx-asl-3.2.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\wstx-asl-3.2.9.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xalan-2.7.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xercesImpl-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xml-apis-1.0.b2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xml-resolver-1.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\XmlSchema-1.4.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\xsdlib-20030225.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\persistence-api-1.0-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-entitymanager-3.3.1.ga-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-annotations-3.3.0.ga-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\hibernate-3.2.5.ga-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\juddi\lib\jena-2.6.2-sources.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\mysql-connector-java-5.1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\slf4j-api-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\GroundingOpe\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\bin;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\mysql-connector-java-5.1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\slf4j-api-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ProfileOpe\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\dom4j-1.6.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\icu4j-3.4.4.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\iri-0.7.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\jena-2.6.2.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\junit-4.5.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\log4j-1.2.13.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\mysql-connector-java-5.1.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\persistence-api-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\slf4j-api-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\slf4j-log4j12-1.5.6.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\swrlapi-1.0.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\OwlsServiceOpe\lib\xercesImpl-2.7.1.jar;C:\luoshan\SourceCode\juddi\projects\rscasd\ExtendedService\bin
+2CIUSERARG               -Dsun.java.command=EDU.pku.ly.owlservice.test.TestPublishAndGet
+2CIUSERARG               -Dsun.java.launcher=SUN_STANDARD
+2CIUSERARG               _port_library 0x7FB969A8
+NULL           
+1CIJVMMI       JVM Monitoring Interface (JVMMI)
+NULL           ------------------------
+2CIJVMMIOFF    [not available]
+NULL           
+NULL           ------------------------------------------------------------------------
+0SECTION       MEMINFO subcomponent dump routine
+NULL           =================================
+1STHEAPFREE    Bytes of Heap Space Free: 1FDAE0 
+1STHEAPALLOC   Bytes of Heap Space Allocated: 730E00 
+NULL           
+1STSEGTYPE     Internal Memory
+NULL           segment  start    alloc    end       type     bytes
+1STSEGMENT     61A383E4 63229338 63229338 63239338  01000040 10000
+1STSEGMENT     61A384A4 63211318 63211318 63221318  01000040 10000
+1STSEGMENT     61A381A4 63239340 63239340 63249340  01000040 10000
+1STSEGMENT     61A38444 61E6C8A8 61E6C8A8 61E7C8A8  01000040 10000
+1STSEGMENT     001AD7EC 618F0058 618F0058 61900058  01000040 10000
+1STSEGMENT     001AD66C 00221E98 00221E98 00235730  01000040 13898
+1STSEGMENT     001AD60C 00211E90 00211E90 00221E90  01000040 10000
+NULL           
+1STSEGTYPE     Object Memory
+NULL           segment  start    alloc    end       type     bytes
+1STSEGMENT     001B01A4 01BB0000 022E0E00 022E0E00  00000009 730E00
+NULL           
+1STSEGTYPE     Class Memory
+NULL           segment  start    alloc    end       type     bytes
+1STSEGMENT     61C20954 631E1300 631EA230 63201300  00020040 20000
+1STSEGMENT     61C208F4 63299370 6329DCF0 632A1370  00010040 8010
+1STSEGMENT     61C20894 61C40D90 61C40F30 61C40F30  00010040 1B0
+1STSEGMENT     61C20834 61BAD270 61BAD640 61BAEAF0  00020040 1880
+1STSEGMENT     61C207D4 61C20E60 61C20FF0 61C20FF0  00010040 1A0
+1STSEGMENT     61C20774 61BABAA8 61BABE58 61BAD268  00020040 17C0
+1STSEGMENT     61C20714 6182E450 6182E600 6182E600  00010040 1C0
+1STSEGMENT     61C206B4 61BAA000 61BAA478 61BABAA0  00020040 1AA0
+1STSEGMENT     61C20654 63279358 63294718 63299358  00020040 20000
+1STSEGMENT     6193C03C 63160050 63167F90 63168050  00010040 8010
+1STSEGMENT     6193BFDC 63259350 63260EF0 63279350  00020040 20000
+1STSEGMENT     6193BF7C 63221320 632292B0 63229320  00010040 8010
+1STSEGMENT     6193BF1C 63251340 63258C30 63259340  00010040 8010
+1STSEGMENT     6193BEBC 61E7F4C0 61E970F8 61E9F4C0  00020040 20000
+1STSEGMENT     6193BE5C 631D92F0 631E0FF0 631E12F0  00010040 8010
+1STSEGMENT     6193BDFC 63209300 63211270 63211300  00010040 8010
+1STSEGMENT     6193BD9C 631B92D8 631D8278 631D92D8  00020040 20000
+1STSEGMENT     6193BD3C 631B12C0 631B9130 631B92C0  00010040 8010
+1STSEGMENT     6193BCDC 631912B8 631AF430 631B12B8  00020040 20000
+1STSEGMENT     61BA1BB4 61A958A0 61A9D830 61A9D8A0  00010040 8010
+1STSEGMENT     61BA1B54 631712B0 6318CEE8 631912B0  00020040 20000
+1STSEGMENT     61BA1AF4 61DF8890 61E00840 61E00890  00010040 8010
+1STSEGMENT     61BA1A94 61E4C8A0 61E6AA98 61E6C8A0  00020040 20000
+1STSEGMENT     61BA1A34 61E2C898 61E4C7B0 61E4C898  00020040 20000
+1STSEGMENT     61BA19D4 61D583F0 61D60380 61D603F0  00010040 8010
+1STSEGMENT     61BA1974 61BD2000 61BD9FE0 61BDA000  00010040 8010
+1STSEGMENT     61BA1914 61B71030 61B78FB0 61B79030  00010040 8010
+1STSEGMENT     61BA18B4 61E0A890 61E283C0 61E2A890  00020040 20000
+1STSEGMENT     61BA1854 61D0E830 61D16810 61D16830  00010040 8010
+1STSEGMENT     6180E77C 61DCE310 61DF8770 61DF8880  00020040 2A570
+1STSEGMENT     6180E71C 61C30980 61C38970 61C38980  00010040 8010
+1STSEGMENT     6180E6BC 61D26850 61D44220 61D46850  00020040 20000
+1STSEGMENT     6180E65C 61D66870 61DBA5C0 61DBA7B0  00020040 53F40
+1STSEGMENT     6180E5FC 61C2B1D0 61C2B350 61C2B350  00010040 190
+1STSEGMENT     6180E59C 6180DF50 6180E0F8 6180E2E0  00020040 390
+1STSEGMENT     6180E53C 61C17E20 61C1FD40 61C1FE20  00010040 8010
+1STSEGMENT     6180E4DC 61D1E840 61D26780 61D26840  00010040 8010
+1STSEGMENT     6180E47C 6180FCC0 6180FE50 6180FE50  00010040 1A0
+1STSEGMENT     6180E41C 61B484A0 61B48708 61B48B80  00020040 6E0
+1STSEGMENT     6190FD84 61CDE820 61CFBAF8 61CFE820  00020040 20000
+1STSEGMENT     6190FD24 61CBE818 61CDE5A8 61CDE818  00020040 20000
+1STSEGMENT     6190FCC4 61C9E810 61CBE480 61CBE810  00020040 20000
+1STSEGMENT     6190FC64 61C96800 61C9E7C0 61C9E800  00010040 8010
+1STSEGMENT     6190FC04 61C8E7E0 61C967D0 61C967E0  00010040 8010
+1STSEGMENT     6190FBA4 61BA1FF0 61BA9FC0 61BA9FF0  00010040 8010
+1STSEGMENT     6190FB44 61C41018 61C8DE28 61C8E7D8  00020040 4D7C0
+1STSEGMENT     6190FAE4 61BB1FF0 61BCF8C8 61BD1FF0  00020040 20000
+1STSEGMENT     6190FA84 61B38FF0 61B40FE0 61B40FF0  00010040 8010
+1STSEGMENT     6190FA24 61C21010 61C28FE0 61C29010  00010040 8010
+1STSEGMENT     6182B3CC 61BE2008 61C12DE8 61C13018  00020040 31010
+1STSEGMENT     6182B36C 61B18FE8 61B37EE0 61B38FE8  00020040 20000
+1STSEGMENT     6182B30C 617FFF00 61807ED0 61807F00  00010040 8010
+1STSEGMENT     6182B2AC 61B81030 61BA0338 61BA1030  00020040 20000
+1STSEGMENT     6182B24C 61B69010 61B70FF0 61B71010  00010040 8010
+1STSEGMENT     6182B1EC 61A8D890 61A95870 61A95890  00010040 8010
+1STSEGMENT     6182B18C 61B49000 61B680A0 61B69000  00020040 20000
+1STSEGMENT     6182B12C 61A59C10 61A79780 61A79C10  00020040 20000
+1STSEGMENT     6182B0CC 61A85870 61A8D7B0 61A8D870  00010040 8010
+1STSEGMENT     6182B06C 61A09BF0 61A29290 61A29BF0  00020040 20000
+1STSEGMENT     619E9B7C 6180FF10 61817ED0 61817F10  00010040 8010
+1STSEGMENT     619E9B1C 619D80B0 619E0050 619E00B0  00010040 8010
+1STSEGMENT     619E9ABC 61A79C20 61A81B90 61A81C20  00010040 8010
+1STSEGMENT     619E9A5C 619049C0 6190C980 6190C9C0  00010040 8010
+1STSEGMENT     619E99FC 61EB0020 61F40788 61F40A30  00020040 90A10
+1STSEGMENT     619E999C 61A39C08 61A597C8 61A59C08  00020040 20000
+1STSEGMENT     619E993C 61839D90 61841D30 61841D90  00010040 8010
+1STSEGMENT     619E98DC 61918080 619373E0 61938080  00020040 20000
+1STSEGMENT     619E987C 61831D70 61839CC0 61839D70  00010040 8010
+1STSEGMENT     619E981C 619E9BE8 61A09278 61A09BE8  00020040 20000
+1STSEGMENT     001B09DC 61910070 61917F40 61918070  00010040 8010
+1STSEGMENT     001B097C 618D0048 618EF3E8 618F0048  00020040 20000
+1STSEGMENT     001B091C 619880A0 6198FFE0 619900A0  00010040 8010
+1STSEGMENT     001B08BC 619B80A8 619D63B8 619D80A8  00020040 20000
+1STSEGMENT     001B085C 61960090 61968070 61968090  00010040 8010
+1STSEGMENT     001B07FC 61940080 6195E3A8 61960080  00020040 20000
+1STSEGMENT     001B079C 7FC15D10 7FC1616C 7FC1616C  04020104 48C
+1STSEGMENT     001B073C 7FEEE4F8 7FEEE928 7FEEE928  04200104 460
+1STSEGMENT     001B06DC 617F3EF0 617FBED0 617FBEF0  00010040 8010
+1STSEGMENT     001B067C 617D3EE8 617F2950 617F3EE8  00020040 20000
+NULL           
+1STSEGTYPE     JIT Code Cache
+NULL           segment  start    alloc    end       type     bytes
+1STSEGMENT     0021147C 63960000 639E0000 639E0000  00000068 80000
+1STSEGMENT     0021141C 615F0000 61670000 61670000  00000068 80000
+NULL           
+1STSEGTYPE     JIT Data Cache
+NULL           segment  start    alloc    end       type     bytes
+1STSEGMENT     00211564 616D0020 6171F82C 61750020  00000048 80000
+NULL           
+1STGCHTYPE     GC History  
+3STHSTTYPE     13:37:56:12944871 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2872808/7540224 loa=0/0 
+3STHSTTYPE     13:37:56:12943515 GMT j9mm.139 -   Reference count end: weak=10 soft=227 phantom=0 threshold=12 maxThreshold=32 
+3STHSTTYPE     13:37:56:12906461 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=10 soft=227 threshold=9 phantom=0 finalizers=586 newspace=0/0 oldspace=2873624/7540224 loa=0/0 
+3STHSTTYPE     13:37:56:12839584 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:56:10801174 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:56:10404428 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:56:10402620 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:56:2593312 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:56:2577496 GMT j9mm.52 -   GlobalGC start: weakrefs=10 soft=227 phantom=0 finalizers=586 globalcount=11 scavengecount=0 
+3STHSTTYPE     13:37:56:2569362 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.009 meanexclusiveaccessms=0.009 threads=0 lastthreadtid=0x001AE200 beatenbyotherthread=0 
+3STHSTTYPE     13:37:56:2568007 GMT j9mm.138 -   Reference count start: weak=10 soft=227 phantom=0 threshold=9 maxThreshold=32 
+3STHSTTYPE     13:37:56:2566651 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/6491648 loa=0/0 requestedbytes=816 
+3STHSTTYPE     13:37:36:873704021 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=1947296/6491648 loa=0/0 
+3STHSTTYPE     13:37:36:873703117 GMT j9mm.139 -   Reference count end: weak=10 soft=227 phantom=0 threshold=9 maxThreshold=32 
+3STHSTTYPE     13:37:36:873682783 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=10 soft=227 threshold=13 phantom=0 finalizers=586 newspace=0/0 oldspace=1949040/6491648 loa=0/0 
+3STHSTTYPE     13:37:36:873646181 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:36:872254857 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:36:872067781 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:36:872067329 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:36:869445549 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:36:869434252 GMT j9mm.52 -   GlobalGC start: weakrefs=10 soft=227 phantom=0 finalizers=634 globalcount=10 scavengecount=0 
+3STHSTTYPE     13:37:36:869428829 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x001AE200 beatenbyotherthread=0 
+3STHSTTYPE     13:37:36:869427925 GMT j9mm.138 -   Reference count start: weak=10 soft=227 phantom=0 threshold=13 maxThreshold=32 
+3STHSTTYPE     13:37:36:869427022 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/5242880 loa=0/0 requestedbytes=1480 
+3STHSTTYPE     13:37:35:578566199 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2265472/5242880 loa=0/0 
+3STHSTTYPE     13:37:35:578565747 GMT j9mm.139 -   Reference count end: weak=10 soft=227 phantom=0 threshold=13 maxThreshold=32 
+3STHSTTYPE     13:37:35:578551739 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=10 soft=227 threshold=11 phantom=0 finalizers=587 newspace=0/0 oldspace=2265504/5242880 loa=0/0 
+3STHSTTYPE     13:37:35:578507907 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:35:577893809 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:35:577763217 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:35:577762765 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:35:574802530 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:35:574793041 GMT j9mm.52 -   GlobalGC start: weakrefs=11 soft=227 phantom=0 finalizers=662 globalcount=9 scavengecount=0 
+3STHSTTYPE     13:37:35:574788522 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.005 meanexclusiveaccessms=0.005 threads=0 lastthreadtid=0x001AE200 beatenbyotherthread=0 
+3STHSTTYPE     13:37:35:574787618 GMT j9mm.138 -   Reference count start: weak=11 soft=227 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     13:37:35:574786714 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/4194304 loa=0/0 requestedbytes=32 
+3STHSTTYPE     13:37:35:430171712 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=1480672/4194304 loa=0/0 
+3STHSTTYPE     13:37:35:430171260 GMT j9mm.139 -   Reference count end: weak=9 soft=222 phantom=0 threshold=11 maxThreshold=32 
+3STHSTTYPE     13:37:35:430155896 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=9 soft=222 threshold=12 phantom=0 finalizers=586 newspace=0/0 oldspace=1480704/4194304 loa=0/0 
+3STHSTTYPE     13:37:35:430152733 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:35:429559873 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:35:429444193 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:35:429443289 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:35:426458201 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:35:426448260 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=222 phantom=0 finalizers=587 globalcount=8 scavengecount=0 
+3STHSTTYPE     13:37:35:426442385 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.005 meanexclusiveaccessms=0.005 threads=0 lastthreadtid=0x001AE200 beatenbyotherthread=0 
+3STHSTTYPE     13:37:35:426441482 GMT j9mm.138 -   Reference count start: weak=9 soft=222 phantom=0 threshold=12 maxThreshold=32 
+3STHSTTYPE     13:37:35:426440578 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/4194304 loa=0/0 requestedbytes=32 
+3STHSTTYPE     13:37:35:177128332 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=1682232/4194304 loa=0/0 
+3STHSTTYPE     13:37:35:177127428 GMT j9mm.139 -   Reference count end: weak=8 soft=222 phantom=0 threshold=12 maxThreshold=32 
+3STHSTTYPE     13:37:35:177110709 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=8 soft=222 threshold=13 phantom=0 finalizers=584 newspace=0/0 oldspace=1747784/4194304 loa=0/0 
+3STHSTTYPE     13:37:35:177106642 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:35:177084048 GMT j9mm.137 -   Compact end: bytesmoved=2419088 
+3STHSTTYPE     13:37:35:169265702 GMT j9mm.136 -   Compact start: reason=compact to meet allocation 
+3STHSTTYPE     13:37:35:169264798 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:35:169158156 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:35:169157704 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:35:166805241 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:35:166797107 GMT j9mm.52 -   GlobalGC start: weakrefs=8 soft=224 phantom=0 finalizers=600 globalcount=7 scavengecount=0 
+3STHSTTYPE     13:37:35:166792137 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.005 meanexclusiveaccessms=0.005 threads=0 lastthreadtid=0x001AE200 beatenbyotherthread=0 
+3STHSTTYPE     13:37:35:166791233 GMT j9mm.138 -   Reference count start: weak=8 soft=224 phantom=0 threshold=13 maxThreshold=32 
+3STHSTTYPE     13:37:35:166790329 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=506800/4194304 loa=0/0 requestedbytes=65552 
+3STHSTTYPE     13:37:35:32370989 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=1746728/4194304 loa=0/0 
+3STHSTTYPE     13:37:35:32370537 GMT j9mm.139 -   Reference count end: weak=8 soft=219 phantom=0 threshold=13 maxThreshold=32 
+3STHSTTYPE     13:37:35:32356981 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=8 soft=219 threshold=15 phantom=0 finalizers=579 newspace=0/0 oldspace=1747264/4194304 loa=0/0 
+3STHSTTYPE     13:37:35:32353818 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:35:31849073 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:35:31746046 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:35:31745594 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:35:29291911 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:35:29282873 GMT j9mm.52 -   GlobalGC start: weakrefs=9 soft=219 phantom=0 finalizers=581 globalcount=6 scavengecount=0 
+3STHSTTYPE     13:37:35:29277451 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.005 meanexclusiveaccessms=0.005 threads=0 lastthreadtid=0x001AE200 beatenbyotherthread=0 
+3STHSTTYPE     13:37:35:29276547 GMT j9mm.138 -   Reference count start: weak=9 soft=219 phantom=0 threshold=15 maxThreshold=32 
+3STHSTTYPE     13:37:35:29276095 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/4194304 loa=0/0 requestedbytes=24 
+3STHSTTYPE     13:37:34:806047898 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2013240/4194304 loa=0/0 
+3STHSTTYPE     13:37:34:806046543 GMT j9mm.139 -   Reference count end: weak=8 soft=207 phantom=0 threshold=15 maxThreshold=32 
+3STHSTTYPE     13:37:34:806026660 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=8 soft=207 threshold=19 phantom=0 finalizers=578 newspace=0/0 oldspace=2013272/4194304 loa=0/0 
+3STHSTTYPE     13:37:34:806023045 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:34:805402169 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:34:805235427 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:34:805234975 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:34:803070944 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:34:803060551 GMT j9mm.52 -   GlobalGC start: weakrefs=8 soft=207 phantom=0 finalizers=580 globalcount=5 scavengecount=0 
+3STHSTTYPE     13:37:34:803055580 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.006 meanexclusiveaccessms=0.006 threads=0 lastthreadtid=0x001AE200 beatenbyotherthread=0 
+3STHSTTYPE     13:37:34:803054676 GMT j9mm.138 -   Reference count start: weak=8 soft=207 phantom=0 threshold=19 maxThreshold=32 
+3STHSTTYPE     13:37:34:803053773 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=0/4194304 loa=0/0 requestedbytes=32 
+3STHSTTYPE     13:37:34:632375960 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2500584/4194304 loa=0/0 
+3STHSTTYPE     13:37:34:632375508 GMT j9mm.139 -   Reference count end: weak=6 soft=7 phantom=0 threshold=19 maxThreshold=32 
+3STHSTTYPE     13:37:34:632362403 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=6 soft=7 threshold=15 phantom=0 finalizers=574 newspace=0/0 oldspace=2559464/4194304 loa=0/0 
+3STHSTTYPE     13:37:34:632358788 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:34:632347040 GMT j9mm.94 -   Class unloading end: classloadersunloaded=0 classesunloaded=0 
+3STHSTTYPE     13:37:34:632323994 GMT j9mm.60 -   Class unloading start 
+3STHSTTYPE     13:37:34:632299141 GMT j9mm.137 -   Compact end: bytesmoved=1633912 
+3STHSTTYPE     13:37:34:625749209 GMT j9mm.136 -   Compact start: reason=compact on aggressive collection 
+3STHSTTYPE     13:37:34:625747853 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:34:625570718 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:34:625570266 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:34:623981021 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:34:623975598 GMT j9mm.52 -   GlobalGC start: weakrefs=6 soft=26 phantom=0 finalizers=574 globalcount=4 scavengecount=0 
+3STHSTTYPE     13:37:34:623918210 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=6 soft=26 threshold=14 phantom=0 finalizers=574 newspace=0/0 oldspace=2013888/4194304 loa=209408/209408 
+3STHSTTYPE     13:37:34:623914595 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:34:623462720 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:34:623264798 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:34:623264798 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:34:621757794 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:34:621748757 GMT j9mm.52 -   GlobalGC start: weakrefs=6 soft=26 phantom=0 finalizers=575 globalcount=3 scavengecount=0 
+3STHSTTYPE     13:37:34:621744238 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.004 meanexclusiveaccessms=0.004 threads=0 lastthreadtid=0x001AE200 beatenbyotherthread=0 
+3STHSTTYPE     13:37:34:621743786 GMT j9mm.138 -   Reference count start: weak=6 soft=26 phantom=0 threshold=14 maxThreshold=32 
+3STHSTTYPE     13:37:34:621742882 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=1301272/4194304 loa=209408/209408 requestedbytes=58880 
+3STHSTTYPE     13:37:34:566625395 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=1908016/4194304 loa=209408/209408 
+3STHSTTYPE     13:37:34:566624491 GMT j9mm.139 -   Reference count end: weak=3 soft=22 phantom=0 threshold=14 maxThreshold=32 
+3STHSTTYPE     13:37:34:566606416 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=3 soft=22 threshold=18 phantom=0 finalizers=544 newspace=0/0 oldspace=1921152/4194304 loa=209408/209408 
+3STHSTTYPE     13:37:34:566602349 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:34:566025756 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:34:565811568 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:34:565811116 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:34:563914143 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:34:563906009 GMT j9mm.52 -   GlobalGC start: weakrefs=3 soft=23 phantom=0 finalizers=849 globalcount=2 scavengecount=0 
+3STHSTTYPE     13:37:34:563901039 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.005 meanexclusiveaccessms=0.005 threads=0 lastthreadtid=0x001AE200 beatenbyotherthread=0 
+3STHSTTYPE     13:37:34:563900135 GMT j9mm.138 -   Reference count start: weak=3 soft=23 phantom=0 threshold=18 maxThreshold=32 
+3STHSTTYPE     13:37:34:563899683 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=381800/4194304 loa=209408/209408 requestedbytes=13136 
+3STHSTTYPE     13:37:34:360206055 GMT j9mm.134 -   Allocation failure end: newspace=0/0 oldspace=2365784/4194304 loa=209408/209408 
+3STHSTTYPE     13:37:34:360205603 GMT j9mm.139 -   Reference count end: weak=3 soft=15 phantom=0 threshold=18 maxThreshold=32 
+3STHSTTYPE     13:37:34:360189335 GMT j9mm.91 -   GlobalGC end: workstackoverflow=0 overflowcount=0 weakrefs=3 soft=15 threshold=32 phantom=0 finalizers=367 newspace=0/0 oldspace=2366592/4194304 loa=209408/209408 
+3STHSTTYPE     13:37:34:360186172 GMT j9mm.90 -   GlobalGC collect complete 
+3STHSTTYPE     13:37:34:359528694 GMT j9mm.57 -   Sweep end 
+3STHSTTYPE     13:37:34:359327157 GMT j9mm.56 -   Sweep start 
+3STHSTTYPE     13:37:34:359326253 GMT j9mm.55 -   Mark end 
+3STHSTTYPE     13:37:34:356952553 GMT j9mm.54 -   Mark start 
+3STHSTTYPE     13:37:34:356941708 GMT j9mm.52 -   GlobalGC start: weakrefs=7 soft=15 phantom=0 finalizers=376 globalcount=1 scavengecount=0 
+3STHSTTYPE     13:37:34:356937641 GMT j9mm.135 -   Exclusive access: exclusiveaccessms=0.004 meanexclusiveaccessms=0.004 threads=0 lastthreadtid=0x001AE200 beatenbyotherthread=0 
+3STHSTTYPE     13:37:34:356936737 GMT j9mm.138 -   Reference count start: weak=7 soft=15 phantom=0 threshold=32 maxThreshold=32 
+3STHSTTYPE     13:37:34:356935833 GMT j9mm.133 -   Allocation failure start: newspace=0/0 oldspace=209408/4194304 loa=209408/209408 requestedbytes=32 
+NULL           
+NULL           ------------------------------------------------------------------------
+0SECTION       LOCKS subcomponent dump routine
+NULL           ===============================
+NULL           
+1LKPOOLINFO    Monitor pool info:
+2LKPOOLTOTAL     Current total number of monitors: 1
+NULL           
+1LKMONPOOLDUMP Monitor Pool Dump (flat & inflated object-monitors):
+2LKMONINUSE      sys_mon_t:0x62E81618 infl_mon_t: 0x62E81650:
+3LKMONOBJECT       java/util/Timer$TimerImpl@01DD1000/01DD100C: <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "MySQL Statement Cancellation Timer" (0x61B05000)
+NULL           
+1LKREGMONDUMP  JVM System Monitor Dump (registered monitors):
+2LKREGMON          Thread global lock (0x00380E10): <unowned>
+2LKREGMON          Windows native console event lock lock (0x00380E64): <unowned>
+2LKREGMON          NLS hash table lock (0x00380EB8): <unowned>
+2LKREGMON          portLibrary_j9sig_async_monitor lock (0x00380F0C): <unowned>
+2LKREGMON          Hook Interface lock (0x00380F60): <unowned>
+2LKREGMON          &(vm->bytecodeTableMutex) lock (0x00380FB4): <unowned>
+2LKREGMON          Hook Interface lock (0x00381008): <unowned>
+2LKREGMON          dump tokens mutex lock (0x0038105C): <unowned>
+2LKREGMON          MM_SublistPool lock (0x003810B0): <unowned>
+2LKREGMON          MM_SublistPool lock (0x00381104): <unowned>
+2LKREGMON          MM_SublistPool lock (0x00381158): <unowned>
+2LKREGMON          MM_SublistPool lock (0x003811AC): <unowned>
+2LKREGMON          MM_SublistPool lock (0x00381200): <unowned>
+2LKREGMON          Undead Segment List Monitor lock (0x00381254): <unowned>
+2LKREGMON          Hook Interface lock (0x003812A8): <unowned>
+2LKREGMON          Hook Interface lock (0x003812FC): <unowned>
+2LKREGMON          MM_ParallelDispatcher::slaveThread lock (0x00381350): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "Gc Slave Thread" (0x619AE700)
+3LKWAITNOTIFY            "Gc Slave Thread" (0x619B4200)
+3LKWAITNOTIFY            "Gc Slave Thread" (0x619B4700)
+2LKREGMON          MM_ParallelDispatcher::shutdownCount lock (0x003813A4): <unowned>
+2LKREGMON          MM_ParallelDispatcher::synchronize lock (0x003813F8): <unowned>
+2LKREGMON          MM_WorkPackets::inputList lock (0x0038144C): <unowned>
+2LKREGMON          MM_WorkPackets::allocatingPackets lock (0x003814A0): <unowned>
+2LKREGMON          MM_GCExtensions::gcStats lock (0x003814F4): <unowned>
+2LKREGMON          &vm->verboseStateMutex lock (0x00381548): <unowned>
+2LKREGMON          VM thread list lock (0x0038159C): Flat locked by "JDWP Transport Listener: dt_socket" (0x61AF9000), entry count 1
+2LKREGMON          VM exclusive access lock (0x003815F0): <unowned>
+2LKREGMON          VM Runtime flags Mutex lock (0x00381644): <unowned>
+2LKREGMON          VM Extended method block flags Mutex lock (0x00381698): <unowned>
+2LKREGMON          Async event mutex lock (0x003816EC): <unowned>
+2LKREGMON          JIT/GC class unload mutex lock (0x00381740): <unowned>
+2LKREGMON          VM bind native lock (0x00381794): <unowned>
+2LKREGMON          VM class loader blocks lock (0x003817E8): <unowned>
+2LKREGMON          VM class table lock (0x0038183C): Flat locked by "JDWP Transport Listener: dt_socket" (0x61AF9000), entry count 1
+2LKREGMON          VM string table lock (0x00381890): <unowned>
+2LKREGMON          VM segment lock (0x003818E4): <unowned>
+2LKREGMON          VM JNI frame lock (0x00381938): <unowned>
+2LKREGMON          VM GC finalize master lock (0x0038198C): <unowned>
+2LKREGMON          VM GC finalize run finalization lock (0x003819E0): <unowned>
+2LKREGMON          VM memory space list lock (0x00381A34): <unowned>
+2LKREGMON          VM JXE description lock (0x00381A88): <unowned>
+2LKREGMON          VM AOT runtime init lock (0x00381ADC): <unowned>
+2LKREGMON          VM monitor table lock (0x00381B30): <unowned>
+2LKREGMON          VM volatile long lock (0x00381B84): <unowned>
+2LKREGMON          VM mem segment list lock (0x00381BD8): <unowned>
+2LKREGMON          VM mem segment list lock (0x00381C2C): <unowned>
+2LKREGMON          VM mem segment list lock (0x00381C80): <unowned>
+2LKREGMON          FinalizeListManager lock (0x00381CD4): <unowned>
+2LKREGMON          &(jvmtiData->mutex) lock (0x00381D28): <unowned>
+2LKREGMON          &(jvmtiData->redefineMutex) lock (0x00381D7C): Flat locked by "JDWP Transport Listener: dt_socket" (0x61AF9000), entry count 1
+2LKREGMON          BCVD verifier lock (0x00381DD0): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x00381E24): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x00381E78): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "main" (0x001AE200)
+2LKREGMON          jvmriDumpThread lock (0x00381ECC): <unowned>
+2LKREGMON          tracemon lock (0x00381F20): <unowned>
+2LKREGMON          tracemon lock (0x00381F74): <unowned>
+2LKREGMON          tracemon lock (0x00381FC8): <unowned>
+2LKREGMON          jvmriDumpThread lock (0x0038201C): <unowned>
+2LKREGMON          JIT-MonitorTableMonitor lock (0x00382070): <unowned>
+2LKREGMON          JIT-MemoryAllocMonitor lock (0x003820C4): <unowned>
+2LKREGMON          JIT-MemoryUseMonitor lock (0x00382118): <unowned>
+2LKREGMON          Hook Interface lock (0x0038216C): <unowned>
+2LKREGMON          JIT-jitConfig->mutex lock (0x003821C0): <unowned>
+2LKREGMON          JIT-AssumptionTableMutex lock (0x00382214): <unowned>
+2LKREGMON          VM mem segment list lock (0x00382268): <unowned>
+2LKREGMON          VM mem segment list lock (0x003822BC): <unowned>
+2LKREGMON          JIT-CompilationQueueMonitor lock (0x019D3D70): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "JIT Compilation Thread" (0x001AE700)
+2LKREGMON          JIT-DLTmonitor lock (0x019D3DC4): <unowned>
+2LKREGMON          JIT-CodeCacheListMutex lock (0x019D3E18): <unowned>
+2LKREGMON          JIT-CodeCacheMonitor-?? lock (0x019D3E6C): <unowned>
+2LKREGMON          OptimizationPlanMonitor lock (0x019D3EC0): <unowned>
+2LKREGMON          JIT-InterpreterProfilingMonitor lock (0x019D3F14): <unowned>
+2LKREGMON          ValueProfilingMutex lock (0x019D3F68): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x019D3FBC): <unowned>
+2LKREGMON          &(j9env->mutex) lock (0x019D4010): <unowned>
+2LKREGMON          management fields lock lock (0x019D4064): <unowned>
+2LKREGMON          &vm->managementData->notificationMonitor lock (0x019D40B8): <unowned>
+2LKREGMON          &vm->managementData->dlparNotificationMonitor lock (0x019D410C): <unowned>
+2LKREGMON          JIT-QueueSlotMonitor-0 lock (0x019D4160): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x019D41B4): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x019D4208): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x019D425C): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x019D42B0): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x019D4304): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x019D4358): <unowned>
+2LKREGMON          JDWP Reference Table Monitor lock (0x019D43AC): <unowned>
+2LKREGMON          JDWP Thread Lock lock (0x019D4400): <unowned>
+2LKREGMON          JDWP Step Handler Lock lock (0x019D4454): <unowned>
+2LKREGMON          JDWP Invocation Lock lock (0x019D44A8): <unowned>
+2LKREGMON          JDWP Resume Lock lock (0x019D44FC): <unowned>
+2LKREGMON          JDWP Initialization Monitor lock (0x019D4550): <unowned>
+2LKREGMON          JDWP Transport Listener Monitor lock (0x019D45A4): <unowned>
+2LKREGMON          JDWP Transport Send Monitor lock (0x019D45F8): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x019D464C): <unowned>
+2LKREGMON          JDWP Callback Lock lock (0x019D46A0): <unowned>
+2LKREGMON          JDWP Callback Block lock (0x019D46F4): <unowned>
+2LKREGMON          JDWP Event Handler Lock lock (0x019D4748): <unowned>
+2LKREGMON          JDWP Event Helper Queue Monitor lock (0x019D479C): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "JDWP Event Helper Thread" (0x61AF9500)
+2LKREGMON          JDWP Event Helper Completion Monitor lock (0x019D47F0): <unowned>
+2LKREGMON          JDWP Event Block CommandLoop Monitor lock (0x019D4844): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x019D4898): <unowned>
+2LKREGMON          JDWP Command Queue Lock lock (0x019D48EC): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x019D4940): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4994): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D49E8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4A3C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4A90): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4AE4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4B38): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4B8C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4BE0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4C34): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4C88): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4CDC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4D30): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4D84): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4DD8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4E2C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4E80): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4ED4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4F28): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4F7C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D4FD0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D5024): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D5078): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D50CC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D5120): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D5174): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D51C8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x019D521C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623383F8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6233844C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623384A0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623384F4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338548): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6233859C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623385F0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338644): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338698): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623386EC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338740): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338794): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623387E8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6233883C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338890): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623388E4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338938): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6233898C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623389E0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338A34): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338A88): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338ADC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338B30): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338B84): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338BD8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338C2C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338C80): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338CD4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338D28): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338D7C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338DD0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338E24): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338E78): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338ECC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338F20): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338F74): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62338FC8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6233901C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339070): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623390C4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339118): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6233916C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623391C0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339214): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339268): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623392BC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339310): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339364): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623393B8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6233940C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339460): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623394B4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339508): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6233955C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623395B0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339604): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339658): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623396AC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339700): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339754): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623397A8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623397FC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62339850): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x623398A4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x626497F8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264984C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x626498A0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x626498F4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649948): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264999C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x626499F0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649A44): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649A98): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649AEC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649B40): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649B94): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649BE8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649C3C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649C90): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649CE4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649D38): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649D8C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649DE0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649E34): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649E88): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649EDC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649F30): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649F84): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62649FD8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A02C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A080): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A0D4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A128): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A17C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A1D0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A224): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A278): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A2CC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A320): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A374): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A3C8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A41C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A470): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A4C4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A518): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A56C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A5C0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A614): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A668): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A6BC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A710): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A764): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A7B8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A80C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A860): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A8B4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A908): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A95C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264A9B0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264AA04): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264AA58): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264AAAC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264AB00): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264AB54): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264ABA8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264ABFC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264AC50): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6264ACA4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62932F38): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62932F8C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62932FE0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933034): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933088): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629330DC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933130): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933184): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629331D8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6293322C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933280): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629332D4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933328): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6293337C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629333D0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933424): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933478): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629334CC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933520): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933574): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629335C8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6293361C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933670): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629336C4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933718): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6293376C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629337C0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933814): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933868): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629338BC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933910): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933964): <unowned>
+2LKREGMON          &(slaveData->monitor) lock (0x629339B8): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "Finalizer thread" (0x61AFC500)
+2LKREGMON          Thread public flags mutex lock (0x62933A0C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933A60): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933AB4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933B08): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933B5C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933BB0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933C04): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933C58): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933CAC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933D00): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933D54): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933DA8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933DFC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933E50): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933EA4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933EF8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933F4C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933FA0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62933FF4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62934048): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6293409C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629340F0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62934144): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62934198): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629341EC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62934240): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62934294): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629342E8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x6293433C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62934390): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x629343E4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFB928): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFB97C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFB9D0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBA24): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBA78): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBACC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBB20): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBB74): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBBC8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBC1C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBC70): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBCC4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBD18): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBD6C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBDC0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBE14): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBE68): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBEBC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBF10): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBF64): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFBFB8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC00C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC060): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC0B4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC108): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC15C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC1B0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC204): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC258): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC2AC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC300): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC354): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC3A8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC3FC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC450): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC4A4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC4F8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC54C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC5A0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC5F4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC648): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC69C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC6F0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC744): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC798): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC7EC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC840): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC894): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC8E8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC93C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC990): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFC9E4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCA38): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCA8C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCAE0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCB34): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCB88): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCBDC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCC30): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCC84): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCCD8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCD2C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCD80): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62BFCDD4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E80CE8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E80D3C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E80D90): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E80DE4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E80E38): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E80E8C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E80EE0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E80F34): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E80F88): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E80FDC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E81030): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E81084): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E810D8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E8112C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E81180): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E811D4): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E81228): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E8127C): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E812D0): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E81324): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E81378): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E813CC): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E81420): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E81474): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E814C8): <unowned>
+2LKREGMON          JVM_RawMonitor lock (0x62E8151C): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x62E81570): <unowned>
+2LKREGMON          Thread public flags mutex lock (0x62E815C4): <unowned>
+2LKREGMON          JIT-CodeCacheMonitor-?? lock (0x62E8166C): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x62E816C0): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x62E81714): <unowned>
+2LKREGMON          &(classLoader->mutex) lock (0x62E81768): <unowned>
+NULL           
+NULL           ------------------------------------------------------------------------
+0SECTION       THREADS subcomponent dump routine
+NULL           =================================
+NULL            
+1XMCURTHDINFO  Current Thread Details
+NULL           ----------------------
+3XMTHREADINFO      "JDWP Transport Listener: dt_socket" TID:0x61AF9000, j9thread_t:0x019FEF7C, state:R, prio=10
+3XMTHREADINFO1            (native thread ID:0x2C78, native priority:0xA, native policy:UNKNOWN)
+NULL           
+1XMTHDINFO     All Thread Details
+NULL           ------------------
+NULL           
+2XMFULLTHDDUMP Full thread dump J9 VM (J2RE 6.0 IBM J9 2.4 Windows Vista x86-32 build jvmwi3260-20080816_2209320080816_022093_lHdSMr, native threads):
+3XMTHREADINFO      "main" TID:0x001AE200, j9thread_t:0x00382334, state:CW, prio=5
+3XMTHREADINFO1            (native thread ID:0x2E2C, native priority:0x5, native policy:UNKNOWN)
+4XESTACKTRACE          at EDU/pku/ly/owlservice/test/TestPublishAndGet.Inquiry(TestPublishAndGet.java:27)
+4XESTACKTRACE          at EDU/pku/ly/owlservice/test/TestPublishAndGet.main(TestPublishAndGet.java:19)
+3XMTHREADINFO      "JIT Compilation Thread" TID:0x001AE700, j9thread_t:0x00382598, state:CW, prio=10
+3XMTHREADINFO1            (native thread ID:0x33DC, native priority:0xB, native policy:UNKNOWN)
+3XMTHREADINFO      "Signal Dispatcher" TID:0x619AE200, j9thread_t:0x003827FC, state:R, prio=5
+3XMTHREADINFO1            (native thread ID:0x2368, native priority:0x5, native policy:UNKNOWN)
+4XESTACKTRACE          at com/ibm/misc/SignalDispatcher.waitForSignal(Native Method)
+4XESTACKTRACE          at com/ibm/misc/SignalDispatcher.run(SignalDispatcher.java:54)
+3XMTHREADINFO      "Gc Slave Thread" TID:0x619AE700, j9thread_t:0x00382F28, state:CW, prio=5
+3XMTHREADINFO1            (native thread ID:0x226C, native priority:0x5, native policy:UNKNOWN)
+3XMTHREADINFO      "Gc Slave Thread" TID:0x619B4200, j9thread_t:0x019FEAB4, state:CW, prio=5
+3XMTHREADINFO1            (native thread ID:0x2FA0, native priority:0x5, native policy:UNKNOWN)
+3XMTHREADINFO      "Gc Slave Thread" TID:0x619B4700, j9thread_t:0x019FED18, state:CW, prio=5
+3XMTHREADINFO1            (native thread ID:0x178C, native priority:0x5, native policy:UNKNOWN)
+3XMTHREADINFO      "JDWP Transport Listener: dt_socket" TID:0x61AF9000, j9thread_t:0x019FEF7C, state:R, prio=10
+3XMTHREADINFO1            (native thread ID:0x2C78, native priority:0xA, native policy:UNKNOWN)
+3XMTHREADINFO      "JDWP Event Helper Thread" TID:0x61AF9500, j9thread_t:0x019FF1E0, state:CW, prio=10
+3XMTHREADINFO1            (native thread ID:0x3098, native priority:0xA, native policy:UNKNOWN)
+3XMTHREADINFO      "JDWP Command Reader" TID:0x61AFC000, j9thread_t:0x019FF444, state:R, prio=10
+3XMTHREADINFO1            (native thread ID:0x24AC, native priority:0xA, native policy:UNKNOWN)
+3XMTHREADINFO      "Finalizer thread" TID:0x61AFC500, j9thread_t:0x019FF6A8, state:CW, prio=5
+3XMTHREADINFO1            (native thread ID:0x3710, native priority:0x5, native policy:UNKNOWN)
+3XMTHREADINFO      "MySQL Statement Cancellation Timer" TID:0x61B05000, j9thread_t:0x62F06854, state:CW, prio=5
+3XMTHREADINFO1            (native thread ID:0x1A84, native priority:0x5, native policy:UNKNOWN)
+4XESTACKTRACE          at java/lang/Object.wait(Native Method)
+4XESTACKTRACE          at java/lang/Object.wait(Object.java:167)
+4XESTACKTRACE          at java/util/Timer$TimerImpl.run(Bytecode PC:35)
+NULL           ------------------------------------------------------------------------
+0SECTION       Stack backtrace for failing native thread
+NULL           =========================================
+NULL           
+BTTHREADID     Native thread id: 0x00002C78
+1BTSTACKENT          computeVTable:0x7FF1BBCF [0x7FF1B870 +0x0000035F]
+1BTSTACKENT          internalCreateRAMClassFromROMClass:0x7FEE3D39 [0x7FEE35B0 +0x00000789]
+1BTSTACKENT          recreateRAMClasses:0x7FCAB813 [0x7FCAB6F0 +0x00000123]
+1BTSTACKENT          0x61AF9000
+1BTSTACKENT          0x001CF734
+1BTSTACKENT          0x631E9770
+NULL           ------------------------------------------------------------------------
+0SECTION       CLASSES subcomponent dump routine
+NULL           =================================
+1CLTEXTCLLOS   	Classloader summaries
+1CLTEXTCLLSS   		12345678: 1=primordial,2=extension,3=shareable,4=middleware,5=system,6=trusted,7=application,8=delegating
+2CLTEXTCLLOADER		p---st-- Loader *System*(0x01C518C0)
+3CLNMBRLOADEDLIB		Number of loaded libraries 4
+3CLNMBRLOADEDCL			Number of loaded classes 981
+2CLTEXTCLLOADER		-x--st-- Loader sun/misc/Launcher$ExtClassLoader(0x01C538E8), Parent *none*(0x00000000)
+3CLNMBRLOADEDLIB		Number of loaded libraries 0
+3CLNMBRLOADEDCL			Number of loaded classes 1
+2CLTEXTCLLOADER		-----ta- Loader sun/misc/Launcher$AppClassLoader(0x01C9D120), Parent sun/misc/Launcher$ExtClassLoader(0x01C538E8)
+3CLNMBRLOADEDLIB		Number of loaded libraries 0
+3CLNMBRLOADEDCL			Number of loaded classes 320
+2CLTEXTCLLOADER		----st-- Loader sun/reflect/DelegatingClassLoader(0x01DC51F8), Parent *none*(0x00000000)
+3CLNMBRLOADEDLIB		Number of loaded libraries 0
+3CLNMBRLOADEDCL			Number of loaded classes 1
+2CLTEXTCLLOADER		-----t-- Loader sun/reflect/DelegatingClassLoader(0x01F4E4B0), Parent sun/misc/Launcher$AppClassLoader(0x01C9D120)
+3CLNMBRLOADEDLIB		Number of loaded libraries 0
+3CLNMBRLOADEDCL			Number of loaded classes 1
+2CLTEXTCLLOADER		-----t-- Loader sun/reflect/DelegatingClassLoader(0x01F56880), Parent sun/misc/Launcher$AppClassLoader(0x01C9D120)
+3CLNMBRLOADEDLIB		Number of loaded libraries 0
+3CLNMBRLOADEDCL			Number of loaded classes 1
+2CLTEXTCLLOADER		-----t-- Loader sun/reflect/DelegatingClassLoader(0x01F5B4B8), Parent sun/misc/Launcher$AppClassLoader(0x01C9D120)
+3CLNMBRLOADEDLIB		Number of loaded libraries 0
+3CLNMBRLOADEDCL			Number of loaded classes 1
+1CLTEXTCLLIB   	ClassLoader loaded libraries
+2CLTEXTCLLIB  		Loader *System*(0x01C518C0)
+3CLTEXTLIB   			C:\luoshan\SourceCode\juddi\running\jdk\jre\bin\java
+3CLTEXTLIB   			C:\luoshan\SourceCode\juddi\running\jdk\jre\bin\jclscar_24
+3CLTEXTLIB   			C:\luoshan\SourceCode\juddi\running\jdk\jre\bin\zip
+3CLTEXTLIB   			C:\luoshan\SourceCode\juddi\running\jdk\jre\bin\net
+1CLTEXTCLLOD   	ClassLoader loaded classes
+2CLTEXTCLLOAD  		Loader *System*(0x01C518C0)
+3CLTEXTCLASS   			org/apache/xerces/dom/AttrImpl(0x63251500)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeferredAttrImpl(0x63252030)
+3CLTEXTCLASS   			org/apache/xerces/dom/AttributeMap(0x63252420)
+3CLTEXTCLASS   			org/apache/xerces/dom/NodeListCache(0x63252900)
+3CLTEXTCLASS   			java/beans/IntrospectionException(0x63252A50)
+3CLTEXTCLASS   			java/beans/FeatureDescriptor(0x63252BB0)
+3CLTEXTCLASS   			java/beans/PropertyDescriptor(0x63252FE0)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeepNodeListImpl(0x63253590)
+3CLTEXTCLASS   			java/io/FilterWriter(0x63253850)
+3CLTEXTCLASS   			java/beans/Introspector(0x63253A00)
+3CLTEXTCLASS   			java/beans/BeanInfo(0x63253E30)
+3CLTEXTCLASS   			java/beans/SimpleBeanInfo(0x63253FA0)
+3CLTEXTCLASS   			java/beans/StandardBeanInfo(0x632541D0)
+3CLTEXTCLASS   			java/beans/StandardBeanInfo$PropertyComparator(0x63254C80)
+3CLTEXTCLASS   			java/awt/Image(0x63254E20)
+3CLTEXTCLASS   			[Ljava/awt/Image;(0x63255140)
+3CLTEXTCLASS   			[Ljava/lang/reflect/Method;(0x63255200)
+3CLTEXTCLASS   			java/beans/MethodDescriptor(0x63255310)
+3CLTEXTCLASS   			[Ljava/beans/MethodDescriptor;(0x63255510)
+3CLTEXTCLASS   			[Ljava/beans/PropertyDescriptor;(0x632555D0)
+3CLTEXTCLASS   			java/beans/EventSetDescriptor(0x63255700)
+3CLTEXTCLASS   			[Ljava/beans/EventSetDescriptor;(0x63255D90)
+3CLTEXTCLASS   			java/lang/CloneNotSupportedException(0x63255E80)
+3CLTEXTCLASS   			java/util/HashMap$2(0x63255FE0)
+3CLTEXTCLASS   			java/util/HashMap$ValueIterator(0x632561A0)
+3CLTEXTCLASS   			java/beans/IndexedPropertyDescriptor(0x63256380)
+3CLTEXTCLASS   			java/text/DateFormat(0x632568F0)
+3CLTEXTCLASS   			java/text/SimpleDateFormat(0x63256F60)
+3CLTEXTCLASS   			java/lang/Integer$IntegerCache(0x63257BC0)
+3CLTEXTCLASS   			java/lang/NullPointerException(0x63257D30)
+3CLTEXTCLASS   			java/sql/ParameterMetaData(0x63257E50)
+3CLTEXTCLASS   			java/sql/Date(0x63258030)
+3CLTEXTCLASS   			java/sql/Time(0x632583A0)
+3CLTEXTCLASS   			java/lang/StringIndexOutOfBoundsException(0x632586D0)
+3CLTEXTCLASS   			[Ljava/io/InputStream;(0x63258850)
+3CLTEXTCLASS   			java/util/Arrays$ArrayList(0x63258970)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLContentSpec(0x631D9320)
+3CLTEXTCLASS   			org/apache/xerces/impl/Constants(0x631D9560)
+3CLTEXTCLASS   			org/apache/xerces/impl/Constants$ArrayEnumeration(0x631D9DF0)
+3CLTEXTCLASS   			org/apache/xerces/xs/ItemPSVI(0x631D9F40)
+3CLTEXTCLASS   			org/apache/xerces/xs/AttributePSVI(0x631DA0D0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/models/CMNode(0x631DA1D0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/models/CMBinOp(0x631DA450)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/models/CMUniOp(0x631DA670)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/models/CMLeaf(0x631DA870)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/models/DFAContentModel(0x631DAAE0)
+3CLTEXTCLASS   			[Lorg/apache/xerces/impl/dtd/models/CMLeaf;(0x631DB030)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/models/CMStateSet(0x631DB110)
+3CLTEXTCLASS   			[Lorg/apache/xerces/impl/dtd/models/CMStateSet;(0x631DB3A0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/models/SimpleContentModel(0x631DB460)
+3CLTEXTCLASS   			java/io/CharConversionException(0x631DB630)
+3CLTEXTCLASS   			org/apache/xerces/impl/io/MalformedByteSequenceException(0x631DB790)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeferredDocumentImpl$IntVector(0x631DB990)
+3CLTEXTCLASS   			org/w3c/dom/Element(0x631DBB10)
+3CLTEXTCLASS   			org/w3c/dom/TypeInfo(0x631DBD10)
+3CLTEXTCLASS   			org/apache/xerces/dom/ElementImpl(0x631DBFF0)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeferredElementImpl(0x631DCC30)
+3CLTEXTCLASS   			org/w3c/dom/DocumentType(0x631DD000)
+3CLTEXTCLASS   			org/apache/xerces/dom/DocumentTypeImpl(0x631DD2A0)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeferredDocumentTypeImpl(0x631DDA20)
+3CLTEXTCLASS   			org/w3c/dom/NamedNodeMap(0x631DDEA0)
+3CLTEXTCLASS   			org/apache/xerces/dom/NamedNodeMapImpl(0x631DE050)
+3CLTEXTCLASS   			org/apache/xerces/dom/CharacterDataImpl(0x631DE760)
+3CLTEXTCLASS   			org/w3c/dom/CharacterData(0x631DEC70)
+3CLTEXTCLASS   			org/w3c/dom/Text(0x631DEDA0)
+3CLTEXTCLASS   			org/apache/xerces/dom/TextImpl(0x631DF040)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeferredTextImpl(0x631DF7F0)
+3CLTEXTCLASS   			org/apache/xerces/dom/CharacterDataImpl$1(0x631DFB20)
+3CLTEXTCLASS   			org/w3c/dom/Comment(0x631DFC30)
+3CLTEXTCLASS   			org/apache/xerces/dom/CommentImpl(0x631DFE70)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeferredCommentImpl(0x631E02A0)
+3CLTEXTCLASS   			org/apache/xerces/dom/ElementDefinitionImpl(0x631E06F0)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeferredElementDefinitionImpl(0x631E0B80)
+3CLTEXTCLASS   			org/w3c/dom/Attr(0x631E0EE0)
+3CLTEXTCLASS   			org/apache/xerces/dom/NodeImpl(0x63209460)
+3CLTEXTCLASS   			org/apache/xerces/dom/ChildNode(0x6320A1F0)
+3CLTEXTCLASS   			org/apache/xerces/dom/ParentNode(0x6320A650)
+3CLTEXTCLASS   			org/w3c/dom/Document(0x6320AE40)
+3CLTEXTCLASS   			org/apache/xerces/dom/CoreDocumentImpl(0x6320B410)
+3CLTEXTCLASS   			org/w3c/dom/traversal/DocumentTraversal(0x6320CBC0)
+3CLTEXTCLASS   			org/w3c/dom/events/DocumentEvent(0x6320CC90)
+3CLTEXTCLASS   			org/w3c/dom/ranges/DocumentRange(0x6320CD50)
+3CLTEXTCLASS   			org/apache/xerces/dom/DocumentImpl(0x6320D160)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeferredNode(0x6320DEE0)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeferredDocumentImpl(0x6320E400)
+3CLTEXTCLASS   			[[I(0x6320F4C0)
+3CLTEXTCLASS   			org/apache/xerces/dom/DeferredDocumentImpl$RefCount(0x6320F580)
+3CLTEXTCLASS   			org/apache/xerces/impl/validation/EntityState(0x6320F660)
+3CLTEXTCLASS   			org/apache/xerces/xni/grammars/Grammar(0x6320F730)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/DTDGrammar(0x6320F950)
+3CLTEXTCLASS   			[[Lorg/apache/xerces/xni/QName;(0x63210ED0)
+3CLTEXTCLASS   			[[S(0x63210F90)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/models/ContentModelValidator(0x63211040)
+3CLTEXTCLASS   			[Lorg/apache/xerces/impl/dtd/models/ContentModelValidator;(0x63211110)
+3CLTEXTCLASS   			[[Lorg/apache/xerces/impl/dtd/models/ContentModelValidator;(0x632111D0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/DTDGrammarBucket(0x631B1300)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/DTDDVFactory(0x631B1510)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/ObjectFactory(0x631B16D0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/SecuritySupport(0x631B1B60)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/SecuritySupport$1(0x631B1E70)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/SecuritySupport$2(0x631B1FB0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/SecuritySupport$3(0x631B20E0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/DTDDVFactoryImpl(0x631B2230)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/DatatypeValidator(0x631B24A0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/StringDatatypeValidator(0x631B2570)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/IDDatatypeValidator(0x631B2680)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/IDREFDatatypeValidator(0x631B27F0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/ListDatatypeValidator(0x631B2950)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/ENTITYDatatypeValidator(0x631B2AE0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/NOTATIONDatatypeValidator(0x631B2C20)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/NMTOKENDatatypeValidator(0x631B2D30)
+3CLTEXTCLASS   			org/apache/xerces/impl/validation/ValidationManager(0x631B2E90)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLVersionDetector(0x631B30A0)
+3CLTEXTCLASS   			org/apache/xerces/util/MessageFormatter(0x631B3410)
+3CLTEXTCLASS   			org/apache/xerces/impl/msg/XMLMessageFormatter(0x631B34E0)
+3CLTEXTCLASS   			org/xml/sax/DTDHandler(0x631B36D0)
+3CLTEXTCLASS   			org/xml/sax/ContentHandler(0x631B37A0)
+3CLTEXTCLASS   			org/xml/sax/helpers/DefaultHandler(0x631B3960)
+3CLTEXTCLASS   			org/apache/xerces/jaxp/DefaultValidationErrorHandler(0x631B3C50)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLErrorHandler(0x631B3E80)
+3CLTEXTCLASS   			org/apache/xerces/util/ErrorHandlerWrapper(0x631B3F80)
+3CLTEXTCLASS   			org/xml/sax/SAXException(0x631B4270)
+3CLTEXTCLASS   			org/xml/sax/SAXParseException(0x631B4490)
+3CLTEXTCLASS   			org/xml/sax/ext/EntityResolver2(0x631B46C0)
+3CLTEXTCLASS   			org/apache/xerces/util/EntityResolverWrapper(0x631B47B0)
+3CLTEXTCLASS   			org/apache/xerces/impl/ExternalSubsetResolver(0x631B49C0)
+3CLTEXTCLASS   			org/xml/sax/InputSource(0x631B4AC0)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLInputSource(0x631B4D50)
+3CLTEXTCLASS   			java/util/Arrays(0x631B4FF0)
+3CLTEXTCLASS   			org/apache/xerces/util/SecurityManager(0x631B5FD0)
+3CLTEXTCLASS   			org/apache/xerces/util/URI(0x631B61B0)
+3CLTEXTCLASS   			java/net/HttpURLConnection(0x631B6C60)
+3CLTEXTCLASS   			sun/net/ProgressMonitor(0x631B72A0)
+3CLTEXTCLASS   			sun/net/ProgressMeteringPolicy(0x631B75E0)
+3CLTEXTCLASS   			sun/net/DefaultProgressMeteringPolicy(0x631B76D0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$RewindableInputStream(0x631B7820)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$EncodingInfo(0x631B7AD0)
+3CLTEXTCLASS   			org/apache/xerces/impl/io/UTF8Reader(0x631B7CE0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$ScannedEntity(0x631B80C0)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLChar(0x631B84F0)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLSymbols(0x631B8860)
+3CLTEXTCLASS   			org/apache/xerces/xni/grammars/XMLGrammarPool(0x631B8AC0)
+3CLTEXTCLASS   			org/w3c/dom/NodeList(0x631B8BD0)
+3CLTEXTCLASS   			org/w3c/dom/events/EventTarget(0x631B8CA0)
+3CLTEXTCLASS   			[[[Ljava/lang/String;(0x631B8D90)
+3CLTEXTCLASS   			[Lorg/apache/xerces/impl/dv/DatatypeValidator;(0x631B8E50)
+3CLTEXTCLASS   			[[Lorg/apache/xerces/impl/dv/DatatypeValidator;(0x631B8F10)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/DTDGrammar$QNameHashtable(0x631B8FE0)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLString(0x61A958D0)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLStringBuffer(0x61A95AF0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentFragmentScannerImpl$ElementStack(0x61A95D40)
+3CLTEXTCLASS   			org/apache/xerces/xni/QName(0x61A95ED0)
+3CLTEXTCLASS   			[Lorg/apache/xerces/xni/QName;(0x61A96140)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentFragmentScannerImpl$Dispatcher(0x61A961F0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentFragmentScannerImpl$FragmentContentDispatcher(0x61A962D0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl$ContentDispatcher(0x61A966D0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLNSDocumentScannerImpl$NSContentDispatcher(0x61A96A20)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLAttributes(0x61A96C40)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLAttributesImpl(0x61A96F90)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLAttributesImpl$Attribute(0x61A976C0)
+3CLTEXTCLASS   			[Lorg/apache/xerces/util/XMLAttributesImpl$Attribute;(0x61A97800)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$Entity(0x61A978D0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$ExternalEntity(0x61A97A80)
+3CLTEXTCLASS   			org/apache/xerces/xni/NamespaceContext(0x61A97C20)
+3CLTEXTCLASS   			org/apache/xerces/util/NamespaceSupport(0x61A97E00)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl$XMLDeclDispatcher(0x61A98100)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl$PrologDispatcher(0x61A983C0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl$DTDDispatcher(0x61A986B0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl$TrailingMiscDispatcher(0x61A989F0)
+3CLTEXTCLASS   			org/apache/xerces/xni/grammars/XMLGrammarDescription(0x61A98C20)
+3CLTEXTCLASS   			org/apache/xerces/xni/grammars/XMLDTDDescription(0x61A98D00)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLDTDDescription(0x61A98E20)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDTDSource(0x61A990C0)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDTDContentModelSource(0x61A99190)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDTDScanner(0x61A99260)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDTDScannerImpl(0x61A99430)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDTDFilter(0x61A9A350)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDTDContentModelFilter(0x61A9A410)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLDTDProcessor(0x61A9A5A0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLEntityDecl(0x61A9B3B0)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDocumentFilter(0x61A9B510)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLDTDValidatorFilter(0x61A9B5D0)
+3CLTEXTCLASS   			org/apache/xerces/impl/RevalidationHandler(0x61A9B6B0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLDTDValidator(0x61A9B830)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLNSDTDValidator(0x61A9C980)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/ValidationContext(0x61A9CCD0)
+3CLTEXTCLASS   			org/apache/xerces/impl/validation/ValidationState(0x61A9CEA0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLElementDecl(0x61A9D2F0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLSimpleType(0x61A9D4C0)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLAttributeDecl(0x61A9D6C0)
+3CLTEXTCLASS   			org/apache/xerces/util/ParserConfigurationSettings(0x61DF88D0)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLParserConfiguration(0x61DF8B90)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLPullParserConfiguration(0x61DF8D80)
+3CLTEXTCLASS   			org/apache/xerces/parsers/XML11Configurable(0x61DF8E70)
+3CLTEXTCLASS   			org/apache/xerces/parsers/XML11Configuration(0x61DF8FC0)
+3CLTEXTCLASS   			org/apache/xerces/util/SymbolTable(0x61DF9EE0)
+3CLTEXTCLASS   			org/apache/xerces/util/SymbolTable$Entry(0x61DFA1F0)
+3CLTEXTCLASS   			[Lorg/apache/xerces/util/SymbolTable$Entry;(0x61DFA360)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLComponent(0x61DFA410)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLEntityResolver(0x61DFA530)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager(0x61DFA690)
+3CLTEXTCLASS   			[Ljava/lang/Boolean;(0x61DFBA10)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$1(0x61DFBAD0)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLResourceIdentifier(0x61DFBBE0)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLResourceIdentifierImpl(0x61DFBD80)
+3CLTEXTCLASS   			org/apache/xerces/xni/Augmentations(0x61DFC080)
+3CLTEXTCLASS   			org/apache/xerces/util/AugmentationsImpl(0x61DFC1A0)
+3CLTEXTCLASS   			org/apache/xerces/util/AugmentationsImpl$AugmentationsItemsContainer(0x61DFC3B0)
+3CLTEXTCLASS   			org/apache/xerces/util/AugmentationsImpl$SmallContainer(0x61DFC560)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$ByteBufferPool(0x61DFC7E0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$CharacterBufferPool(0x61DFC990)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$CharacterBuffer(0x61DFCB90)
+3CLTEXTCLASS   			[Lorg/apache/xerces/impl/XMLEntityManager$CharacterBuffer;(0x61DFCCD0)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLLocator(0x61DFCD80)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityScanner(0x61DFCF50)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityScanner$1(0x61DFD610)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLErrorReporter(0x61DFD7A0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLScanner(0x61DFDD10)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDocumentSource(0x61DFE850)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDocumentScanner(0x61DFE920)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityHandler(0x61DFE9F0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentFragmentScannerImpl(0x61DFEBB0)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl(0x61DFF970)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLNSDocumentScannerImpl(0x61E00270)
+3CLTEXTCLASS   			java/util/regex/PatternSyntaxException(0x61BD2050)
+3CLTEXTCLASS   			java/lang/ArithmeticException(0x61BD22D0)
+3CLTEXTCLASS   			java/io/StringReader(0x61BD2430)
+3CLTEXTCLASS   			java/sql/ResultSetMetaData(0x61BD26C0)
+3CLTEXTCLASS   			sun/misc/FDBigInt(0x61BD2920)
+3CLTEXTCLASS   			[Lsun/misc/FDBigInt;(0x61BD2D00)
+3CLTEXTCLASS   			java/sql/SQLRecoverableException(0x61BD2E00)
+3CLTEXTCLASS   			java/util/NoSuchElementException(0x61BD3010)
+3CLTEXTCLASS   			java/sql/Timestamp(0x61BD31C0)
+3CLTEXTCLASS   			java/util/Collections$UnmodifiableMap$UnmodifiableEntrySet(0x61BD36C0)
+3CLTEXTCLASS   			java/util/Collections$UnmodifiableMap$UnmodifiableEntrySet$1(0x61BD38D0)
+3CLTEXTCLASS   			java/util/Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableMapEntry(0x61BD3AD0)
+3CLTEXTCLASS   			java/util/TreeMap$3(0x61BD3CE0)
+3CLTEXTCLASS   			java/util/TreeMap$UnboundedEntryIterator(0x61BD3EF0)
+3CLTEXTCLASS   			sun/io/ByteToCharSingleByte(0x61BD40F0)
+3CLTEXTCLASS   			sun/io/ByteToCharCp1252(0x61BD4500)
+3CLTEXTCLASS   			org/w3c/dom/Node(0x61BD46D0)
+3CLTEXTCLASS   			javax/xml/parsers/DocumentBuilderFactory(0x61BD4A90)
+3CLTEXTCLASS   			javax/xml/parsers/FactoryConfigurationError(0x61BD4E80)
+3CLTEXTCLASS   			org/xml/sax/ErrorHandler(0x61BD5030)
+3CLTEXTCLASS   			org/xml/sax/EntityResolver(0x61BD5110)
+3CLTEXTCLASS   			javax/xml/parsers/FactoryFinder(0x61BD51E0)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport(0x61BD5640)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport$2(0x61BD5890)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport$1(0x61BD59C0)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport$5(0x61BD5AF0)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport$4(0x61BD5C40)
+3CLTEXTCLASS   			org/apache/xerces/jaxp/DocumentBuilderFactoryImpl(0x61BD5DE0)
+3CLTEXTCLASS   			javax/xml/parsers/DocumentBuilder(0x61BD6260)
+3CLTEXTCLASS   			org/apache/xerces/jaxp/JAXPConstants(0x61BD6510)
+3CLTEXTCLASS   			org/apache/xerces/jaxp/DocumentBuilderImpl(0x61BD6630)
+3CLTEXTCLASS   			org/apache/xerces/parsers/XMLParser(0x61BD6CC0)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLDocumentHandler(0x61BD6E40)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLDTDHandler(0x61BD7020)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLDTDContentModelHandler(0x61BD7240)
+3CLTEXTCLASS   			org/apache/xerces/parsers/AbstractXMLDocumentParser(0x61BD74B0)
+3CLTEXTCLASS   			org/apache/xerces/parsers/AbstractDOMParser(0x61BD7C10)
+3CLTEXTCLASS   			org/apache/xerces/parsers/DOMParser(0x61BD8F60)
+3CLTEXTCLASS   			org/apache/xerces/parsers/ObjectFactory(0x61BD95F0)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport(0x61BD9A80)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport$1(0x61BD9D90)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport$2(0x61BD9ED0)
+3CLTEXTCLASS   			java/security/Security(0x61D0E850)
+3CLTEXTCLASS   			java/lang/SecurityManager(0x61D0EFA0)
+3CLTEXTCLASS   			java/lang/SecurityManager$InterruptAccessLock(0x61D0F910)
+3CLTEXTCLASS   			java/lang/SecurityManager$InterruptDefinitionLock(0x61D0FA20)
+3CLTEXTCLASS   			java/security/Security$1(0x61D0FB40)
+3CLTEXTCLASS   			org/apache/harmony/security/SecurityUtils(0x61D0FE60)
+3CLTEXTCLASS   			org/apache/harmony/security/fortress/SecurityAccess(0x61D0FFB0)
+3CLTEXTCLASS   			java/security/Security$SecurityDoor(0x61D100B0)
+3CLTEXTCLASS   			org/apache/harmony/security/fortress/Engine(0x61D10250)
+3CLTEXTCLASS   			sun/security/action/GetIntegerAction(0x61D10560)
+3CLTEXTCLASS   			sun/net/InetAddressCachePolicy$2(0x61D106F0)
+3CLTEXTCLASS   			java/util/LinkedList$LinkIterator(0x61D10840)
+3CLTEXTCLASS   			java/net/InetAddress$CacheEntry(0x61D10B70)
+3CLTEXTCLASS   			java/net/Inet6Address(0x61D10CD0)
+3CLTEXTCLASS   			java/net/SocketAddress(0x61D11340)
+3CLTEXTCLASS   			java/net/InetSocketAddress(0x61D11450)
+3CLTEXTCLASS   			java/net/SocketOptions(0x61D11780)
+3CLTEXTCLASS   			java/net/SocketImpl(0x61D11900)
+3CLTEXTCLASS   			java/net/PlainSocketImpl(0x61D11DA0)
+3CLTEXTCLASS   			java/net/SocksConsts(0x61D12780)
+3CLTEXTCLASS   			java/net/SocksSocketImpl(0x61D12930)
+3CLTEXTCLASS   			java/net/SocksSocketImpl$5(0x61D13330)
+3CLTEXTCLASS   			java/net/ProxySelector(0x61D13470)
+3CLTEXTCLASS   			sun/net/spi/DefaultProxySelector(0x61D13650)
+3CLTEXTCLASS   			[[Ljava/lang/String;(0x61D13BD0)
+3CLTEXTCLASS   			sun/net/spi/DefaultProxySelector$1(0x61D13C90)
+3CLTEXTCLASS   			sun/net/NetProperties(0x61D13DC0)
+3CLTEXTCLASS   			sun/net/NetProperties$1(0x61D14090)
+3CLTEXTCLASS   			sun/net/spi/DefaultProxySelector$NonProxyInfo(0x61D141B0)
+3CLTEXTCLASS   			java/util/regex/Pattern$GroupCurly(0x61D142D0)
+3CLTEXTCLASS   			java/net/URI(0x61D145B0)
+3CLTEXTCLASS   			java/net/URI$Parser(0x61D158C0)
+3CLTEXTCLASS   			java/net/Proxy(0x61D15F80)
+3CLTEXTCLASS   			java/net/Proxy$Type(0x61D161E0)
+3CLTEXTCLASS   			[Ljava/net/Proxy$Type;(0x61D163B0)
+3CLTEXTCLASS   			java/net/Socket$2(0x61D16470)
+3CLTEXTCLASS   			java/net/Socket$3(0x61D165B0)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport$3(0x61D166F0)
+3CLTEXTCLASS   			java/net/Socket(0x61D1E920)
+3CLTEXTCLASS   			java/util/Collections$UnmodifiableMap(0x61D1F430)
+3CLTEXTCLASS   			sun/util/resources/LocaleData(0x61D1F770)
+3CLTEXTCLASS   			sun/util/resources/LocaleData$1(0x61D1FB20)
+3CLTEXTCLASS   			java/util/ResourceBundle$Control(0x61D1FCA0)
+3CLTEXTCLASS   			sun/util/resources/LocaleData$LocaleDataResourceBundleControl(0x61D20280)
+3CLTEXTCLASS   			java/util/Collections$UnmodifiableList(0x61D20520)
+3CLTEXTCLASS   			java/util/Collections$UnmodifiableRandomAccessList(0x61D208E0)
+3CLTEXTCLASS   			java/util/ResourceBundle$SimpleControl(0x61D20AB0)
+3CLTEXTCLASS   			java/util/ResourceBundle$1(0x61D20C30)
+3CLTEXTCLASS   			sun/util/LocaleDataMetaInfo(0x61D20D90)
+3CLTEXTCLASS   			java/util/ResourceBundle$Control$1(0x61D20F60)
+3CLTEXTCLASS   			sun/util/resources/OpenListResourceBundle(0x61D21130)
+3CLTEXTCLASS   			sun/util/resources/LocaleNamesBundle(0x61D213E0)
+3CLTEXTCLASS   			sun/util/resources/CalendarData(0x61D21550)
+3CLTEXTCLASS   			[[Ljava/lang/Object;(0x61D216B0)
+3CLTEXTCLASS   			sun/util/calendar/CalendarDate(0x61D21830)
+3CLTEXTCLASS   			sun/util/calendar/BaseCalendar$Date(0x61D22090)
+3CLTEXTCLASS   			sun/util/calendar/Gregorian$Date(0x61D22430)
+3CLTEXTCLASS   			sun/util/calendar/CalendarUtils(0x61D22650)
+3CLTEXTCLASS   			java/sql/ResultSet(0x61D22850)
+3CLTEXTCLASS   			java/util/TreeMap$1(0x61D235E0)
+3CLTEXTCLASS   			java/util/TreeMap$AbstractMapIterator(0x61D237B0)
+3CLTEXTCLASS   			java/util/TreeMap$UnboundedKeyIterator(0x61D239A0)
+3CLTEXTCLASS   			java/io/EOFException(0x61D23B60)
+3CLTEXTCLASS   			java/net/MalformedURLException(0x61D23CC0)
+3CLTEXTCLASS   			java/sql/SQLWarning(0x61D23E30)
+3CLTEXTCLASS   			java/sql/DataTruncation(0x61D240F0)
+3CLTEXTCLASS   			java/security/GeneralSecurityException(0x61D24380)
+3CLTEXTCLASS   			java/security/NoSuchAlgorithmException(0x61D24520)
+3CLTEXTCLASS   			java/net/InetAddress(0x61D246D0)
+3CLTEXTCLASS   			sun/security/action/GetBooleanAction(0x61D25150)
+3CLTEXTCLASS   			sun/security/action/LoadLibraryAction(0x61D252A0)
+3CLTEXTCLASS   			java/net/InetAddress$Cache(0x61D253E0)
+3CLTEXTCLASS   			java/net/InetAddress$Cache$Type(0x61D25630)
+3CLTEXTCLASS   			[Ljava/net/InetAddress$Cache$Type;(0x61D257F0)
+3CLTEXTCLASS   			java/net/InetAddress$localHostCacheLock(0x61D258B0)
+3CLTEXTCLASS   			java/net/InetAddressImplFactory(0x61D259C0)
+3CLTEXTCLASS   			java/net/InetAddressImpl(0x61D25B00)
+3CLTEXTCLASS   			java/net/Inet6AddressImpl(0x61D25C40)
+3CLTEXTCLASS   			sun/net/spi/nameservice/NameService(0x61D25EB0)
+3CLTEXTCLASS   			java/net/InetAddress$1(0x61D25FA0)
+3CLTEXTCLASS   			[Ljava/net/InetAddress;(0x61D260F0)
+3CLTEXTCLASS   			java/net/Inet4AddressImpl(0x61D261D0)
+3CLTEXTCLASS   			java/net/Inet4Address(0x61D26440)
+3CLTEXTCLASS   			java/sql/CallableStatement(0x61C96810)
+3CLTEXTCLASS   			java/sql/Savepoint(0x61C97030)
+3CLTEXTCLASS   			[Ljava/lang/reflect/Field;(0x61C97110)
+3CLTEXTCLASS   			sun/reflect/ClassFileConstants(0x61C971C0)
+3CLTEXTCLASS   			sun/reflect/AccessorGenerator(0x61C973F0)
+3CLTEXTCLASS   			sun/reflect/MethodAccessorGenerator(0x61C97D90)
+3CLTEXTCLASS   			sun/reflect/ByteVectorFactory(0x61C984A0)
+3CLTEXTCLASS   			sun/reflect/ByteVector(0x61C985C0)
+3CLTEXTCLASS   			sun/reflect/ByteVectorImpl(0x61C98700)
+3CLTEXTCLASS   			sun/reflect/ClassFileAssembler(0x61C98A60)
+3CLTEXTCLASS   			sun/reflect/UTF8(0x61C99400)
+3CLTEXTCLASS   			sun/reflect/Label(0x61C99580)
+3CLTEXTCLASS   			sun/reflect/Label$PatchInfo(0x61C99750)
+3CLTEXTCLASS   			sun/reflect/MethodAccessorGenerator$1(0x61C99870)
+3CLTEXTCLASS   			sun/reflect/ClassDefiner(0x61C99A20)
+3CLTEXTCLASS   			sun/reflect/ClassDefiner$1(0x61C99BA0)
+3CLTEXTCLASS   			sun/reflect/DelegatingClassLoader(0x61C99D80)
+3CLTEXTCLASS   			javax/naming/RefAddr(0x61C99FA0)
+3CLTEXTCLASS   			javax/naming/StringRefAddr(0x61C9A1B0)
+3CLTEXTCLASS   			[Ljava/lang/Character;(0x61C9A2D0)
+3CLTEXTCLASS   			[Ljava/lang/Byte;(0x61C9A390)
+3CLTEXTCLASS   			[Ljava/lang/Integer;(0x61C9A450)
+3CLTEXTCLASS   			[Ljava/lang/Short;(0x61C9A510)
+3CLTEXTCLASS   			[Ljava/lang/Long;(0x61C9A5D0)
+3CLTEXTCLASS   			java/util/Timer(0x61C9A6B0)
+3CLTEXTCLASS   			sun/reflect/NativeConstructorAccessorImpl(0x61C9AA20)
+3CLTEXTCLASS   			sun/reflect/DelegatingConstructorAccessorImpl(0x61C9AC00)
+3CLTEXTCLASS   			java/util/Timer$1(0x61C9AD40)
+3CLTEXTCLASS   			java/util/Timer$TimerImpl(0x61C9AF20)
+3CLTEXTCLASS   			java/util/Timer$TimerImpl$TimerHeap(0x61C9B2B0)
+3CLTEXTCLASS   			java/util/TimerTask(0x61C9B550)
+3CLTEXTCLASS   			[Ljava/util/TimerTask;(0x61C9B720)
+3CLTEXTCLASS   			java/sql/SQLXML(0x61C9B7D0)
+3CLTEXTCLASS   			java/sql/SQLClientInfoException(0x61C9B970)
+3CLTEXTCLASS   			java/lang/ClassCastException(0x61C9BBC0)
+3CLTEXTCLASS   			java/sql/Blob(0x61C9BD20)
+3CLTEXTCLASS   			java/text/Format(0x61C9BEC0)
+3CLTEXTCLASS   			java/text/MessageFormat(0x61C9C1E0)
+3CLTEXTCLASS   			[Ljava/text/Format;(0x61C9CB70)
+3CLTEXTCLASS   			[Ljava/lang/StringBuffer;(0x61C9CC30)
+3CLTEXTCLASS   			java/text/FieldPosition(0x61C9CD10)
+3CLTEXTCLASS   			java/util/Date(0x61C9D080)
+3CLTEXTCLASS   			java/text/AttributedCharacterIterator$Attribute(0x61C9D9F0)
+3CLTEXTCLASS   			java/text/Format$Field(0x61C9DCA0)
+3CLTEXTCLASS   			java/text/MessageFormat$Field(0x61C9DDB0)
+3CLTEXTCLASS   			java/net/SocketException(0x61C9DF70)
+3CLTEXTCLASS   			sun/net/InetAddressCachePolicy(0x61C9E0A0)
+3CLTEXTCLASS   			sun/net/InetAddressCachePolicy$1(0x61C9E350)
+3CLTEXTCLASS   			java/net/SocketInputStream(0x61C9E4B0)
+3CLTEXTCLASS   			sun/util/calendar/ZoneInfoFile(0x61B39010)
+3CLTEXTCLASS   			sun/util/calendar/ZoneInfoFile$1(0x61B395B0)
+3CLTEXTCLASS   			java/util/TimeZone$1(0x61B39770)
+3CLTEXTCLASS   			java/sql/Clob(0x61B398A0)
+3CLTEXTCLASS   			java/sql/NClob(0x61B39A30)
+3CLTEXTCLASS   			java/util/MissingResourceException(0x61B39B20)
+3CLTEXTCLASS   			java/util/ResourceBundle(0x61B39CE0)
+3CLTEXTCLASS   			java/util/ResourceBundle$MissingBundle(0x61B3A4D0)
+3CLTEXTCLASS   			sun/misc/URLClassPath$JarLoader$3(0x61B3A600)
+3CLTEXTCLASS   			java/util/ResourceBundle$2(0x61B3A770)
+3CLTEXTCLASS   			com/ibm/oti/vm/AbstractClassLoader$1(0x61B3A910)
+3CLTEXTCLASS   			java/net/URLClassLoader$1(0x61B3AA60)
+3CLTEXTCLASS   			java/net/JarURLConnection(0x61B3AC70)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/JarURLConnection(0x61B3B0A0)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController(0x61B3B640)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/JarFileFactory(0x61B3B720)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/URLJarFile(0x61B3BAB0)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/URLJarFile$URLJarFileEntry(0x61B3BFF0)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/JarURLConnection$JarURLInputStream(0x61B3C220)
+3CLTEXTCLASS   			java/util/PropertyResourceBundle(0x61B3C3C0)
+3CLTEXTCLASS   			java/io/PrintWriter(0x61B3C690)
+3CLTEXTCLASS   			[Ljava/lang/StackTraceElement;(0x61B3CE70)
+3CLTEXTCLASS   			java/util/Collections$SynchronizedCollection(0x61B3CF60)
+3CLTEXTCLASS   			java/util/Collections$SynchronizedSet(0x61B3D300)
+3CLTEXTCLASS   			java/util/Hashtable$6(0x61B3D550)
+3CLTEXTCLASS   			java/util/Hashtable$6$1(0x61B3D750)
+3CLTEXTCLASS   			java/util/Calendar(0x61B3D950)
+3CLTEXTCLASS   			java/util/GregorianCalendar(0x61B3E8C0)
+3CLTEXTCLASS   			java/sql/Statement(0x61B3F550)
+3CLTEXTCLASS   			java/sql/PreparedStatement(0x61B3F8C0)
+3CLTEXTCLASS   			java/lang/IndexOutOfBoundsException(0x61B3FD60)
+3CLTEXTCLASS   			java/lang/ArrayIndexOutOfBoundsException(0x61B3FEC0)
+3CLTEXTCLASS   			java/lang/InterruptedException(0x61B40070)
+3CLTEXTCLASS   			java/sql/DatabaseMetaData(0x61B40190)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport$4(0x61B40EC0)
+3CLTEXTCLASS   			java/math/BigDecimal(0x61C21110)
+3CLTEXTCLASS   			java/math/BigDecimal$1(0x61C22AC0)
+3CLTEXTCLASS   			java/math/BigInteger(0x61C22C90)
+3CLTEXTCLASS   			[Ljava/math/BigInteger;(0x61C23EB0)
+3CLTEXTCLASS   			java/math/MathContext(0x61C23F80)
+3CLTEXTCLASS   			java/lang/Enum(0x61C24350)
+3CLTEXTCLASS   			java/math/RoundingMode(0x61C24690)
+3CLTEXTCLASS   			[Ljava/math/RoundingMode;(0x61C24930)
+3CLTEXTCLASS   			[Ljava/math/BigDecimal;(0x61C249F0)
+3CLTEXTCLASS   			sun/reflect/UnsafeFieldAccessorFactory(0x61C24AB0)
+3CLTEXTCLASS   			sun/reflect/FieldAccessor(0x61C24FE0)
+3CLTEXTCLASS   			sun/reflect/FieldAccessorImpl(0x61C25220)
+3CLTEXTCLASS   			sun/reflect/UnsafeFieldAccessorImpl(0x61C25590)
+3CLTEXTCLASS   			sun/reflect/UnsafeObjectFieldAccessorImpl(0x61C25CD0)
+3CLTEXTCLASS   			java/lang/ClassLoader$CacheTable(0x61C26110)
+3CLTEXTCLASS   			java/io/StringWriter(0x61C263E0)
+3CLTEXTCLASS   			java/lang/SecurityException(0x61C26770)
+3CLTEXTCLASS   			java/util/TimeZone(0x61C26920)
+3CLTEXTCLASS   			java/lang/InheritableThreadLocal(0x61C270A0)
+3CLTEXTCLASS   			sun/util/calendar/ZoneInfo(0x61C27250)
+3CLTEXTCLASS   			sun/util/calendar/CalendarSystem(0x61C27A60)
+3CLTEXTCLASS   			sun/util/calendar/AbstractCalendar(0x61C27F30)
+3CLTEXTCLASS   			sun/util/calendar/BaseCalendar(0x61C284D0)
+3CLTEXTCLASS   			sun/util/calendar/Gregorian(0x61C28D10)
+3CLTEXTCLASS   			java/util/LinkedList(0x617FFFE0)
+3CLTEXTCLASS   			java/util/LinkedList$Link(0x61800780)
+3CLTEXTCLASS   			java/util/HashSet(0x618008D0)
+3CLTEXTCLASS   			sun/io/ByteToCharGB18030(0x61800D20)
+3CLTEXTCLASS   			java/util/zip/ZipException(0x618011C0)
+3CLTEXTCLASS   			java/util/HashMap$1(0x61801320)
+3CLTEXTCLASS   			java/util/HashMap$KeyIterator(0x61801510)
+3CLTEXTCLASS   			java/sql/SQLException(0x618016A0)
+3CLTEXTCLASS   			java/io/UnsupportedEncodingException(0x61801990)
+3CLTEXTCLASS   			java/sql/DriverManager(0x61801AC0)
+3CLTEXTCLASS   			java/sql/SQLPermission(0x618021B0)
+3CLTEXTCLASS   			java/sql/DriverManager$2(0x618022F0)
+3CLTEXTCLASS   			java/sql/DriverManager$3(0x61802470)
+3CLTEXTCLASS   			sun/nio/cs/ISO_8859_1(0x61802620)
+3CLTEXTCLASS   			sun/nio/cs/ISO_8859_1$Decoder(0x61802860)
+3CLTEXTCLASS   			java/lang/CharacterDataLatin1(0x61802B00)
+3CLTEXTCLASS   			java/util/Collections$UnmodifiableCollection(0x61802EA0)
+3CLTEXTCLASS   			java/util/Collections$UnmodifiableSet(0x618031D0)
+3CLTEXTCLASS   			java/util/Collections$UnmodifiableCollection$1(0x618033A0)
+3CLTEXTCLASS   			sun/jdbc/odbc/JdbcOdbcObject(0x61803560)
+3CLTEXTCLASS   			java/sql/Driver(0x618038C0)
+3CLTEXTCLASS   			sun/jdbc/odbc/JdbcOdbcDriverInterface(0x618039D0)
+3CLTEXTCLASS   			sun/jdbc/odbc/JdbcOdbcDriver(0x61803B10)
+3CLTEXTCLASS   			sun/jdbc/odbc/JdbcOdbcTracer(0x61804330)
+3CLTEXTCLASS   			java/util/AbstractList$SubAbstractList(0x61804530)
+3CLTEXTCLASS   			java/util/AbstractList$SubAbstractListRandomAccess(0x61804880)
+3CLTEXTCLASS   			java/util/ListIterator(0x618049D0)
+3CLTEXTCLASS   			java/util/AbstractList$SubAbstractList$SubAbstractListIterator(0x61804B50)
+3CLTEXTCLASS   			java/util/AbstractList$SimpleListIterator(0x61804DF0)
+3CLTEXTCLASS   			java/util/AbstractList$FullListIterator(0x61805010)
+3CLTEXTCLASS   			sun/misc/URLClassPath$JarLoader$2(0x618052D0)
+3CLTEXTCLASS   			java/lang/IllegalArgumentException(0x61805540)
+3CLTEXTCLASS   			java/lang/NumberFormatException(0x618056E0)
+3CLTEXTCLASS   			java/sql/Wrapper(0x61805870)
+3CLTEXTCLASS   			java/sql/Connection(0x61805940)
+3CLTEXTCLASS   			java/lang/reflect/InvocationHandler(0x61805D30)
+3CLTEXTCLASS   			java/lang/InstantiationException(0x61805E30)
+3CLTEXTCLASS   			java/lang/IllegalAccessException(0x61805FC0)
+3CLTEXTCLASS   			java/lang/NoClassDefFoundError(0x61806120)
+3CLTEXTCLASS   			sun/security/util/ManifestEntryVerifier(0x61806260)
+3CLTEXTCLASS   			sun/security/util/ManifestEntryVerifier$1(0x61806740)
+3CLTEXTCLASS   			com/ibm/misc/CharacterDecoder(0x618068A0)
+3CLTEXTCLASS   			com/ibm/misc/BASE64Decoder(0x61806C00)
+3CLTEXTCLASS   			sun/security/util/SignatureFileVerifier(0x61806E40)
+3CLTEXTCLASS   			java/lang/IllegalStateException(0x61807690)
+3CLTEXTCLASS   			java/sql/DriverManager$1(0x61807810)
+3CLTEXTCLASS   			java/lang/NoSuchMethodException(0x61807990)
+3CLTEXTCLASS   			java/net/SocketOutputStream(0x61807AE0)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport$7(0x61807DA0)
+3CLTEXTCLASS   			com/ibm/security/bootstrap/BootstrapProvider(0x61B690E0)
+3CLTEXTCLASS   			sun/misc/FloatingDecimal(0x61B69590)
+3CLTEXTCLASS   			sun/misc/FloatingDecimal$1(0x61B69EE0)
+3CLTEXTCLASS   			java/util/regex/Pattern$GroupTail(0x61B6A010)
+3CLTEXTCLASS   			java/util/regex/Pattern$BitClass(0x61B6A190)
+3CLTEXTCLASS   			java/util/regex/Pattern$Ques(0x61B6A380)
+3CLTEXTCLASS   			java/util/regex/Pattern$BranchConn(0x61B6A510)
+3CLTEXTCLASS   			java/util/regex/Pattern$Branch(0x61B6A660)
+3CLTEXTCLASS   			[Ljava/util/regex/Pattern$Node;(0x61B6A850)
+3CLTEXTCLASS   			java/util/regex/Pattern$Single(0x61B6A920)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames(0x61B6AA50)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$CharPropertyFactory(0x61B6B0D0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$1(0x61B6B1F0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$2(0x61B6B330)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$5(0x61B6B470)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$3(0x61B6B590)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$CloneableProperty(0x61B6B6F0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$6(0x61B6B8A0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$4(0x61B6B9D0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$7(0x61B6BB20)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$8(0x61B6BC70)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$9(0x61B6BDC0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$10(0x61B6BF10)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$11(0x61B6C060)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$12(0x61B6C1B0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$13(0x61B6C300)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$14(0x61B6C450)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$15(0x61B6C5A0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$16(0x61B6C6F0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$17(0x61B6C840)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$18(0x61B6C990)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$19(0x61B6CAE0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$20(0x61B6CC30)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharPropertyNames$21(0x61B6CD80)
+3CLTEXTCLASS   			java/util/regex/Pattern$2(0x61B6CEC0)
+3CLTEXTCLASS   			java/util/HashMap$HashMapEntrySet(0x61B6D050)
+3CLTEXTCLASS   			java/util/HashMap$AbstractMapIterator(0x61B6D2A0)
+3CLTEXTCLASS   			java/util/HashMap$EntryIterator(0x61B6D530)
+3CLTEXTCLASS   			sun/security/util/Debug(0x61B6D6A0)
+3CLTEXTCLASS   			java/io/ByteArrayOutputStream(0x61B6DB70)
+3CLTEXTCLASS   			java/io/IOException(0x61B6DE70)
+3CLTEXTCLASS   			java/io/FileNotFoundException(0x61B6E010)
+3CLTEXTCLASS   			java/lang/RuntimeException(0x61B6E1C0)
+3CLTEXTCLASS   			java/io/Reader(0x61B6E360)
+3CLTEXTCLASS   			java/io/BufferedReader(0x61B6E640)
+3CLTEXTCLASS   			java/io/InputStreamReader(0x61B6EA60)
+3CLTEXTCLASS   			sun/nio/cs/StreamDecoder(0x61B6ED20)
+3CLTEXTCLASS   			sun/nio/cs/HistoricallyNamedCharset(0x61B6F200)
+3CLTEXTCLASS   			sun/nio/cs/Unicode(0x61B6F310)
+3CLTEXTCLASS   			sun/nio/cs/UTF_8(0x61B6F650)
+3CLTEXTCLASS   			sun/nio/cs/StreamDecoder$CharsetSD(0x61B6F840)
+3CLTEXTCLASS   			sun/nio/cs/UTF8_Decoder(0x61B6FCF0)
+3CLTEXTCLASS   			sun/nio/cs/UTF_8$Decoder(0x61B70170)
+3CLTEXTCLASS   			sun/nio/cs/Surrogate$Generator(0x61B702F0)
+3CLTEXTCLASS   			java/nio/channels/Channel(0x61B704F0)
+3CLTEXTCLASS   			java/nio/channels/InterruptibleChannel(0x61B705C0)
+3CLTEXTCLASS   			java/nio/channels/spi/AbstractInterruptibleChannel(0x61B706B0)
+3CLTEXTCLASS   			java/nio/channels/ReadableByteChannel(0x61B70970)
+3CLTEXTCLASS   			java/nio/channels/WritableByteChannel(0x61B70A40)
+3CLTEXTCLASS   			java/nio/channels/ByteChannel(0x61B70B10)
+3CLTEXTCLASS   			java/nio/channels/GatheringByteChannel(0x61B70BE0)
+3CLTEXTCLASS   			java/nio/channels/ScatteringByteChannel(0x61B70CC0)
+3CLTEXTCLASS   			java/util/Queue(0x61B70DA0)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport$8(0x61B70EC0)
+3CLTEXTCLASS   			java/util/zip/Inflater(0x61A858D0)
+3CLTEXTCLASS   			java/security/PrivilegedActionException(0x61A85D60)
+3CLTEXTCLASS   			sun/misc/URLClassPath$FileLoader(0x61A85F40)
+3CLTEXTCLASS   			sun/misc/Resource(0x61A861C0)
+3CLTEXTCLASS   			sun/misc/URLClassPath$FileLoader$1(0x61A864A0)
+3CLTEXTCLASS   			sun/nio/ByteBuffered(0x61A86680)
+3CLTEXTCLASS   			java/security/CodeSource(0x61A86760)
+3CLTEXTCLASS   			java/security/PermissionCollection(0x61A86DA0)
+3CLTEXTCLASS   			java/security/Permissions(0x61A87020)
+3CLTEXTCLASS   			java/net/URLConnection(0x61A87550)
+3CLTEXTCLASS   			sun/net/www/URLConnection(0x61A88140)
+3CLTEXTCLASS   			sun/net/www/protocol/file/FileURLConnection(0x61A886F0)
+3CLTEXTCLASS   			java/net/ContentHandler(0x61A88D50)
+3CLTEXTCLASS   			java/net/UnknownContentHandler(0x61A88E90)
+3CLTEXTCLASS   			sun/net/www/MessageHeader(0x61A88FF0)
+3CLTEXTCLASS   			java/io/FilePermission(0x61A894F0)
+3CLTEXTCLASS   			java/io/FilePermissionCollection(0x61A89970)
+3CLTEXTCLASS   			java/security/AllPermission(0x61A89C90)
+3CLTEXTCLASS   			java/security/BasicPermissionCollection(0x61A89E40)
+3CLTEXTCLASS   			org/apache/harmony/security/fortress/PolicyUtils(0x61A8A290)
+3CLTEXTCLASS   			java/util/jar/Manifest(0x61A8A810)
+3CLTEXTCLASS   			java/io/ByteArrayInputStream(0x61A8ACB0)
+3CLTEXTCLASS   			java/util/jar/Attributes(0x61A8AF40)
+3CLTEXTCLASS   			java/util/jar/Manifest$FastInputStream(0x61A8B580)
+3CLTEXTCLASS   			java/util/jar/Attributes$Name(0x61A8B7F0)
+3CLTEXTCLASS   			java/util/jar/JarVerifier(0x61A8BBB0)
+3CLTEXTCLASS   			org/apache/harmony/security/fortress/Services(0x61A8C150)
+3CLTEXTCLASS   			org/apache/harmony/security/fortress/BootstrapHelper(0x61A8C720)
+3CLTEXTCLASS   			org/apache/harmony/security/fortress/BootstrapHelper$2(0x61A8C990)
+3CLTEXTCLASS   			org/apache/harmony/security/fortress/BootstrapHelper$3(0x61A8CB10)
+3CLTEXTCLASS   			org/apache/harmony/security/fortress/BootstrapHelper$1(0x61A8CC80)
+3CLTEXTCLASS   			java/security/Provider(0x61A8CEA0)
+3CLTEXTCLASS   			java/util/regex/Pattern(0x6180FF40)
+3CLTEXTCLASS   			java/util/regex/Pattern$Node(0x61811390)
+3CLTEXTCLASS   			java/util/regex/Pattern$5(0x61811520)
+3CLTEXTCLASS   			java/util/regex/Pattern$LastNode(0x61811650)
+3CLTEXTCLASS   			java/util/regex/Pattern$GroupHead(0x618117A0)
+3CLTEXTCLASS   			[Ljava/util/regex/Pattern$GroupHead;(0x618118F0)
+3CLTEXTCLASS   			java/util/regex/Pattern$CharProperty(0x618119C0)
+3CLTEXTCLASS   			java/util/regex/Pattern$BmpCharProperty(0x61811BE0)
+3CLTEXTCLASS   			java/util/regex/Pattern$Ctype(0x61811D70)
+3CLTEXTCLASS   			java/util/regex/ASCII(0x61811EB0)
+3CLTEXTCLASS   			java/util/regex/Pattern$Curly(0x61812240)
+3CLTEXTCLASS   			java/util/regex/Pattern$SliceNode(0x61812480)
+3CLTEXTCLASS   			java/util/regex/Pattern$Slice(0x618125E0)
+3CLTEXTCLASS   			java/util/regex/Pattern$Begin(0x61812750)
+3CLTEXTCLASS   			java/util/regex/Pattern$First(0x618128B0)
+3CLTEXTCLASS   			java/util/regex/Pattern$Start(0x61812A70)
+3CLTEXTCLASS   			java/util/regex/Pattern$TreeInfo(0x61812C20)
+3CLTEXTCLASS   			java/util/regex/MatchResult(0x61812D40)
+3CLTEXTCLASS   			java/util/regex/Matcher(0x61812F00)
+3CLTEXTCLASS   			java/lang/ThreadDeath(0x618136A0)
+3CLTEXTCLASS   			java/lang/reflect/InvocationTargetException(0x618137F0)
+3CLTEXTCLASS   			java/util/WeakHashMap(0x618139D0)
+3CLTEXTCLASS   			java/util/WeakHashMap$Entry(0x61813ED0)
+3CLTEXTCLASS   			[Ljava/util/WeakHashMap$Entry;(0x61814140)
+3CLTEXTCLASS   			com/ibm/jvm/Trace(0x61814200)
+3CLTEXTCLASS   			java/net/URLClassLoader$ClassFinder(0x618147C0)
+3CLTEXTCLASS   			sun/misc/URLClassPath$3(0x61814970)
+3CLTEXTCLASS   			sun/misc/URLClassPath$Loader(0x61814B60)
+3CLTEXTCLASS   			sun/misc/URLClassPath$JarLoader(0x61814DE0)
+3CLTEXTCLASS   			sun/misc/URLClassPath$JarLoader$1(0x618154F0)
+3CLTEXTCLASS   			sun/misc/FileURLMapper(0x61815740)
+3CLTEXTCLASS   			java/util/zip/ZipConstants(0x61815920)
+3CLTEXTCLASS   			java/util/zip/ZipFile(0x61815AB0)
+3CLTEXTCLASS   			java/util/jar/JarFile(0x61816170)
+3CLTEXTCLASS   			sun/misc/JavaUtilJarAccess(0x618167E0)
+3CLTEXTCLASS   			java/util/jar/JavaUtilJarAccessImpl(0x618168B0)
+3CLTEXTCLASS   			sun/misc/JarIndex(0x618169F0)
+3CLTEXTCLASS   			java/util/zip/ZipEntry(0x61816EF0)
+3CLTEXTCLASS   			java/util/jar/JarEntry(0x61817430)
+3CLTEXTCLASS   			sun/misc/ExtensionDependency(0x61817650)
+3CLTEXTCLASS   			java/io/DataInput(0x61817D30)
+3CLTEXTCLASS   			java/security/AccessControlContext(0x619D80E0)
+3CLTEXTCLASS   			java/security/SecurityPermission(0x619D8530)
+3CLTEXTCLASS   			java/security/ProtectionDomain(0x619D8670)
+3CLTEXTCLASS   			[Ljava/security/ProtectionDomain;(0x619D8980)
+3CLTEXTCLASS   			sun/misc/Launcher$AppClassLoader(0x619D8AF0)
+3CLTEXTCLASS   			sun/misc/Launcher$AppClassLoader$1(0x619D8EE0)
+3CLTEXTCLASS   			java/util/LinkedHashMap$1(0x619D9080)
+3CLTEXTCLASS   			java/util/LinkedHashMap$AbstractMapIterator(0x619D9260)
+3CLTEXTCLASS   			java/util/LinkedHashMap$KeyIterator(0x619D94D0)
+3CLTEXTCLASS   			com/ibm/jvm/ClassLoader(0x619D96C0)
+3CLTEXTCLASS   			java/lang/Class$2(0x619D98E0)
+3CLTEXTCLASS   			java/io/BufferedInputStream(0x619D9AC0)
+3CLTEXTCLASS   			java/util/concurrent/atomic/AtomicReferenceFieldUpdater(0x619D9E60)
+3CLTEXTCLASS   			java/util/concurrent/atomic/AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl(0x619DA020)
+3CLTEXTCLASS   			sun/reflect/misc/ReflectUtil(0x619DA3A0)
+3CLTEXTCLASS   			java/lang/reflect/Modifier(0x619DA5E0)
+3CLTEXTCLASS   			sun/reflect/LangReflectAccess(0x619DA8F0)
+3CLTEXTCLASS   			java/lang/reflect/ReflectAccess(0x619DAAE0)
+3CLTEXTCLASS   			java/io/FileInputStream(0x619DAE00)
+3CLTEXTCLASS   			com/ibm/jvm/io/ConsoleInputStream(0x619DB170)
+3CLTEXTCLASS   			java/lang/Terminator(0x619DB420)
+3CLTEXTCLASS   			sun/misc/SignalHandler(0x619DB5A0)
+3CLTEXTCLASS   			java/lang/Terminator$1(0x619DB6B0)
+3CLTEXTCLASS   			sun/misc/Signal(0x619DB800)
+3CLTEXTCLASS   			com/ibm/misc/AbstractSignalInfo(0x619DBBF0)
+3CLTEXTCLASS   			com/ibm/misc/SignalInfo(0x619DBE40)
+3CLTEXTCLASS   			com/ibm/misc/WinSignalInfo(0x619DC070)
+3CLTEXTCLASS   			sun/misc/NativeSignalHandler(0x619DC1E0)
+3CLTEXTCLASS   			java/lang/Void(0x619DC340)
+3CLTEXTCLASS   			java/lang/StringBuffer(0x619DC550)
+3CLTEXTCLASS   			com/ibm/misc/SignalDispatcher(0x619DCE80)
+3CLTEXTCLASS   			com/ibm/misc/SignalDispatcher$1(0x619DD3A0)
+3CLTEXTCLASS   			java/lang/ApplicationShutdownHooks(0x619DD530)
+3CLTEXTCLASS   			java/util/IdentityHashMap(0x619DD7E0)
+3CLTEXTCLASS   			java/lang/Shutdown(0x619DDDD0)
+3CLTEXTCLASS   			java/lang/Shutdown$Lock(0x619DE0D0)
+3CLTEXTCLASS   			com/ibm/misc/SystemIntialization$1(0x619DE1E0)
+3CLTEXTCLASS   			sun/reflect/ReflectionFactory$1(0x619DE340)
+3CLTEXTCLASS   			sun/reflect/NativeMethodAccessorImpl(0x619DE500)
+3CLTEXTCLASS   			sun/reflect/DelegatingMethodAccessorImpl(0x619DE6F0)
+3CLTEXTCLASS   			java/util/Hashtable$HashIterator(0x619DE840)
+3CLTEXTCLASS   			java/util/Hashtable$HashEnumIterator(0x619DEAC0)
+3CLTEXTCLASS   			java/util/MapEntry$Type(0x619DED30)
+3CLTEXTCLASS   			java/util/Hashtable$5(0x619DEE00)
+3CLTEXTCLASS   			java/util/jar/JarFile$JarFileEntry(0x619DEF80)
+3CLTEXTCLASS   			java/io/DataInputStream(0x619DF220)
+3CLTEXTCLASS   			java/util/zip/InflaterInputStream(0x619DF6C0)
+3CLTEXTCLASS   			java/util/zip/ZipFile$1(0x619DFAD0)
+3CLTEXTCLASS   			java/nio/channels/FileChannel(0x619DFD60)
+3CLTEXTCLASS   			java/io/FileSystem(0x61A79CB0)
+3CLTEXTCLASS   			java/io/Win32FileSystem(0x61A7A170)
+3CLTEXTCLASS   			java/io/WinNTFileSystem(0x61A7AA90)
+3CLTEXTCLASS   			java/io/ExpiringCache(0x61A7AD90)
+3CLTEXTCLASS   			java/util/LinkedHashMap(0x61A7B0A0)
+3CLTEXTCLASS   			java/io/ExpiringCache$1(0x61A7B590)
+3CLTEXTCLASS   			java/util/LinkedHashMap$LinkedHashMapEntry(0x61A7B740)
+3CLTEXTCLASS   			[Ljava/util/LinkedHashMap$LinkedHashMapEntry;(0x61A7B8B0)
+3CLTEXTCLASS   			sun/misc/JavaIODeleteOnExitAccess(0x61A7B960)
+3CLTEXTCLASS   			java/io/File$1(0x61A7BA30)
+3CLTEXTCLASS   			sun/misc/SharedSecrets(0x61A7BB70)
+3CLTEXTCLASS   			sun/misc/JavaLangAccess(0x61A7BDF0)
+3CLTEXTCLASS   			sun/misc/SharedSecrets$1(0x61A7BF10)
+3CLTEXTCLASS   			[Ljava/io/File;(0x61A7C190)
+3CLTEXTCLASS   			sun/misc/Launcher$ExtClassLoader$1(0x61A7C250)
+3CLTEXTCLASS   			sun/misc/MetaIndex(0x61A7C3A0)
+3CLTEXTCLASS   			java/io/ExpiringCache$Entry(0x61A7C6D0)
+3CLTEXTCLASS   			sun/net/www/ParseUtil(0x61A7C840)
+3CLTEXTCLASS   			java/util/BitSet(0x61A7D210)
+3CLTEXTCLASS   			java/net/URL(0x61A7D7C0)
+3CLTEXTCLASS   			java/net/Parts(0x61A7E0B0)
+3CLTEXTCLASS   			java/net/URLStreamHandler(0x61A7E260)
+3CLTEXTCLASS   			sun/net/www/protocol/file/Handler(0x61A7E720)
+3CLTEXTCLASS   			[Ljava/net/URL;(0x61A7EA00)
+3CLTEXTCLASS   			com/ibm/oti/shared/Shared(0x61A7EAC0)
+3CLTEXTCLASS   			com/ibm/oti/shared/Shared$Monitor(0x61A7ECF0)
+3CLTEXTCLASS   			com/ibm/oti/util/PriviAction(0x61A7EE00)
+3CLTEXTCLASS   			sun/misc/URLClassPath(0x61A7F0A0)
+3CLTEXTCLASS   			java/util/ArrayList(0x61A7F870)
+3CLTEXTCLASS   			java/io/ObjectStreamClass(0x61A7FEE0)
+3CLTEXTCLASS   			java/lang/IncompatibleClassChangeError(0x61A812A0)
+3CLTEXTCLASS   			java/lang/NoSuchMethodError(0x61A81400)
+3CLTEXTCLASS   			java/util/Stack(0x61A81600)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/Handler(0x61A818B0)
+3CLTEXTCLASS   			java/nio/Bits(0x619049E0)
+3CLTEXTCLASS   			java/nio/ByteOrder(0x61905760)
+3CLTEXTCLASS   			java/lang/Readable(0x619058D0)
+3CLTEXTCLASS   			java/nio/CharBuffer(0x61905A80)
+3CLTEXTCLASS   			java/nio/HeapCharBuffer(0x61906250)
+3CLTEXTCLASS   			java/nio/charset/CoderResult(0x619066E0)
+3CLTEXTCLASS   			java/nio/charset/CoderResult$Cache(0x61906AC0)
+3CLTEXTCLASS   			java/nio/charset/CoderResult$1(0x61906CB0)
+3CLTEXTCLASS   			java/nio/charset/CoderResult$2(0x61906DD0)
+3CLTEXTCLASS   			sun/nio/cs/Surrogate$Parser(0x61906F10)
+3CLTEXTCLASS   			sun/nio/cs/Surrogate(0x61907170)
+3CLTEXTCLASS   			java/io/BufferedWriter(0x619073D0)
+3CLTEXTCLASS   			com/ibm/misc/SystemIntialization(0x61907710)
+3CLTEXTCLASS   			com/ibm/oti/vm/AbstractClassLoader(0x61907B30)
+3CLTEXTCLASS   			com/ibm/oti/vm/BootstrapClassLoader(0x619082E0)
+3CLTEXTCLASS   			com/ibm/oti/vm/AbstractClassLoader$CacheLock(0x61908740)
+3CLTEXTCLASS   			com/ibm/oti/vm/AbstractClassLoader$ManifestLock(0x61908850)
+3CLTEXTCLASS   			java/lang/ClassLoader$AssertionLock(0x61908960)
+3CLTEXTCLASS   			java/lang/ClassLoader$LazyInitLock(0x61908A70)
+3CLTEXTCLASS   			[[B(0x61908B80)
+3CLTEXTCLASS   			sun/misc/Launcher(0x61908C40)
+3CLTEXTCLASS   			java/lang/Package(0x619090F0)
+3CLTEXTCLASS   			java/net/URLStreamHandlerFactory(0x61909810)
+3CLTEXTCLASS   			sun/misc/Launcher$Factory(0x619098E0)
+3CLTEXTCLASS   			java/security/SecureClassLoader(0x61909BA0)
+3CLTEXTCLASS   			java/net/URLClassLoader(0x61909F10)
+3CLTEXTCLASS   			sun/misc/Launcher$ExtClassLoader(0x6190A990)
+3CLTEXTCLASS   			java/util/Vector(0x6190AE30)
+3CLTEXTCLASS   			java/util/StringTokenizer(0x6190B6D0)
+3CLTEXTCLASS   			java/io/File(0x6190BA00)
+3CLTEXTCLASS   			java/util/AbstractSequentialList(0x6190C660)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLComponentManager(0x6190C8C0)
+3CLTEXTCLASS   			sun/nio/cs/StandardCharsets$Classes(0x61839DF0)
+3CLTEXTCLASS   			sun/nio/cs/StandardCharsets$Cache(0x6183A240)
+3CLTEXTCLASS   			java/nio/charset/Charset$3(0x6183A500)
+3CLTEXTCLASS   			sun/nio/cs/AbstractCharsetProvider(0x6183A690)
+3CLTEXTCLASS   			sun/nio/cs/ext/ExtendedCharsets(0x6183AA90)
+3CLTEXTCLASS   			java/util/SortedMap(0x6183CFB0)
+3CLTEXTCLASS   			java/util/NavigableMap(0x6183D0C0)
+3CLTEXTCLASS   			java/util/TreeMap(0x6183D380)
+3CLTEXTCLASS   			sun/misc/ASCIICaseInsensitiveComparator(0x6183DE30)
+3CLTEXTCLASS   			java/util/TreeMap$Entry(0x6183E040)
+3CLTEXTCLASS   			sun/nio/cs/ext/GB18030(0x6183E200)
+3CLTEXTCLASS   			sun/nio/cs/StreamEncoder$CharsetSE(0x6183E820)
+3CLTEXTCLASS   			java/nio/charset/CharsetEncoder(0x6183ED00)
+3CLTEXTCLASS   			sun/nio/cs/ext/GB18030$Encoder(0x6183F480)
+3CLTEXTCLASS   			java/nio/charset/CodingErrorAction(0x6183F840)
+3CLTEXTCLASS   			java/nio/charset/CharsetDecoder(0x6183FA20)
+3CLTEXTCLASS   			sun/nio/cs/ext/GB18030$Decoder(0x618400C0)
+3CLTEXTCLASS   			java/nio/Buffer(0x618404D0)
+3CLTEXTCLASS   			java/nio/ByteBuffer(0x618409C0)
+3CLTEXTCLASS   			java/nio/HeapByteBuffer(0x61841360)
+3CLTEXTCLASS   			java/util/Deque(0x61841B60)
+3CLTEXTCLASS   			java/lang/StringBuilder(0x61831E70)
+3CLTEXTCLASS   			sun/io/CharToByteUTF8(0x618327C0)
+3CLTEXTCLASS   			sun/misc/VM(0x61832B00)
+3CLTEXTCLASS   			java/lang/StringCoding$DecoderCache(0x61832FE0)
+3CLTEXTCLASS   			java/lang/StringCoding$1(0x61833270)
+3CLTEXTCLASS   			java/lang/StringCoding$DecoderCache$1(0x618333A0)
+3CLTEXTCLASS   			sun/io/ByteToCharConverter(0x61833540)
+3CLTEXTCLASS   			sun/io/ByteToCharUTF8(0x618339D0)
+3CLTEXTCLASS   			sun/io/CharToByteGB18030(0x61833DE0)
+3CLTEXTCLASS   			[[C(0x618341A0)
+3CLTEXTCLASS   			java/io/Closeable(0x61834250)
+3CLTEXTCLASS   			java/io/Flushable(0x61834310)
+3CLTEXTCLASS   			java/io/OutputStream(0x618343F0)
+3CLTEXTCLASS   			java/io/FilterOutputStream(0x618345B0)
+3CLTEXTCLASS   			java/io/BufferedOutputStream(0x61834780)
+3CLTEXTCLASS   			java/io/FileOutputStream(0x61834980)
+3CLTEXTCLASS   			java/io/FileDescriptor(0x61834D40)
+3CLTEXTCLASS   			java/io/PrintStream(0x61835030)
+3CLTEXTCLASS   			com/ibm/jvm/io/ConsolePrintStream(0x618358F0)
+3CLTEXTCLASS   			java/io/InputStream(0x61835ED0)
+3CLTEXTCLASS   			java/io/FilterInputStream(0x61836130)
+3CLTEXTCLASS   			com/ibm/jvm/io/LocalizedInputStream(0x61836350)
+3CLTEXTCLASS   			java/util/zip/ZipFile$ZipFileInputStream(0x618366E0)
+3CLTEXTCLASS   			com/ibm/jvm/io/LocalizedInputStream$1(0x61836900)
+3CLTEXTCLASS   			java/io/Writer(0x61836A80)
+3CLTEXTCLASS   			java/io/OutputStreamWriter(0x61836DB0)
+3CLTEXTCLASS   			sun/nio/cs/StreamEncoder(0x618370A0)
+3CLTEXTCLASS   			java/nio/charset/Charset(0x61837520)
+3CLTEXTCLASS   			java/nio/charset/spi/CharsetProvider(0x61837CD0)
+3CLTEXTCLASS   			sun/nio/cs/FastCharsetProvider(0x61837E30)
+3CLTEXTCLASS   			sun/nio/cs/StandardCharsets(0x61838100)
+3CLTEXTCLASS   			sun/util/PreHashedMap(0x61838CD0)
+3CLTEXTCLASS   			sun/nio/cs/StandardCharsets$Aliases(0x61838FD0)
+3CLTEXTCLASS   			sun/io/ByteToCharASCII(0x61839AD0)
+3CLTEXTCLASS   			java/util/Collections$SynchronizedMap(0x619100C0)
+3CLTEXTCLASS   			java/security/Guard(0x61910450)
+3CLTEXTCLASS   			java/security/Permission(0x61910530)
+3CLTEXTCLASS   			java/security/BasicPermission(0x619107A0)
+3CLTEXTCLASS   			java/lang/reflect/ReflectPermission(0x61910A50)
+3CLTEXTCLASS   			java/security/PrivilegedAction(0x61910B70)
+3CLTEXTCLASS   			sun/reflect/ReflectionFactory$GetReflectionFactoryAction(0x61910C40)
+3CLTEXTCLASS   			java/security/AccessController(0x61910D60)
+3CLTEXTCLASS   			sun/reflect/ReflectionFactory(0x61911140)
+3CLTEXTCLASS   			java/lang/RuntimePermission(0x61911720)
+3CLTEXTCLASS   			java/lang/annotation/Annotation(0x61911990)
+3CLTEXTCLASS   			[Ljava/lang/annotation/Annotation;(0x61911A90)
+3CLTEXTCLASS   			java/lang/ThreadLocal$ThreadLocalMap(0x61911B50)
+3CLTEXTCLASS   			java/lang/ref/WeakReference(0x61911EC0)
+3CLTEXTCLASS   			java/lang/ThreadLocal$ThreadLocalMap$Entry(0x61912020)
+3CLTEXTCLASS   			[Ljava/lang/ThreadLocal$ThreadLocalMap$Entry;(0x61912150)
+3CLTEXTCLASS   			java/lang/StringCoding$EncoderCache(0x61912220)
+3CLTEXTCLASS   			java/lang/StringCoding$2(0x619124B0)
+3CLTEXTCLASS   			java/security/PrivilegedExceptionAction(0x619125D0)
+3CLTEXTCLASS   			java/lang/StringCoding$EncoderCache$1(0x619126A0)
+3CLTEXTCLASS   			sun/io/CharToByteConverter(0x61912850)
+3CLTEXTCLASS   			sun/io/Converters(0x61912D50)
+3CLTEXTCLASS   			[Ljava/lang/ref/SoftReference;(0x61913220)
+3CLTEXTCLASS   			[[Ljava/lang/ref/SoftReference;(0x619132E0)
+3CLTEXTCLASS   			sun/security/action/GetPropertyAction(0x619133B0)
+3CLTEXTCLASS   			sun/io/CharacterEncoding(0x61913520)
+3CLTEXTCLASS   			java/util/Locale(0x61914CA0)
+3CLTEXTCLASS   			java/util/concurrent/ConcurrentMap(0x61915740)
+3CLTEXTCLASS   			java/util/concurrent/ConcurrentHashMap(0x61915890)
+3CLTEXTCLASS   			java/util/concurrent/locks/Lock(0x61915E80)
+3CLTEXTCLASS   			java/util/concurrent/locks/ReentrantLock(0x61915FF0)
+3CLTEXTCLASS   			java/util/concurrent/ConcurrentHashMap$Segment(0x619164A0)
+3CLTEXTCLASS   			[Ljava/util/concurrent/ConcurrentHashMap$Segment;(0x619167D0)
+3CLTEXTCLASS   			java/util/concurrent/locks/AbstractQueuedSynchronizer(0x61916930)
+3CLTEXTCLASS   			java/util/concurrent/locks/ReentrantLock$Sync(0x619173C0)
+3CLTEXTCLASS   			java/util/concurrent/locks/ReentrantLock$NonfairSync(0x61917760)
+3CLTEXTCLASS   			java/util/concurrent/locks/AbstractQueuedSynchronizer$Node(0x61917980)
+3CLTEXTCLASS   			java/util/concurrent/ConcurrentHashMap$HashEntry(0x61917B50)
+3CLTEXTCLASS   			[Ljava/util/concurrent/ConcurrentHashMap$HashEntry;(0x61917C80)
+3CLTEXTCLASS   			java/lang/Appendable(0x61917D30)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport$5(0x61917E20)
+3CLTEXTCLASS   			java/lang/Double(0x619880F0)
+3CLTEXTCLASS   			java/lang/StrictMath(0x619885F0)
+3CLTEXTCLASS   			java/util/Dictionary(0x61988C00)
+3CLTEXTCLASS   			java/util/Map(0x61988D70)
+3CLTEXTCLASS   			java/util/Hashtable(0x61988F60)
+3CLTEXTCLASS   			java/util/Properties(0x61989810)
+3CLTEXTCLASS   			java/util/Enumeration(0x6198A1A0)
+3CLTEXTCLASS   			java/util/Hashtable$1(0x6198A290)
+3CLTEXTCLASS   			java/util/Iterator(0x6198A3C0)
+3CLTEXTCLASS   			java/util/Hashtable$2(0x6198A4C0)
+3CLTEXTCLASS   			java/util/Map$Entry(0x6198A620)
+3CLTEXTCLASS   			java/util/MapEntry(0x6198A740)
+3CLTEXTCLASS   			java/util/Hashtable$Entry(0x6198A9A0)
+3CLTEXTCLASS   			[Ljava/util/Hashtable$Entry;(0x6198ABB0)
+3CLTEXTCLASS   			com/ibm/oti/util/Util(0x6198AC70)
+3CLTEXTCLASS   			com/ibm/oti/vm/VM(0x6198B020)
+3CLTEXTCLASS   			java/lang/StringCoding(0x6198B420)
+3CLTEXTCLASS   			java/lang/ThreadLocal(0x6198BA00)
+3CLTEXTCLASS   			java/util/concurrent/atomic/AtomicInteger(0x6198BD00)
+3CLTEXTCLASS   			sun/misc/Unsafe(0x6198C1D0)
+3CLTEXTCLASS   			sun/reflect/Reflection(0x6198CC80)
+3CLTEXTCLASS   			java/util/AbstractMap(0x6198CFF0)
+3CLTEXTCLASS   			java/util/HashMap(0x6198D480)
+3CLTEXTCLASS   			java/util/HashMap$Entry(0x6198DB40)
+3CLTEXTCLASS   			[Ljava/util/HashMap$Entry;(0x6198DCB0)
+3CLTEXTCLASS   			java/util/Collections(0x6198DD70)
+3CLTEXTCLASS   			java/lang/Iterable(0x6198E7E0)
+3CLTEXTCLASS   			java/util/Collection(0x6198E8A0)
+3CLTEXTCLASS   			java/util/AbstractCollection(0x6198EA90)
+3CLTEXTCLASS   			java/util/List(0x6198EE10)
+3CLTEXTCLASS   			java/util/AbstractList(0x6198F0F0)
+3CLTEXTCLASS   			java/util/RandomAccess(0x6198F560)
+3CLTEXTCLASS   			java/util/Collections$EmptyList(0x6198F680)
+3CLTEXTCLASS   			java/util/Set(0x6198F870)
+3CLTEXTCLASS   			java/util/AbstractSet(0x6198FA70)
+3CLTEXTCLASS   			java/util/Collections$EmptySet(0x6198FCF0)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport$6(0x6198FEB0)
+3CLTEXTCLASS   			java/lang/VirtualMachineError(0x619600E0)
+3CLTEXTCLASS   			java/lang/StackOverflowError(0x61960240)
+3CLTEXTCLASS   			java/lang/Exception(0x619603A0)
+3CLTEXTCLASS   			java/lang/ClassNotFoundException(0x61960530)
+3CLTEXTCLASS   			java/lang/OutOfMemoryError(0x61960700)
+3CLTEXTCLASS   			java/lang/LinkageError(0x61960860)
+3CLTEXTCLASS   			java/lang/ExceptionInInitializerError(0x619609C0)
+3CLTEXTCLASS   			java/lang/Number(0x61960B80)
+3CLTEXTCLASS   			java/lang/Long(0x61960D20)
+3CLTEXTCLASS   			java/lang/Boolean(0x61961320)
+3CLTEXTCLASS   			java/lang/Byte(0x61961610)
+3CLTEXTCLASS   			java/lang/Character(0x61961A00)
+3CLTEXTCLASS   			java/lang/Integer(0x61962980)
+3CLTEXTCLASS   			java/lang/Short(0x61963020)
+3CLTEXTCLASS   			java/lang/reflect/AccessibleObject(0x61963440)
+3CLTEXTCLASS   			java/lang/reflect/Member(0x61963700)
+3CLTEXTCLASS   			java/lang/reflect/Field(0x61963880)
+3CLTEXTCLASS   			java/lang/reflect/Method(0x619640E0)
+3CLTEXTCLASS   			java/lang/reflect/Constructor(0x619648C0)
+3CLTEXTCLASS   			java/lang/Thread$UncaughtExceptionHandler(0x61964FA0)
+3CLTEXTCLASS   			java/lang/ThreadGroup(0x619650E0)
+3CLTEXTCLASS   			java/util/concurrent/locks/AbstractOwnableSynchronizer(0x61965830)
+3CLTEXTCLASS   			sun/reflect/MagicAccessorImpl(0x61965970)
+3CLTEXTCLASS   			sun/reflect/ConstructorAccessor(0x61965A50)
+3CLTEXTCLASS   			sun/reflect/ConstructorAccessorImpl(0x61965B20)
+3CLTEXTCLASS   			sun/reflect/MethodAccessor(0x61965C20)
+3CLTEXTCLASS   			sun/reflect/MethodAccessorImpl(0x61965CF0)
+3CLTEXTCLASS   			[Ljava/lang/Thread;(0x61965E00)
+3CLTEXTCLASS   			[Ljava/lang/ThreadGroup;(0x61965EC0)
+3CLTEXTCLASS   			java/lang/ThreadGroup$ChildrenGroupsLock(0x61965F80)
+3CLTEXTCLASS   			java/lang/ThreadGroup$ChildrenThreadsLock(0x61966090)
+3CLTEXTCLASS   			java/lang/Thread$ThreadLock(0x619661A0)
+3CLTEXTCLASS   			java/lang/System(0x619662B0)
+3CLTEXTCLASS   			java/lang/Runtime(0x61966B80)
+3CLTEXTCLASS   			java/lang/Math(0x619670D0)
+3CLTEXTCLASS   			java/lang/Float(0x619677A0)
+3CLTEXTCLASS   			java/util/Collections$EmptyMap(0x61967C30)
+3CLTEXTCLASS   			java/sql/BatchUpdateException(0x61967E50)
+3CLTEXTCLASS   			java/lang/Object(0x617F3F10)
+3CLTEXTCLASS   			java/lang/J9VMInternals(0x617F4120)
+3CLTEXTCLASS   			java/io/Serializable(0x617F4670)
+3CLTEXTCLASS   			java/lang/reflect/GenericDeclaration(0x617F4720)
+3CLTEXTCLASS   			java/lang/reflect/Type(0x617F47E0)
+3CLTEXTCLASS   			java/lang/reflect/AnnotatedElement(0x617F4890)
+3CLTEXTCLASS   			java/lang/Class(0x617F4A80)
+3CLTEXTCLASS   			void(0x617F6130)
+3CLTEXTCLASS   			boolean(0x617F61D0)
+3CLTEXTCLASS   			java/lang/Cloneable(0x617F6270)
+3CLTEXTCLASS   			[Z(0x617F6330)
+3CLTEXTCLASS   			char(0x617F63F0)
+3CLTEXTCLASS   			[C(0x617F64A0)
+3CLTEXTCLASS   			float(0x617F6550)
+3CLTEXTCLASS   			[F(0x617F6600)
+3CLTEXTCLASS   			double(0x617F66B0)
+3CLTEXTCLASS   			[D(0x617F6760)
+3CLTEXTCLASS   			byte(0x617F6810)
+3CLTEXTCLASS   			[B(0x617F68C0)
+3CLTEXTCLASS   			short(0x617F6970)
+3CLTEXTCLASS   			[S(0x617F6A20)
+3CLTEXTCLASS   			int(0x617F6AD0)
+3CLTEXTCLASS   			[I(0x617F6B80)
+3CLTEXTCLASS   			long(0x617F6C30)
+3CLTEXTCLASS   			[J(0x617F6CE0)
+3CLTEXTCLASS   			java/lang/Comparable(0x617F6D90)
+3CLTEXTCLASS   			java/lang/CharSequence(0x617F6E50)
+3CLTEXTCLASS   			java/lang/String(0x617F7020)
+3CLTEXTCLASS   			[Ljava/lang/Class;(0x617F7D80)
+3CLTEXTCLASS   			java/util/Comparator(0x617F7E30)
+3CLTEXTCLASS   			java/lang/String$CaseInsensitiveComparator(0x617F7F20)
+3CLTEXTCLASS   			java/io/ObjectStreamField(0x617F80C0)
+3CLTEXTCLASS   			[Ljava/io/ObjectStreamField;(0x617F8490)
+3CLTEXTCLASS   			[Ljava/lang/Object;(0x617F8550)
+3CLTEXTCLASS   			java/lang/Class$CacheKey(0x617F8610)
+3CLTEXTCLASS   			java/lang/ref/ReferenceQueue(0x617F87A0)
+3CLTEXTCLASS   			java/lang/ref/Reference(0x617F8A10)
+3CLTEXTCLASS   			java/lang/ref/PhantomReference(0x617F8C40)
+3CLTEXTCLASS   			sun/misc/Cleaner(0x617F8D90)
+3CLTEXTCLASS   			java/lang/ClassLoader(0x617F9070)
+3CLTEXTCLASS   			java/security/cert/Certificate(0x617F9EF0)
+3CLTEXTCLASS   			[Ljava/security/cert/Certificate;(0x617FA150)
+3CLTEXTCLASS   			java/lang/ref/SoftReference(0x617FA230)
+3CLTEXTCLASS   			java/lang/Runnable(0x617FA380)
+3CLTEXTCLASS   			java/lang/Class$ReflectRef(0x617FA470)
+3CLTEXTCLASS   			[Ljava/lang/ref/Reference;(0x617FA600)
+3CLTEXTCLASS   			java/lang/Thread(0x617FA740)
+3CLTEXTCLASS   			java/lang/Thread$UniqueIdLock(0x617FB2E0)
+3CLTEXTCLASS   			java/lang/StackTraceElement(0x617FB410)
+3CLTEXTCLASS   			[Ljava/lang/String;(0x617FB7A0)
+3CLTEXTCLASS   			java/lang/Throwable(0x617FB890)
+3CLTEXTCLASS   			java/lang/Error(0x617FBD90)
+2CLTEXTCLLOAD  		Loader sun/misc/Launcher$ExtClassLoader(0x01C538E8)
+3CLTEXTCLASS   			sun/util/resources/CalendarData_zh(0x61C2B230)
+2CLTEXTCLLOAD  		Loader sun/misc/Launcher$AppClassLoader(0x01C9D120)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfServiceCategoryException(0x632993C0)
+3CLTEXTCLASS   			EDU/pku/ly/Grounding/Implementation/GroundingInquiryImpl(0x63299530)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlAtomicProcessGrounding(0x63299960)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlAtomicProcessGroundingList(0x63299B20)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/ServiceGrounding(0x63299C20)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlGrounding(0x63299CF0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlGroundingList(0x63299DD0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlOperationRef(0x63299EE0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlMessageMap(0x63299FD0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlOutputMessageMap(0x6329A100)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlMessageMapList(0x6329A1C0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlOutputMessageMapList(0x6329A2C0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlInputMessageMap(0x6329A3D0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/WsdlInputMessageMapList(0x6329A490)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/implementation/ServiceGroundingListImpl(0x6329A5E0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlGroundingListImpl(0x6329A7F0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/implementation/ServiceGroundingImpl(0x6329A9F0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlGroundingImpl(0x6329ABB0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfWsdlGroundingException(0x6329AE20)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlAtomicProcessGroundingListImpl(0x6329AFC0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlAtomicProcessGroundingImpl(0x6329B1E0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfWsdlAtomicProcessGroundingException(0x6329B920)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfWSDLOperationRefException(0x6329BAC0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlMessageMapListImpl(0x6329BC60)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlInputMessageMapListImpl(0x6329BE70)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlMessageMapImpl(0x6329C080)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlInputMessageMapImpl(0x6329C530)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfWsdlMessageMapException(0x6329C6C0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlOutputMessageMapListImpl(0x6329C870)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlOutputMessageMapImpl(0x6329CA80)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/grounding/implementation/WsdlOperationRefImpl(0x6329CC00)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Process(0x6329CF10)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/CompositeProcess(0x6329D120)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/ProcessImpl(0x6329D280)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/AtomicProcessImpl(0x6329D710)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/CompositeProcessImpl(0x6329DA70)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/PreConditionList(0x63160060)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Variable(0x63160160)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Parameter(0x63160210)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Output(0x63160330)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/ParameterList(0x631603F0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/OutputList(0x631604F0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Input(0x63160600)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/InputList(0x631606C0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/ParameterImpl(0x63160830)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/InputImpl(0x63160D80)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/OutputImpl(0x63160FD0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/ParameterListImpl(0x63161180)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/InputListImpl(0x63161390)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/OutputListImpl(0x631615B0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/PreConditionListImpl(0x631617C0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/ResultListImpl(0x631619C0)
+3CLTEXTCLASS   			EDU/pku/ly/Process/util/ProcessResource(0x63161B90)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/ServiceProfile(0x63161E60)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/Profile(0x63161F30)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfProfileException(0x63162270)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/shadowlist/implementation/ListImpl(0x63162400)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/ControlConstructListImpl(0x63162640)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/PerformImpl(0x631627C0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfPerformException(0x63162C30)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfParameterException(0x63162DD0)
+3CLTEXTCLASS   			edu/cmu/atlas/owl/exceptions/NotAnLiteralException(0x63162F70)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/OWLSParameterNotIndividual(0x63163110)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/ResultImpl(0x631632B0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfResultException(0x63163700)
+3CLTEXTCLASS   			com/mysql/jdbc/OperationNotSupportedException(0x631638B0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/EffectListImpl(0x63163A30)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/expression/implementation/ConditionListImpl(0x63163C30)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/expression/implementation/ExpressionImpl(0x63163E20)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfExpressionException(0x63164240)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfLogicLanguage(0x631643E0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/expression/implementation/LogicLanguageImpl(0x63164570)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/expression/implementation/ConditionImpl(0x631648E0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfControlConstructException(0x63164AF0)
+3CLTEXTCLASS   			EDU/pku/ly/Profile/Implementation/ProfileInquiryImpl(0x63164C60)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/ProfileList(0x631652E0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/ServiceCategory(0x631653F0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/ServiceCategoriesList(0x63165520)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/Actor(0x63165620)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/ActorsList(0x631657C0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/implementation/ServiceProfileListImpl(0x63165900)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/implementation/ProfileListImpl(0x63165B10)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/implementation/ServiceProfileImpl(0x63165D10)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/implementation/ProfileImpl(0x63165FD0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotSubclassOfProfileException(0x63166D70)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/implementation/ActorsListImpl(0x63166F10)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/implementation/ActorImpl(0x63167170)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfActorException(0x63167760)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/implementation/ServiceCategoriesListImpl(0x63167900)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/profile/implementation/ServiceCategoryImpl(0x63167B30)
+3CLTEXTCLASS   			org/apache/log4j/Layout(0x63221360)
+3CLTEXTCLASS   			org/apache/log4j/PatternLayout(0x63221550)
+3CLTEXTCLASS   			org/apache/log4j/helpers/PatternParser(0x632217C0)
+3CLTEXTCLASS   			org/apache/log4j/helpers/PatternConverter(0x63221D50)
+3CLTEXTCLASS   			org/apache/log4j/helpers/PatternParser$LiteralPatternConverter(0x63221F90)
+3CLTEXTCLASS   			org/apache/log4j/helpers/PatternParser$BasicPatternConverter(0x632220E0)
+3CLTEXTCLASS   			org/apache/log4j/helpers/PatternParser$LocationPatternConverter(0x63222260)
+3CLTEXTCLASS   			org/apache/log4j/helpers/PatternParser$NamedPatternConverter(0x632223D0)
+3CLTEXTCLASS   			org/apache/log4j/helpers/PatternParser$CategoryPatternConverter(0x63222540)
+3CLTEXTCLASS   			org/apache/log4j/helpers/PatternParser$MDCPatternConverter(0x63222690)
+3CLTEXTCLASS   			org/apache/log4j/helpers/PatternParser$ClassNamePatternConverter(0x632227E0)
+3CLTEXTCLASS   			org/apache/log4j/helpers/AbsoluteTimeDateFormat(0x63222980)
+3CLTEXTCLASS   			org/apache/log4j/helpers/ISO8601DateFormat(0x63222C30)
+3CLTEXTCLASS   			org/apache/log4j/helpers/DateTimeDateFormat(0x63222F20)
+3CLTEXTCLASS   			org/apache/log4j/helpers/PatternParser$DatePatternConverter(0x63223150)
+3CLTEXTCLASS   			org/apache/log4j/helpers/FormattingInfo(0x632232F0)
+3CLTEXTCLASS   			org/apache/log4j/helpers/AppenderAttachableImpl(0x632234C0)
+3CLTEXTCLASS   			com/mysql/jdbc/ParameterBindings(0x63223700)
+3CLTEXTCLASS   			com/mysql/jdbc/JDBC4PreparedStatement(0x63223BE0)
+3CLTEXTCLASS   			com/mysql/jdbc/PreparedStatement$ParseInfo(0x63223FD0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/core/implementation/OWLS_ObjectImpl(0x632242F0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/implementation/ServiceImpl(0x632244F0)
+3CLTEXTCLASS   			com/hp/hpl/jena/graph/FrontsNode(0x632249D0)
+3CLTEXTCLASS   			com/hp/hpl/jena/rdf/model/RDFNode(0x63224A90)
+3CLTEXTCLASS   			com/hp/hpl/jena/rdf/model/Resource(0x63224BE0)
+3CLTEXTCLASS   			com/hp/hpl/jena/rdf/model/Property(0x63224F20)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/OWLS_Store_Exception(0x63225060)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfServiceException(0x63225200)
+3CLTEXTCLASS   			edu/cmu/atlas/owl/exceptions/NotAnIndividualException(0x632253A0)
+3CLTEXTCLASS   			edu/cmu/atlas/owl/exceptions/PropertyNotFunctional(0x63225540)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/exception/NotInstanceOfProcessException(0x632256E0)
+3CLTEXTCLASS   			EDU/pku/ly/Process/Implementation/ProcessInquiryImpl(0x63225860)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/implementation/ServiceModelImpl(0x63226080)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/ProcessImpl(0x63226280)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/CompositeProcess(0x63226610)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/CompositeProcessImpl(0x63226770)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/AtomicProcess(0x632269E0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/AtomicProcessImpl(0x63226B10)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/ControlConstruct(0x63226D80)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/ControlConstructImpl(0x63226E80)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/RepeatWhile(0x63227080)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/RepeatWhileImpl(0x632271C0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/RepeatUntil(0x632274D0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/RepeatUntilImpl(0x63227610)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/AnyOrder(0x63227960)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/AnyOrderImpl(0x63227A50)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Choice(0x63227B90)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/ChoiceImpl(0x63227C80)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/SplitJoin(0x63227DC0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/SplitJoinImpl(0x63227EB0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Split(0x63227FF0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/SplitImpl(0x632280E0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/IfThenElse(0x63228220)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/IfThenElseImpl(0x63228390)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Sequence(0x63228720)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/implementation/SequenceImpl(0x63228810)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/shadowlist/List(0x63228960)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/ControlConstructList(0x63228A50)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Perform(0x63228B10)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/expression/LogicLanguage(0x63228C10)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/expression/Expression(0x63228CE0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/expression/Condition(0x63228DD0)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/expression/ConditionList(0x63228E90)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/EffectList(0x63228F90)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Result(0x63229090)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/ResultList(0x632291C0)
+3CLTEXTCLASS   			org/apache/log4j/Category(0x61D584C0)
+3CLTEXTCLASS   			org/apache/log4j/Logger(0x61D58DC0)
+3CLTEXTCLASS   			org/apache/log4j/Priority(0x61D59100)
+3CLTEXTCLASS   			org/apache/log4j/Level(0x61D59400)
+3CLTEXTCLASS   			org/apache/log4j/LogManager(0x61D597E0)
+3CLTEXTCLASS   			org/apache/log4j/spi/RootLogger(0x61D59C60)
+3CLTEXTCLASS   			org/apache/log4j/spi/LoggerRepository(0x61D59E90)
+3CLTEXTCLASS   			org/apache/log4j/spi/RepositorySelector(0x61D5A040)
+3CLTEXTCLASS   			org/apache/log4j/spi/RendererSupport(0x61D5A100)
+3CLTEXTCLASS   			org/apache/log4j/Hierarchy(0x61D5A240)
+3CLTEXTCLASS   			org/apache/log4j/spi/LoggerFactory(0x61D5A8D0)
+3CLTEXTCLASS   			org/apache/log4j/ProvisionNode(0x61D5AA40)
+3CLTEXTCLASS   			org/apache/log4j/or/RendererMap(0x61D5AC00)
+3CLTEXTCLASS   			org/apache/log4j/or/ObjectRenderer(0x61D5AF50)
+3CLTEXTCLASS   			org/apache/log4j/or/DefaultRenderer(0x61D5B020)
+3CLTEXTCLASS   			org/apache/log4j/DefaultCategoryFactory(0x61D5B130)
+3CLTEXTCLASS   			org/apache/log4j/spi/DefaultRepositorySelector(0x61D5B250)
+3CLTEXTCLASS   			org/apache/log4j/helpers/OptionConverter(0x61D5B370)
+3CLTEXTCLASS   			org/apache/log4j/spi/Configurator(0x61D5B9B0)
+3CLTEXTCLASS   			org/apache/log4j/PropertyConfigurator(0x61D5BAC0)
+3CLTEXTCLASS   			org/apache/log4j/helpers/Loader(0x61D5C2D0)
+3CLTEXTCLASS   			org/apache/log4j/helpers/LogLog(0x61D5C620)
+3CLTEXTCLASS   			org/apache/log4j/xml/DOMConfigurator(0x61D5C8E0)
+3CLTEXTCLASS   			org/apache/log4j/spi/OptionHandler(0x61D5D510)
+3CLTEXTCLASS   			org/apache/log4j/spi/Filter(0x61D5D5F0)
+3CLTEXTCLASS   			org/apache/log4j/helpers/FileWatchdog(0x61D5D7F0)
+3CLTEXTCLASS   			org/apache/log4j/xml/XMLWatchdog(0x61D5DB60)
+3CLTEXTCLASS   			org/apache/log4j/xml/DOMConfigurator$ParseAction(0x61D5DD10)
+3CLTEXTCLASS   			org/apache/log4j/xml/DOMConfigurator$2(0x61D5DDE0)
+3CLTEXTCLASS   			org/apache/log4j/xml/SAXErrorHandler(0x61D5DF80)
+3CLTEXTCLASS   			org/apache/log4j/xml/Log4jEntityResolver(0x61D5E180)
+3CLTEXTCLASS   			org/apache/log4j/CategoryKey(0x61D5E330)
+3CLTEXTCLASS   			org/apache/log4j/config/PropertySetter(0x61D5E520)
+3CLTEXTCLASS   			org/apache/log4j/config/PropertySetterException(0x61D5EA90)
+3CLTEXTCLASS   			org/apache/log4j/Appender(0x61D5EBF0)
+3CLTEXTCLASS   			org/apache/log4j/AppenderSkeleton(0x61D5EDD0)
+3CLTEXTCLASS   			org/apache/log4j/WriterAppender(0x61D5F250)
+3CLTEXTCLASS   			org/apache/log4j/ConsoleAppender(0x61D5F780)
+3CLTEXTCLASS   			org/apache/log4j/spi/ErrorHandler(0x61D5FAD0)
+3CLTEXTCLASS   			org/apache/log4j/helpers/QuietWriter(0x61D5FC30)
+3CLTEXTCLASS   			org/apache/log4j/ConsoleAppender$SystemErrStream(0x61D5FE50)
+3CLTEXTCLASS   			org/apache/log4j/ConsoleAppender$SystemOutStream(0x61D5FFF0)
+3CLTEXTCLASS   			org/apache/log4j/helpers/OnlyOnceErrorHandler(0x61D601A0)
+3CLTEXTCLASS   			com/mysql/jdbc/Field(0x61B710E0)
+3CLTEXTCLASS   			[Lcom/mysql/jdbc/Field;(0x61B71B90)
+3CLTEXTCLASS   			com/mysql/jdbc/MysqlDefs(0x61B71C50)
+3CLTEXTCLASS   			com/mysql/jdbc/RowDataStatic(0x61B72200)
+3CLTEXTCLASS   			com/mysql/jdbc/UpdatableResultSet(0x61B729C0)
+3CLTEXTCLASS   			com/mysql/jdbc/NotUpdatable(0x61B73F10)
+3CLTEXTCLASS   			com/mysql/jdbc/JDBC4ResultSet(0x61B74510)
+3CLTEXTCLASS   			com/mysql/jdbc/JDBC4UpdatableResultSet(0x61B75480)
+3CLTEXTCLASS   			com/mysql/jdbc/SQLError(0x61B76090)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/MySQLTransientConnectionException(0x61B76D70)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/MySQLNonTransientConnectionException(0x61B76F30)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/MySQLDataException(0x61B770F0)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/MySQLIntegrityConstraintViolationException(0x61B772B0)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/MySQLSyntaxErrorException(0x61B77470)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/MySQLTransactionRollbackException(0x61B77630)
+3CLTEXTCLASS   			com/mysql/jdbc/NotImplemented(0x61B777F0)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/jdbc4/CommunicationsException(0x61B77980)
+3CLTEXTCLASS   			com/mysql/jdbc/EscapeProcessor(0x61B77B60)
+3CLTEXTCLASS   			com/mysql/jdbc/LicenseConfiguration(0x61B78260)
+3CLTEXTCLASS   			EDU/pku/ly/Process/Implementation/ProcessMainImpl(0x61B78370)
+3CLTEXTCLASS   			EDU/pku/ly/Process/ProcessParser(0x61B785B0)
+3CLTEXTCLASS   			EDU/pku/ly/Process/ProcessInquiry(0x61B78670)
+3CLTEXTCLASS   			EDU/pku/ly/Process/ProcessDelete(0x61B78750)
+3CLTEXTCLASS   			EDU/pku/ly/Profile/Implementation/ProfileMainImpl(0x61B78830)
+3CLTEXTCLASS   			EDU/pku/ly/Profile/ProfileInquiry(0x61B78A90)
+3CLTEXTCLASS   			EDU/pku/ly/Profile/ProfileParser(0x61B78B50)
+3CLTEXTCLASS   			EDU/pku/ly/Profile/ProfileDelete(0x61B78C20)
+3CLTEXTCLASS   			EDU/pku/ly/Grounding/Implementation/GroundingMainImpl(0x61B78D00)
+3CLTEXTCLASS   			EDU/pku/ly/Grounding/GroundingInquiry(0x61B78F00)
+3CLTEXTCLASS   			com/mysql/jdbc/MysqlIO(0x61C30A70)
+3CLTEXTCLASS   			com/mysql/jdbc/util/ReadAheadInputStream(0x61C328F0)
+3CLTEXTCLASS   			com/mysql/jdbc/PacketTooBigException(0x61C32CB0)
+3CLTEXTCLASS   			com/mysql/jdbc/CompressedInputStream(0x61C32E70)
+3CLTEXTCLASS   			com/mysql/jdbc/BufferRow(0x61C332B0)
+3CLTEXTCLASS   			com/mysql/jdbc/ResultSetInternalMethods(0x61C338E0)
+3CLTEXTCLASS   			com/mysql/jdbc/ResultSetImpl(0x61C33F20)
+3CLTEXTCLASS   			com/mysql/jdbc/MysqlDataTruncation(0x61C37030)
+3CLTEXTCLASS   			com/mysql/jdbc/StreamingNotifiable(0x61C371D0)
+3CLTEXTCLASS   			com/mysql/jdbc/CommunicationsException(0x61C372E0)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionFeatureNotAvailableException(0x61C374E0)
+3CLTEXTCLASS   			com/mysql/jdbc/Buffer(0x61C37730)
+3CLTEXTCLASS   			com/mysql/jdbc/SingleByteCharsetConverter(0x61C37F80)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/MySQLTransientException(0x61C382C0)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/MySQLTimeoutException(0x61C38470)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/MySQLNonTransientException(0x61C38650)
+3CLTEXTCLASS   			com/mysql/jdbc/StatementImpl$CancelTask(0x61C387E0)
+3CLTEXTCLASS   			com/mysql/jdbc/CharsetMapping(0x61C17E40)
+3CLTEXTCLASS   			com/mysql/jdbc/VersionedStringProperty(0x61C18C50)
+3CLTEXTCLASS   			com/mysql/jdbc/log/LogFactory(0x61C18E80)
+3CLTEXTCLASS   			com/mysql/jdbc/DatabaseMetaData(0x61C19410)
+3CLTEXTCLASS   			com/mysql/jdbc/DatabaseMetaDataUsingInfoSchema(0x61C1C710)
+3CLTEXTCLASS   			com/mysql/jdbc/RowData(0x61C1D1F0)
+3CLTEXTCLASS   			com/mysql/jdbc/ResultSetRow(0x61C1D4C0)
+3CLTEXTCLASS   			com/mysql/jdbc/ByteArrayRow(0x61C1DC90)
+3CLTEXTCLASS   			com/mysql/jdbc/DatabaseMetaData$IteratorWithCleanup(0x61C1E0C0)
+3CLTEXTCLASS   			com/mysql/jdbc/DatabaseMetaData$SingleStringIterator(0x61C1E200)
+3CLTEXTCLASS   			com/mysql/jdbc/DatabaseMetaData$ResultSetIterator(0x61C1E360)
+3CLTEXTCLASS   			com/mysql/jdbc/JDBC4DatabaseMetaData(0x61C1E7B0)
+3CLTEXTCLASS   			com/mysql/jdbc/JDBC4DatabaseMetaDataUsingInfoSchema(0x61C1EFF0)
+3CLTEXTCLASS   			com/mysql/jdbc/exceptions/MySQLStatementCancelledException(0x61C1F4C0)
+3CLTEXTCLASS   			EDU/pku/ly/Grounding/GroundingParser(0x61C1F650)
+3CLTEXTCLASS   			EDU/pku/ly/Grounding/GroundingDelete(0x61C1F720)
+3CLTEXTCLASS   			EDU/pku/ly/owlsservice/implementation/ExtendedServiceImpl(0x61C1F830)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/implementation/ServiceListImpl(0x61C1FB90)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionImpl(0x61C8EFD0)
+3CLTEXTCLASS   			com/mysql/jdbc/IterateBlock(0x61C92520)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionImpl$2(0x61C926F0)
+3CLTEXTCLASS   			com/mysql/jdbc/util/LRUCache(0x61C92880)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionImpl$3(0x61C92A70)
+3CLTEXTCLASS   			com/mysql/jdbc/Statement(0x61C92C30)
+3CLTEXTCLASS   			com/mysql/jdbc/StatementImpl(0x61C92E70)
+3CLTEXTCLASS   			com/mysql/jdbc/PreparedStatement(0x61C944A0)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionImpl$5(0x61C96570)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionImpl$6(0x61C966B0)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionPropertiesImpl(0x61BA2590)
+3CLTEXTCLASS   			com/mysql/jdbc/Connection(0x61BA6710)
+3CLTEXTCLASS   			com/mysql/jdbc/ServerPreparedStatement(0x61BA6D30)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionImpl$7(0x61BA8580)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionImpl$8(0x61BA86D0)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionImpl$9(0x61BA8820)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionImpl$10(0x61BA8950)
+3CLTEXTCLASS   			com/mysql/jdbc/log/Log(0x61BA8A60)
+3CLTEXTCLASS   			com/mysql/jdbc/log/StandardLogger(0x61BA8CA0)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionPropertiesImpl$ConnectionProperty(0x61BA9150)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionPropertiesImpl$BooleanConnectionProperty(0x61BA9630)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionPropertiesImpl$IntegerConnectionProperty(0x61BA98B0)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionPropertiesImpl$MemorySizeConnectionProperty(0x61BA9C00)
+3CLTEXTCLASS   			com/mysql/jdbc/JDBC4Connection$1(0x61BA9E90)
+3CLTEXTCLASS   			EDU/pku/ly/owlservice/test/TestPublishAndGet(0x61A8D8B0)
+3CLTEXTCLASS   			EDU/pku/ly/owlsservice/OwlsServiceMain(0x61A8DA50)
+3CLTEXTCLASS   			EDU/pku/ly/owlsservice/implementation/OwlsServiceMainImpl(0x61A8DB40)
+3CLTEXTCLASS   			EDU/pku/ly/owlsservice/ExtendedService(0x61A8E080)
+3CLTEXTCLASS   			EDU/pku/ly/Process/ProcessMain(0x61A8E220)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/core/OWLS_Object(0x61A8E310)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/ServiceModel(0x61A8E400)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/Service(0x61A8E4D0)
+3CLTEXTCLASS   			EDU/pku/ly/Profile/ProfileMain(0x61A8E600)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/core/OWLS_Store(0x61A8E700)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/ServiceProfileList(0x61A8E830)
+3CLTEXTCLASS   			EDU/pku/ly/Grounding/GroundingMain(0x61A8E930)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/ServiceGroundingList(0x61A8EA30)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/service/ServiceList(0x61A8EB30)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/process/Process(0x61A8EC30)
+3CLTEXTCLASS   			edu/pku/ly/SqlOpe/SQLHelper(0x61A8EE20)
+3CLTEXTCLASS   			com/mysql/jdbc/NonRegisteringDriver(0x61A8F1E0)
+3CLTEXTCLASS   			com/mysql/jdbc/Driver(0x61A8F9F0)
+3CLTEXTCLASS   			org/apache/derby/jdbc/AutoloadedDriver(0x61A8FB80)
+3CLTEXTCLASS   			com/mysql/jdbc/StringUtils(0x61A8FE70)
+3CLTEXTCLASS   			com/mysql/jdbc/Util(0x61A906D0)
+3CLTEXTCLASS   			com/mysql/jdbc/Messages(0x61A90F60)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionProperties(0x61A91200)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionPropertiesImpl$StringConnectionProperty(0x61A929C0)
+3CLTEXTCLASS   			com/mysql/jdbc/ConnectionPropertiesImpl$LongConnectionProperty(0x61A92C10)
+3CLTEXTCLASS   			com/mysql/jdbc/log/NullLogger(0x61A92ED0)
+3CLTEXTCLASS   			com/mysql/jdbc/Constants(0x61A93180)
+3CLTEXTCLASS   			com/mysql/jdbc/JDBC4Connection(0x61A93BE0)
+3CLTEXTCLASS   			com/mysql/jdbc/SocketFactory(0x61A94820)
+3CLTEXTCLASS   			com/mysql/jdbc/StandardSocketFactory(0x61A94920)
+3CLTEXTCLASS   			EDU/cmu/Atlas/owls1_1/core/implementation/OWLS_StoreImpl(0x61A94DF0)
+3CLTEXTCLASS   			org/apache/log4j/spi/AppenderAttachable(0x61A95100)
+3CLTEXTCLASS   			org/apache/log4j/spi/LoggingEvent(0x61A95260)
+2CLTEXTCLLOAD  		Loader sun/reflect/DelegatingClassLoader(0x01DC51F8)
+3CLTEXTCLASS   			sun/reflect/GeneratedMethodAccessor1(0x6180FCE0)
+2CLTEXTCLLOAD  		Loader sun/reflect/DelegatingClassLoader(0x01F4E4B0)
+3CLTEXTCLASS   			sun/reflect/GeneratedConstructorAccessor1(0x6182E470)
+2CLTEXTCLLOAD  		Loader sun/reflect/DelegatingClassLoader(0x01F56880)
+3CLTEXTCLASS   			sun/reflect/GeneratedConstructorAccessor2(0x61C20E80)
+2CLTEXTCLLOAD  		Loader sun/reflect/DelegatingClassLoader(0x01F5B4B8)
+3CLTEXTCLASS   			sun/reflect/GeneratedConstructorAccessor3(0x61C40DB0)
+NULL           ------------------------------------------------------------------------
+0SECTION       Javadump End section
+NULL           ---------------------- END OF DUMP -------------------------------------
