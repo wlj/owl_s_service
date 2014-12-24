@@ -2132,3 +2132,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration GroundingResourceTe
 2014-12-23 23:45:45,936 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2014-12-23 23:45:45,939 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2014-12-23 23:45:45,939 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory H:\eclipse_workspace\liuxin\simple-service-webapp\src\test\resources
+2014-12-24 22:04:19,923 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-24 22:04:19,951 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-12-24 22:04:19,956 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-24 22:04:19,957 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory H:\eclipse_workspace\liuxin\simple-service-webapp\src\test\resources

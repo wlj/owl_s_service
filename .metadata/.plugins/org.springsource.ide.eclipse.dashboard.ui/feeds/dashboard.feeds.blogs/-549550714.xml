@@ -5,7 +5,38 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2014-12-19T16:36:48Z</updated>
+  <updated>2014-12-23T22:12:41Z</updated>
+  <entry>
+    <title>Spring XD 1.1 M2 and 1.0.3 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/23/spring-xd-1-1-m2-and-1-0-3-released" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Mark Pollack</name>
+    </author>
+    <id>tag:spring.io,2014-12-23:1899</id>
+    <updated>2014-12-23T22:12:41Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the Spring XD team, I am very pleased to announce the second milestone release of Spring XD 1.1 and the 1.0.3 maintenance release.&lt;/p&gt;&lt;p&gt;Download Links:&lt;br/&gt;* 1.1.0.M2 RELEASE: &lt;a href="http://repo.spring.io/libs-milestone/org/springframework/xd/spring-xd/1.1.0.M2/spring-xd-1.1.0.M2-dist.zip"&gt;zip&lt;/a&gt;, 1.0.3.RELEASE: &lt;a href="http://repo.spring.io/release/org/springframework/xd/spring-xd/1.0.3.RELEASE/spring-xd-1.0.3.RELEASE-dist.zip"&gt;zip&lt;/a&gt;&lt;/p&gt;&lt;p&gt;The 1.1 M2 release includes bug fixes and enhancements as well as several new features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd/wiki/Application-Configuration#kafka"&gt;Kafka based Message Bus&lt;/a&gt;. If Kafka is your middleware du jour, you will feel right at home.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd/wiki/Application-Configuration#rabbitmq"&gt;Batching and compression support for RabbitMQ&lt;/a&gt; provides significantly increased effective message rate throughput.&lt;/li&gt;
+  &lt;li&gt;Develop Processor modules using &lt;a href="https://github.com/reactor/reactor"&gt;Project Reactor¡¯s&lt;/a&gt; Stream API. The &lt;a href="https://reactor.github.io/docs/api/2.0.0.M2/reactor/rx/Stream.html"&gt;Stream API&lt;/a&gt; is based on the &lt;a href="http://www.reactive-streams.org/"&gt;Reactive Streams specification&lt;/a&gt; that provides a standard for asynchronous stream processing with non-blocking backpressure. This allows you to use a functional programming model as the basis for processing event streams. Combined with XD¡¯s support for &lt;a href="https://github.com/spring-projects/spring-xd/wiki/Deployment#stream-partitioning"&gt;Data Partitioning on the Message Bus&lt;/a&gt;, you can create very powerful distributed stream processing solutions.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd/wiki/Modules#module-packaging"&gt;Easily develop, test, and package custom modules&lt;/a&gt;. A parent pom bootstraps all the dependencies required for building a custom module and bundles your module and dependencies into a single uberjar file. There is also support for &lt;a href="https://github.com/spring-projects/spring-xd/wiki/Creating-a-Processor-Module#write-a-test"&gt;integration testing your module&lt;/a&gt; with JUnit using an embedded single node server.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd/wiki/Creating-a-Processor-Module#register-the-module"&gt;Upload custom modules&lt;/a&gt; to the admin server over HTTP.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd/wiki/Application-Configuration#customizing-authorization"&gt;Role based authorization of REST endpoints&lt;/a&gt; give you control over ¡°who can do what¡±.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd/wiki/Application-Configuration#file-based-authentication"&gt;File based authentication&lt;/a&gt; as a simple alternative to LDAP.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd/wiki/Batch-Jobs#running-sqoop-as-a-batch-job-sqoop"&gt;Sqoop Batch job integration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Please see the &lt;a href="https://github.com/spring-projects/spring-xd-samples/tree/master/reactor-moving-average"&gt;reactor-moving-average project&lt;/a&gt; for an example of using Reactor¡¯s Stream API and the &lt;a href="https://github.com/spring-projects/spring-xd-samples/tree/master/si-dsl-module"&gt;si-dsl-module&lt;/a&gt; for a complete example of developing a custom module.&lt;/p&gt;&lt;p&gt;Of note for the next release of Spring XD 1.1 RC1 we will be including support for&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Processor modules that use Spark Streaming&lt;/li&gt;
+  &lt;li&gt;Processor modules that use RxJava&lt;/li&gt;
+  &lt;li&gt;Kafka Message Bus and Kafka source improvements based on a revamped &lt;a href="https://github.com/spring-projects/spring-integration-kafka"&gt;Spring Kafka Library&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Granular security ACLs to support who can create or destroy streams and jobs&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Feedback is very important, so please get in touch with questions and comments via&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://stackoverflow.com/questions/tagged/spring-xd"&gt;StackOverflow&lt;/a&gt; &lt;code&gt;spring-xd&lt;/code&gt; tag&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://jira.spring.io/browse/XD/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel"&gt;Spring JIRA&lt;/a&gt; or &lt;a href="https://github.com/spring-projects/spring-xd/issues"&gt;GitHub Issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud 1.0.0.RC1 Available Now</title>
     <link rel="alternate" href="https://spring.io/blog/2014/12/19/spring-cloud-1-0-0-rc1-available-now" />
@@ -496,47 +527,6 @@
 &lt;p&gt;Spring XD aims to provide a one stop shop for writing and deploying Big Data Applications. It provides a scalable, fault tolerant, distributed runtime for Data Ingestion, Analytics, and Workflow Orchestration using a single programming, configuration and extensibility model. By not requiring developers to rationalize all of this themselves across the many different solutions available today, Spring XD greatly reduces the inherent complexity of Big Data development. It's all built on proven projects like Spring Integration, and Spring Batch. You'll see for yourself how this heritage combines to provide a scalable runtime environment, that is easily configured and assembled via a simple DSL.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/mcJXjxZ3f9k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for Android 2.0.0.M2 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/12/09/spring-for-android-2-0-0-m2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Roy Clarkson</name>
-    </author>
-    <id>tag:spring.io,2014-12-09:1876</id>
-    <updated>2014-12-09T09:21:46Z</updated>
-    <content type="html">&lt;p&gt;I am pleased to announce that Spring for Android 2.0.0.M2 is now available in the Spring milestone repository. Highlights include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Support for the Android port of &lt;a href="https://hc.apache.org/httpcomponents-client-4.3.x/android-port.html"&gt;HttpClient 4.3&lt;/a&gt; via HttpComponentsClientHttpRequestFactory&lt;/li&gt;
-&lt;li&gt;Support for HttpClient 4.0 included with Android is now deprecated but will remain available through HttpComponentsAndroidClientHttpRequestFactory.&lt;/li&gt;
-&lt;li&gt;HTTP PATCH support in RestTemplate&lt;/li&gt;
-&lt;li&gt;The type conversion package from Spring Core is now available in Spring for Android Core.&lt;/li&gt;
-&lt;li&gt;Many improvements and fixes from Spring 3.2 are now merged into Spring for Android to bring baseline compatibility to Spring 3.2, while certain RestTemplate features from Spring 4.1 have been included to support the new HttpClient.&lt;/li&gt;
-&lt;li&gt;Other bug fixes and improvements&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;
-&lt;a id="user-content-httpclient-43" class="anchor" href="#httpclient-43" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;HttpClient 4.3&lt;/h3&gt;
-
-&lt;p&gt;If HttpClient 4.3 for Android is available on the classpath it will be configured as the default HTTP client. Include the following dependency in your &lt;code&gt;build.gradle&lt;/code&gt; to utilize the new HttpClient.&lt;/p&gt;
-
-&lt;div class="highlight highlight-groovy"&gt;&lt;pre&gt;dependencies {
-    compile &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;org.apache.httpcomponents:httpclient-android:4.3.5&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
-}&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3&gt;
-&lt;a id="user-content-minimum-version" class="anchor" href="#minimum-version" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Minimum Version&lt;/h3&gt;
-
-&lt;p&gt;The minimum supported version is Android 2.2 (API level 8), however it now accounts for 0.5% of Android devices on the Android developer &lt;a href="https://developer.android.com/about/dashboards/index.html"&gt;Dashboards&lt;/a&gt;. We recommend Android 2.3 as a minimum target for new apps, as third-party libraries such as Jackson 2.4 and OkHttp require Android 2.3 and newer.&lt;/p&gt;
-
-&lt;h3&gt;
-&lt;a id="user-content-conclusion" class="anchor" href="#conclusion" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;For a complete list of changes, see the &lt;a href="https://jira.spring.io/browse/ANDROID"&gt;Release Notes&lt;/a&gt; in JIRA. The &lt;a href="http://docs.spring.io/spring-android/docs/2.0.0.M2/reference/htmlsingle/"&gt;reference documentation&lt;/a&gt; has also been updated to cover the new features.&lt;/p&gt;
-
-&lt;p&gt;Thanks again to everyone that has contributed to the release! Please try this new milestone and report any problems in &lt;a href="https://jira.spring.io/browse/ANDROID"&gt;JIRA&lt;/a&gt; or on &lt;a href="https://github.com/spring-projects/spring-android/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</content>
   </entry>
 </feed>
 
