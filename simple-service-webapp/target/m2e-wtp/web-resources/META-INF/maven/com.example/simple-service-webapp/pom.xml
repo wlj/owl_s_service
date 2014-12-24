@@ -33,20 +33,6 @@
                 <version>${jersey.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-               <exclusions>
-                 <exclusion>
-			      <groupId>org.springframework</groupId>
-			      <artifactId>spring-core</artifactId>
-			    </exclusion>			
-			    <exclusion>
-			      <groupId>org.springframework</groupId>
-			      <artifactId>spring-web</artifactId>
-			    </exclusion>
-			    <exclusion>
-			      <groupId>org.springframework</groupId>
-			      <artifactId>spring-beans</artifactId>
-			    </exclusion>
-                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -57,10 +43,22 @@
             <artifactId>jersey-container-servlet-core</artifactId>
             <!-- use the following artifactId if you don't need servlet 2.x compatibility -->
             <!-- artifactId>jersey-container-servlet</artifactId -->
+            <exclusions>
+            	<exclusion>
+            		<artifactId>javax.ws.rs-api</artifactId>
+            		<groupId>javax.ws.rs</groupId>
+            	</exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-moxy</artifactId>
+            <exclusions>
+            	<exclusion>
+            		<artifactId>javax.ws.rs-api</artifactId>
+            		<groupId>javax.ws.rs</groupId>
+            	</exclusion>
+            </exclusions>
         </dependency>
         <!-- uncomment this to get JSON support
         <dependency>
@@ -103,11 +101,23 @@
 
             <version>2.14</version>
 
-        </dependency>
+            <exclusions>
+            	<exclusion>
+            		<artifactId>javax.ws.rs-api</artifactId>
+            		<groupId>javax.ws.rs</groupId>
+            	</exclusion>
+            </exclusions>
+	</dependency>
         <dependency>
 	<groupId>org.glassfish.jersey.core</groupId>
 	<artifactId>jersey-server</artifactId>
-	</dependency>
+	<exclusions>
+		<exclusion>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<groupId>javax.ws.rs</groupId>
+		</exclusion>
+	</exclusions>
+        </dependency>
         <dependency>
 	<groupId>asm</groupId>
 	<artifactId>asm</artifactId>
@@ -168,6 +178,12 @@
 			<artifactId>mybatis-spring</artifactId>
 			<version>${mybatis-spring.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+		
     </dependencies>
     <properties>
         <jersey.version>2.14</jersey.version>
