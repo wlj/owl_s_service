@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.pku.wlj.dao.ProfileDao">
+    <resultMap type="ProfileProfileBean" id="ProfileProfileBeanMap">
+        <id property="id" column="id"/>
+        <result property="uri" column="uri"/>
+        <result property="serviceName" column="service_name"/>
+        <result property="description" column="description"/>
+        <result property="processId" column="process_id"/>
+        <result property="serviceId" column="service_id"/>
+    </resultMap>
+    
+    <select id="getProfileProfileById" parameterType="int" 
+        resultType="com.pku.wlj.bean.ProfileProfileBean" 
+        resultMap="ProfileProfileBeanMap">
+        <![CDATA[
+        	SELECT * FROM `profile_profile` profile WHERE `profile`.`id`=#{id}
+        ]]>
+    </select>
+    <select id="getProfileProfileListByService" parameterType="int"
+        resultType="com.pku.wlj.bean.ProfileProfileBean"
+        resultMap="ProfileProfileBeanMap">
+        <![CDATA[
+        	SELECT * FROM `profile_profile` profile WHERE `profile`.`service_id`=#{serviceId}
+        ]]>
+    </select>
+</mapper>

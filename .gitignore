@@ -1,13 +1,4 @@
-/ExtendedService/
-/GroundingOpe/
-/owlsapi-1.1.2/
-/OwlsServiceOpe/
-/Pellet-2.0.2/
-/ProcessOpe/
-/ProfileOpe/
-/protege-owl-src-3.4.8/
-/rscasd-utils/
-/SemanticOpe/
-/Servers/
-/simple-service-webapp/
-/suddi/
+.metadata/*
+/.recommenders
+/RemoteSystemsTempFiles
+/Servers
