@@ -19,10 +19,13 @@
 	    <property name="configLocation" value="classpath:mybatis-config.xml"></property>
 	</bean>
 	
-	<bean id="profileProfileMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+	<bean id="profileDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
 	    <property name="mapperInterface" value="com.pku.wlj.dao.ProfileDao"></property>
-	    <property name="sqlSessionFactory" ref="sqlSessionFactory" />
-	    
+	    <property name="sqlSessionFactory" ref="sqlSessionFactory" />    
+	</bean>
+	
+	<bean id="profileService" class="com.pku.wlj.Profile">
+	    <property name="profileDao" ref="profileDao"></property>
 	</bean>
 
 </beans>

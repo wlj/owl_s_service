@@ -6,7 +6,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 
-import EDU.pku.ly.owlsservice.implementation.OwlsServiceMainImpl;
+//import EDU.pku.ly.owlsservice.implementation.OwlsServiceMainImpl;
 
 @Path("service")
 public class Service {
@@ -17,7 +17,7 @@ public class Service {
 	@POST
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	public void post(@FormParam("service_uri") String service_uri){
-		OwlsServiceMainImpl impl=new OwlsServiceMainImpl();
-		impl.OwlsServicePublishEntry(service_uri);
+//		OwlsServiceMainImpl impl=new OwlsServiceMainImpl();
+//		impl.OwlsServicePublishEntry(service_uri);
 	}
 }
