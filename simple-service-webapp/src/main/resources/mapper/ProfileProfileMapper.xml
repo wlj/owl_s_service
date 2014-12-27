@@ -11,14 +11,14 @@
     </resultMap>
     
     <select id="getProfileProfileById" parameterType="int" 
-        resultType="com.pku.wlj.bean.ProfileProfileBean" 
+        resultType="com.pku.wlj.bean.profile.ProfileProfileBean" 
         resultMap="ProfileProfileBeanMap">
         <![CDATA[
         	SELECT * FROM `profile_profile` profile WHERE `profile`.`id`=#{id}
         ]]>
     </select>
     <select id="getProfileProfileListByService" parameterType="int"
-        resultType="com.pku.wlj.bean.ProfileProfileBean"
+        resultType="com.pku.wlj.bean.profile.ProfileProfileBean"
         resultMap="ProfileProfileBeanMap">
         <![CDATA[
         	SELECT * FROM `profile_profile` profile WHERE `profile`.`service_id`=#{serviceId}

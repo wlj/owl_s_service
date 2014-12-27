@@ -23,9 +23,23 @@
 	    <property name="mapperInterface" value="com.pku.wlj.dao.ProfileDao"></property>
 	    <property name="sqlSessionFactory" ref="sqlSessionFactory" />    
 	</bean>
-	
 	<bean id="profileService" class="com.pku.wlj.Profile">
 	    <property name="profileDao" ref="profileDao"></property>
 	</bean>
+	
+	<bean id="processDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+	    <property name="mapperInterface" value="com.pku.wlj.dao.ProcessDao"></property>
+	    <property name="sqlSessionFactory" ref="sqlSessionFactory" />    
+	</bean>
+	
+	<bean id="processService" class="com.pku.wlj.service.impl.ProcessServiceImpl">
+	    <property name="processDao" ref="processDao"></property>
+	</bean>
+	
+	<bean id="processAction" class="com.pku.wlj.Process">
+	    <property name="processService" ref="processService"></property>
+	</bean>
+	
+	
 
 </beans>

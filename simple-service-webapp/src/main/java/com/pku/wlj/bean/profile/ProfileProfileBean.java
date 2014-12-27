@@ -1,4 +1,4 @@
-package com.pku.wlj.bean;
+package com.pku.wlj.bean.profile;
 
 import java.io.Serializable;
 

@@ -4,7 +4,7 @@ package com.pku.wlj.dao;
 
 import java.util.List;
 
-import com.pku.wlj.bean.ProfileProfileBean;
+import com.pku.wlj.bean.profile.ProfileProfileBean;
 
 public interface ProfileDao {
 	/**

@@ -3,9 +3,11 @@
 <configuration>
     <!-- 定义同义词 -->
     <typeAliases>
-        <typeAlias type="com.pku.wlj.bean.ProfileProfileBean" alias="ProfileProfileBean"/>
+        <typeAlias type="com.pku.wlj.bean.profile.ProfileProfileBean" alias="ProfileProfileBean"/>
+        <typeAlias type="com.pku.wlj.bean.process.ProcessProcessBean" alias="ProcessProcessBean"/>
     </typeAliases>
     <mappers>
+        <mapper resource="mapper/ProcessMapper.xml"/>
         <mapper resource="mapper/ProfileProfileMapper.xml"/>
     </mappers>
 </configuration> 

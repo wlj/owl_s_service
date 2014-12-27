@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.pku.wlj.bean.ProfileProfileBean;
+import com.pku.wlj.bean.profile.ProfileProfileBean;
 import com.pku.wlj.dao.ProfileDao;
 
 @Path("profile")

@@ -19,7 +19,7 @@ public class SQLHelper {
 	{
 		try
 		{
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/juddiv3","root","");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/juddiv3_wlj","root","");
 		}
 		catch(SQLException e) 
 		{
