@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.pku.wlj.dao.ProcessDao">
+    <resultMap type="ProcessProcessBean" id="processProcessBeanMap">
+        <id property="id" column="id"/>
+        <result property="uri" column="uri"/>
+        <result property="name" column="name"/>
+        <result property="uri" column="uri"/>
+        <result property="type" column="type"/>
+        <result property="ccType" column="cc_type"/>
+        <result property="serviceId" column="service_id"/>
+    </resultMap>
+    
+    <select id="getProcessBean" parameterType="int" 
+        resultType="com.pku.wlj.bean.process.ProcessProcessBean" 
+        resultMap="processProcessBeanMap">
+        <![CDATA[
+        	SELECT * FROM process_process WHERE id = #{id}
+        ]]>
+    </select>
+    <select id="getProcessBeanList" parameterType="int"
+        resultType="com.pku.wlj.bean.process.ProcessProcessBean"
+        resultMap="processProcessBeanMap">
+        <![CDATA[
+        	SELECT * FROM process_process WHERE  service_id=#{serviceId}
+        ]]>
+    </select>
+</mapper>

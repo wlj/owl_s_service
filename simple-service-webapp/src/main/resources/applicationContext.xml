@@ -18,11 +18,12 @@
 	    <property name="dataSource" ref="dataSource"></property>
 	    <property name="configLocation" value="classpath:mybatis-config.xml"></property>
 	</bean>
-	
+	<!-- Dao  -->
 	<bean id="profileDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
 	    <property name="mapperInterface" value="com.pku.wlj.dao.ProfileDao"></property>
 	    <property name="sqlSessionFactory" ref="sqlSessionFactory" />    
 	</bean>
+	<!-- Service -->
 	<bean id="profileService" class="com.pku.wlj.Profile">
 	    <property name="profileDao" ref="profileDao"></property>
 	</bean>
@@ -34,8 +35,10 @@
 	
 	<bean id="processService" class="com.pku.wlj.service.impl.ProcessServiceImpl">
 	    <property name="processDao" ref="processDao"></property>
+	    
 	</bean>
 	
+	<!-- Action -->
 	<bean id="processAction" class="com.pku.wlj.Process">
 	    <property name="processService" ref="processService"></property>
 	</bean>
