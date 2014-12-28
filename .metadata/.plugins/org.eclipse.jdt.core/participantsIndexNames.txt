@@ -1,3 +1,0 @@
-INDEX VERSION 1.127
-H:\eclipse_workspace\liuxin\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3782002141.index
-\simple-service-webapp\src\main\java
